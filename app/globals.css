@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .flexCenter {
+    @apply flex justify-center items-center;
+  }
+
+  .menuDiv {
+    @apply py-4 px-8 bg-white/90 backdrop-blur-sm border-[3px] rounded-md shadow-md border-white absolute top-14 -left-5 z-30 text-black cursor-default text-sm flex justify-between items-start font-normal;
+  }
+
+  .easyTrans {
+    @apply transition-all ease-linear duration-300;
+  }
+
+  .mobBackdrop {
+    fill: linear-gradient(
+      107deg,
+      rgba(34, 19, 19, 0.34) 140.35%,
+      rgba(42, 44, 37, 0.1) 250.76%
+    );
+    backdrop-filter: blur(75px);
+  }
+
+  .subRoutebg {
+    @apply mt-[85px] lg:mt-[142px] bg-softWhite;
+  }
+
+  .subRoutebanner {
+    @apply h-[40vh] bg-cover bg-center;
+  }
+
+  .subRouteblack {
+    @apply h-full bg-black/60 backdrop-blur-[2px] flexCenter;
+  }
+
+  .subRouteTitle {
+    @apply text-white font-bold leading-10 text-4xl lg:text-5xl tracking-wide text-center;
+  }
+
+  .glass_bg {
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(3px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+  }
+}
