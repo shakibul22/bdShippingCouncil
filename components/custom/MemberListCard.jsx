@@ -4,9 +4,7 @@ import React from "react";
 const MemberListCard = ({ bg, name, logo, member_id }) => {
   return (
     <div
-      className={`p-2 md:p-4 flex items-center gap-3 shadow-md ${
-        bg === "white" ? "bg-white border rounded-[8px]" : "glass_bg"
-      }`}
+      className={`p-2 md:p-4 flex items-center gap-3}`}
     >
       {/* <Image
         src={`/img/memberLogo/${logo}`}
