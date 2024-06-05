@@ -31,7 +31,7 @@ const HomeBOD = async ({ data }) => {
         <div>
           <Link
             href={"/about/officials"}
-            className="py-2.5 px-5 w-fit leading-normal bg-secondaryColor block shadow-lg mx-auto mt-14"
+            className="py-2.5 px-5 w-fit leading-normal bg-btn block shadow-lg mx-auto mt-14"
           >
             <p className="text-white font-semibold">View All</p>
           </Link>
