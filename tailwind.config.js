@@ -21,9 +21,11 @@ module.exports = {
         "3xl": "1600px",
       },
       colors: {
-        primaryColor: "#082237",
+        primaryColor: "#0a4a77",
+        
         secondaryColor: "#8C7F77",
-        softWhite: "#FFFBF4",
+        softWhite: "#e9f5ff",
+        btn: "#0081e9",
         textPrimary: "#12141D",
         tabbg: "#E7EAEC",
       },
