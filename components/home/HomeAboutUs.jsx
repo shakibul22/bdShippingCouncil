@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -7,19 +8,35 @@ import React from "react";
 
 const HomeAboutUs = ({ data }) => {
   return (
-    <div className="bg-softWhite text-textPrimary">
-      <div className="py-8 px-2 lg:py-20 xl:px-0 space-y-8 lg:flex md:gap-10 items-center justify-between max-w-screen-2xl mx-auto">
-        <div className="sm:w-[60%] mx-auto">
-          <p className="text-xs font-semibold lg:text-lg">About Us</p>
-          <h3 className="text-xl font-bold mt-3 lg:text-4xl">{data?.title}</h3>
-          <p className="mt-4 text-justify font-light text-sm lg:text-base">
-            {data?.text}
+    <div className="bg-softWhite text-white">
+      <div className="py-8 px-2 lg:py-20 xl:px-0 space-y-8 lg:flex md:gap-10 items-center justify-between max-w-7xl mx-auto">
+        <div className="flex flex-col gap-4 ">
+          <Image
+            className="rounded-lg h-[300px]"
+            src="https://images.pexels.com/photos/2680058/pexels-photo-2680058.jpeg"
+            width={800}
+            height={800}
+            alt="about"
+          />
+          <Image
+            className="rounded-lg h-[300px]"
+            src="https://images.pexels.com/photos/3856440/pexels-photo-3856440.jpeg"
+            width={800}
+            height={800}
+            alt="about"
+          />
+        </div>
+        <div className="bg-[#001e35] w-[400px] absolute right-[40%] h-[700px] z-10 p-10">
+          <p className="text-xs font-semibold lg:text-4xl border-b ">
+            About <span className="text-blue-700">Us</span>
           </p>
+          <h3 className="text-xl font-bold mt-3 lg:text-lg">{data?.title}</h3>
+          <p className="mt-4 text-justify font-light text-sm">{data?.text}</p>
 
           <div>
             <Link
               href={"/about"}
-              className="py-2.5 px-5 w-fit leading-normal bg-secondaryColor block shadow-lg mx-auto md:mx-0 mt-8"
+              className="py-2.5 px-5 w-fit leading-normal bg-btn block shadow-lg mx-auto md:mx-0 mt-8"
             >
               <p className="text-white font-semibold">Explore Now</p>
             </Link>
