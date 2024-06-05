@@ -14,6 +14,7 @@ import HomeLatestNews from "./HomeLatestNews";
 import HomeMember from "./HomeMember";
 import HomeRnP from "./HomeRnP";
 import HomeSlider from "./HomeSlider";
+import Hero from "../custom/Hero";
 
 // async function getData() {
 //   const res = await fetch(`
@@ -39,16 +40,19 @@ const HomeLayout = async () => {
       <nav>
         <Navbar />
       </nav>
-      <div className="h-[60vh] sm:h-[70vh] md:h-[45vh] lg:h-[100vh] 3xl:h-[85vh] bg-[url('/img/herobg.webp')] bg-cover bg-center -z-50 object-cover">
-        <div className="bg-black/50 h-full backdrop-blur-md">
-          <div className="h-full flexCenter -z-40">
-            <div className="w-[87%] sm:w-[600px] lg:w-[900px] xl:w-[1180px] pt-[50px] lg:pt-[130px]">
-              <HomeSlider />
+      <div className="h-[60vh] sm:h-[70vh] md:h-[45vh] lg:h-screen 3xl:h-screen bg-transparent opacity-100    bg-[url('https://res.cloudinary.com/dgohi0iqm/image/upload/v1717481512/istockphoto-1317779371-1024x1024_1_migxdp.jpg')] bg-cover   bg-center -z-50 ">
+        <div className="h-screen ">
+          <div className="h-full flex flex-col max-w-7xl mx-auto ">
+            <Hero />
+            <div className="absolute bottom-0">
+              <HomeAffiliates />
             </div>
           </div>
-          <HomeLatestNews />
-
+          {/* <HomeLatestNews /> */}
           <div>
+            <div className="bg-primaryColor">
+              <HomeSlider />
+            </div>
             <HomeAboutUs data={homeData[0]} />
             <HomeChairmanProfile data={homeData[1]} />
             <HomeBOD data={homeData[2]} />
@@ -56,9 +60,7 @@ const HomeLayout = async () => {
             <HomeRnP />
             <HomeAssociate />
             <HomeGallery />
-            <HomeAffiliates />
           </div>
-
           <Footer />
         </div>
       </div>
