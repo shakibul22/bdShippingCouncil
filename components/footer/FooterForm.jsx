@@ -47,7 +47,7 @@ const FooterForm = () => {
             <label className="block">Name</label>
             <input
               type="text"
-              className="text-neutral-700 placeholder-neutral-400 p-1.5 focus:outline-none w-full"
+              className="text-neutral-700 bg-[#547086] p-1.5 focus:outline-none w-full"
               required
               placeholder="Enter your name"
               onChange={(e) => {
@@ -59,7 +59,7 @@ const FooterForm = () => {
             <label className="block">Number</label>
             <input
               type="number"
-              className="text-neutral-700 placeholder-neutral-400 p-1.5 focus:outline-none w-full"
+              className="text-neutral-700 bg-[#547086] p-1.5 focus:outline-none w-full"
               required
               placeholder="Enter your number"
               onChange={(e) => {
@@ -73,7 +73,7 @@ const FooterForm = () => {
           <label className="block">Email</label>
           <input
             type="email"
-            className="text-neutral-700 placeholder-neutral-400 p-1.5 focus:outline-none w-full"
+            className="text-neutral-700 bg-[#547086] p-1.5 focus:outline-none w-full"
             required
             placeholder="Enter your email"
             onChange={(e) => {
@@ -87,7 +87,7 @@ const FooterForm = () => {
           <textarea
             rows={3}
             type="text"
-            className="text-neutral-700 placeholder-neutral-400 p-1.5 focus:outline-none w-full"
+            className="text-neutral-700 bg-[#547086] p-1.5 focus:outline-none w-full"
             required
             aria-required
             placeholder="Write something to us"
@@ -99,7 +99,7 @@ const FooterForm = () => {
 
         <button
           type="submit"
-          className="py-3 w-full bg-secondaryColor"
+          className="py-3 w-full bg-white text-blue-600"
           // onClick={(e) => handleSubmit(e)}
           disabled={sending}
         >
