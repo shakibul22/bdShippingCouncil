@@ -2,7 +2,6 @@
 
 import { publicRequest } from "@/requestMethod";
 import Image from "next/image";
-import Slider from "react-slick";
 
 const getData = async () => {
   const res = await publicRequest("/home/affiliates");
@@ -15,53 +14,29 @@ const data = getData();
 const HomeAffiliates = async () => {
   const affiliates = await data;
 
-  const settings = {
-    infinite: true,
-    speed: 500,
-    slidesToShow: 5,
-    swipeToSlide: true,
-    arrows: false,
-    autoplay: true,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 400,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-    ],
-  };
   return (
-    <div className="bg-[url('/img/affiliatebg.webp')] bg-cover text-white">
-      <div className="bg-black/50 backdrop-blur-[1px] px-2 xl:px-0 py-8 lg:py-16">
-        <div className="mx-auto max-w-screen-2xl">
-          <h3 className="text-xl font-bold lg:text-4xl text-center">
-            Our Affiliates
-          </h3>
+    <div className="">
+      <div className="mx-auto max-w-7xl">
+        <h3 className="text-xl font-bold lg:text-2xl text-white text-start">
+          Our Affiliates
+        </h3>
 
-          <div className="mt-10">
-            {affiliates?.length > 0 ? (
-              <Slider {...settings}>
-                {affiliates?.map((aff) => (
-                  <div key={aff.id}>
-                    <Image
-                      src={`/img/affiliates/${aff.logo}`}
-                      width={100}
-                      height={24}
-                      alt="temp"
-                      className="mx-auto"
-                    />
-                  </div>
-                ))}
-              </Slider>
-            ) : null}
-          </div>
+        <div className="mt-10 flex xl:flex-row sm:flex-wrap justify-between gap-20 border-t bg-transparent opacity-70  items-center">
+          {affiliates?.map((aff) => (
+            <div
+              key={aff.id}
+              className="hover:bg-[#063152] p-4 hover:border-t-4 border-white"
+            >
+              <Image
+                src={`/img/affiliates/${aff.logo}`}
+                width={100}
+                height={24}
+                alt={aff.name}
+                className="mx-auto"
+                style={{ filter: "brightness(0) invert(1) contrast(100)" }}
+              />
+            </div>
+          ))}
         </div>
       </div>
     </div>
