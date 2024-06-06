@@ -2,7 +2,7 @@
 import { publicRequest } from "@/requestMethod";
 import React, { useState } from "react";
 import toast from "react-hot-toast";
-
+import { TbSend } from "react-icons/tb";
 const FooterForm = () => {
   const [form, setForm] = useState({
     name: "",
@@ -34,20 +34,19 @@ const FooterForm = () => {
   };
 
   return (
-    <div className="space-y-6 flex-1">
+    <div className="space-y-6 flex-1 flex flex-col items-start">
       <div>
-        <h4 className="font-medium">Contact with us</h4>
+        <h4 className="text-2xl text-white">Contact with us</h4>
       </div>
       <form
-        className="text-sm text-softWhite max-w-sm mx-auto space-y-3"
+        className="text-sm text-softWhite  space-y-3"
         onSubmit={handleSubmit}
       >
         <div className="flex gap-2 overflow-hidden">
           <div className="flex-1">
-            <label className="block">Name</label>
             <input
               type="text"
-              className="text-neutral-700 bg-[#547086] p-1.5 focus:outline-none w-full"
+              className=" bg-[#547086] text-white  p-4 rounded-lg mt-2 focus:outline-none w-full"
               required
               placeholder="Enter your name"
               onChange={(e) => {
@@ -56,10 +55,9 @@ const FooterForm = () => {
             />
           </div>
           <div className="flex-1">
-            <label className="block">Number</label>
             <input
               type="number"
-              className="text-neutral-700 bg-[#547086] p-1.5 focus:outline-none w-full"
+              className=" bg-[#547086] text-white  p-4 rounded-lg mt-2 focus:outline-none w-full"
               required
               placeholder="Enter your number"
               onChange={(e) => {
@@ -70,10 +68,9 @@ const FooterForm = () => {
         </div>
 
         <div>
-          <label className="block">Email</label>
           <input
             type="email"
-            className="text-neutral-700 bg-[#547086] p-1.5 focus:outline-none w-full"
+            className=" bg-[#547086] text-white  p-4 rounded-lg mt-2 focus:outline-none w-full"
             required
             placeholder="Enter your email"
             onChange={(e) => {
@@ -83,11 +80,10 @@ const FooterForm = () => {
         </div>
 
         <div>
-          <label className="block">Message</label>
           <textarea
             rows={3}
             type="text"
-            className="text-neutral-700 bg-[#547086] p-1.5 focus:outline-none w-full"
+            className=" bg-[#547086] text-white  p-4 rounded-lg mt-2 focus:outline-none w-full"
             required
             aria-required
             placeholder="Write something to us"
@@ -99,10 +95,11 @@ const FooterForm = () => {
 
         <button
           type="submit"
-          className="py-3 w-full bg-white text-blue-600"
+          className="py-3 w-full bg-white flex flex-row justify-center items-center gap-3   text-blue-600"
           // onClick={(e) => handleSubmit(e)}
           disabled={sending}
         >
+          <TbSend className="text-2xl" />{" "}
           {sending ? "Sending ..." : "Send Message"}
         </button>
       </form>

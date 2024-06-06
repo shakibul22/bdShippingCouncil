@@ -2,6 +2,7 @@ import React from "react";
 import NewsCard from "../custom/NewsCard";
 import Link from "next/link";
 import { publicRequest } from "@/requestMethod";
+import { ImArrowUpRight2 } from "react-icons/im";
 
 const getData = async () => {
   const res = await publicRequest("/publication/news");
@@ -30,25 +31,41 @@ const HomeRnP = async () => {
           </h3>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 lg:gap-6 mt-10">
-          {news?.slice(0, 4).map((n) => (
-            <NewsCard
-              key={n.id}
-              image={n.image}
-              name={n.name}
-              date={n.date}
-              volume={n.volume}
-              pdf={n.pdf}
-            />
-          ))}
+        <div className="grid grid-cols-2 gap-2 lg:gap-6 mt-10">
+          <div className="flex flex-col gap-4 w-full">
+            {news?.slice(0, 2).map((n) => (
+              <NewsCard
+                key={n.id}
+                index={n.id}
+                image={n.image}
+                name={n.name}
+                date={n.date}
+                volume={n.volume}
+                pdf={n.pdf}
+              />
+            ))}
+          </div>
+          <div className="w-full">
+            {news?.slice(2, 4).map((n) => (
+              <NewsCard
+                key={n.id}
+                index={n.id}
+                image={n.image}
+                name={n.name}
+                date={n.date}
+                volume={n.volume}
+                pdf={n.pdf}
+              />
+            ))}
+          </div>
         </div>
 
         <div>
           <Link
             href={"/news"}
-            className="py-2.5 px-5 w-fit leading-normal bg-btn block shadow-lg mx-auto mt-12 text-white font-semibold"
+            className="py-2.5 px-7 w-fit flex flex-row justify-center gap-2 leading-normal bg-btn items-center rounded-sm shadow-lg mx-auto mt-12 text-white font-semibold"
           >
-            See More
+            See More <ImArrowUpRight2 />
           </Link>
         </div>
       </div>

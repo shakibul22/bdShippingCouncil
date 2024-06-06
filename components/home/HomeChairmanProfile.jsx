@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 
 import { FaLinkedin, FaRegEnvelope } from "react-icons/fa6";
+import { ImArrowUpRight2 } from "react-icons/im";
 
 const HomeChairmanProfile = ({ data }) => {
   return (
@@ -44,11 +45,10 @@ const HomeChairmanProfile = ({ data }) => {
               <FaLinkedin className="opacity-50 hover:opacity-90 cursor-pointer" />
             </div>
 
-            <Link
-              href={"/chairman"}
-              className="py-2.5 px-5 w-fit leading-normal bg-btn block shadow-lg mt-8 mx-auto lg:mx-0"
-            >
-              <p className="text-white font-semibold">Read More</p>
+            <Link href={"/chairman"} className="w-[200px]">
+              <p className="py-2.5 px-7 w-fit flex flex-row justify-center gap-2 leading-normal bg-btn items-center rounded-sm shadow-lg mx-auto mt-12 text-white font-semibold">
+                Read More <ImArrowUpRight2 />
+              </p>
             </Link>
           </div>
         </div>

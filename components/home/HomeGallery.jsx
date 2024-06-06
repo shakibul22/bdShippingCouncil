@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { publicRequest } from "@/requestMethod";
-
+import { ImArrowUpRight2 } from "react-icons/im";
 async function getData() {
   const res = await publicRequest("/gallery/allphotos");
   return res.data;
@@ -16,11 +16,12 @@ const HomeGallery = async () => {
   const images = galleryData[0]?.photos || [];
 
   return (
-    <div className="bg-softWhite px-2 py-8 lg:py-20">
+    <div className="bg-softWhite px-4 py-8 lg:py-20">
       <div className="max-w-7xl mx-auto">
         <p className="text-xs font-semibold lg:text-lg">Media Corner</p>
         <h3 className="text-xl font-bold mt-3 lg:text-4xl">
-          Our Photo Gallery and Video
+          Our Photo <span className="text-btn"> Gallery</span> and{" "}
+          <span className="text-btn">Video</span>
         </h3>
         <div className="mt-10 grid grid-cols-2 lg:grid-cols-4 gap-4">
           <div className="flex flex-col gap-4">
@@ -87,9 +88,9 @@ const HomeGallery = async () => {
         <div>
           <Link
             href={"/media"}
-            className="py-2.5 px-5 w-fit leading-normal bg-btn block shadow-lg mx-auto mt-12 text-white font-semibold"
+            className="py-2.5 px-7 w-fit flex flex-row justify-center gap-2 leading-normal bg-btn items-center rounded-sm shadow-lg mx-auto mt-12 text-white font-semibold"
           >
-            See More
+            See More <ImArrowUpRight2 />
           </Link>
         </div>
       </div>

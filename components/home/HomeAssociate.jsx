@@ -1,6 +1,7 @@
 import Link from "next/link";
 import MemberListCard from "../custom/MemberListCard";
 import { publicRequest } from "@/requestMethod";
+import { ImArrowUpRight2 } from "react-icons/im";
 
 const getMembers = async () => {
   const res = await publicRequest("/member/memberlist");
@@ -93,9 +94,9 @@ const HomeAssociate = async () => {
         <div>
           <Link
             href={"/member/list"}
-            className="py-2.5 px-5 w-fit leading-normal bg-btn block shadow-lg mx-auto mt-12 text-white font-semibold"
+            className="py-2.5 px-7 w-fit flex flex-row justify-center gap-2 leading-normal bg-btn items-center rounded-sm shadow-lg mx-auto mt-12 text-white font-semibold"
           >
-            See More
+            See More <ImArrowUpRight2 />
           </Link>
         </div>
       </div>

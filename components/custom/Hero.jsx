@@ -43,7 +43,7 @@ const Hero = () => {
         </div>
 
         {/* Text Box */}
-        <div className="relative bg-black bg-opacity-70 p-6 right-32 top-16 text-white text-start max-w-lg z-20">
+        <div className="relative rounded-lg  bg-gradient-to-r from-gray-900 to-gray-600/30 bg-opacity-70 p-6 right-32 top-16 text-white text-start max-w-lg z-20">
           <h1 className="text-2xl font-bold uppercase">Latest News</h1>
           <p className="mt-4">
             “Shipping Industry Embraces Sustainability for Climate Action:

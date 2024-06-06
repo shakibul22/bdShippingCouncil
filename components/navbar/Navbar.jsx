@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Inter, Poppins } from "next/font/google";
 import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
-import { FaAngleDown } from "react-icons/fa6";
+import { BsSend } from "react-icons/bs";
 import { usePathname } from "next/navigation";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -101,12 +101,15 @@ const Navbar = () => {
               Shippers’ Council of Bangladesh
             </h2>
           </div>
-          <div>
+          <div className="border border-primaryColor rounded-tl-3xl  rounded-bl-3xl rounded-br-[40px] w-[220px] ">
             <Link
-              href={"/contact"}
-              className="py-2.5 px-5 w-fit leading-normal "
+              href="/contact"
+              className="font-bold text-xl col-span-1 flex items-center gap-3 w-fit leading-normal"
             >
-              Contact
+              <div className="p-3 rounded-full border-2 ring bg-primaryColor transform transition-transform duration-1000 hover:rotate-45">
+                <BsSend className="text-2xl text-white" />
+              </div>
+              <span className="pr-2"> CONTACT US</span>
             </Link>
           </div>
         </div>

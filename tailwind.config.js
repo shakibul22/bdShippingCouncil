@@ -16,14 +16,19 @@ module.exports = {
     //   },
     // },
     extend: {
+      rotate: {
+        '-135': '-135deg',
+        '45': '45deg',
+      },
       screens: {
         "2xl": "1180px",
         "3xl": "1600px",
       },
+
       colors: {
         primaryColor: "#0a4a77",
-        
-        secondaryColor: "#8C7F77",
+        footerbg: "#0c3352",
+        secondaryColor: "#dc963c",
         softWhite: "#e9f5ff",
         btn: "#0081e9",
         textPrimary: "#12141D",
@@ -43,6 +48,11 @@ module.exports = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+    },
+  },
+  variants: {
+    extend: {
+      rotate: ['hover'],
     },
   },
   plugins: [require("tailwindcss-animate")],

@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import FooterCred from "./FooterCred";
 import { publicRequest } from "@/requestMethod";
 import toast from "react-hot-toast";
+import { AiOutlineSend } from "react-icons/ai";
 
 const FooterSub = () => {
   const [sending, setsending] = useState(false);
@@ -40,30 +41,29 @@ const FooterSub = () => {
   };
 
   return (
-    <div className="flex-1">
+    <div className="flex-1 flex flex-col gap-12 ">
       <div className="flex items-center gap-2 w-fit mx-auto lg:mx-0">
         <Image src={"/img/logo.webp"} width={45} height={45} alt="logo" />
-        <h2 className="font-semibold lg:text-xl">
+        <h2 className="font-semibold text-2xl text-white">
           Shippers’ Council of Bangladesh
         </h2>
       </div>
 
-      <div>
-        <p className="font-extralight text-sm mt-1">
-          There are many variations of passages of Lorem the Ipsum available it
-          majority.
-        </p>
-      </div>
-
-      <div>
+      <div className="flex flex-col gap-5">
+        <div>
+          <h3 className="text-2xl font-smeibold text-white">NEWSLETTER</h3>
+          <p className="text-[#6f8699] mt-1">
+            Subscribe to out newsletter and stay updated
+          </p>
+        </div>
         <form
-          className="bg-[#FFF0F0] p-1 bg-opacity-25 mt-6 text-sm"
+          className="bg-[#FFF0F0] text-[#1b405d] flex flex-row justify-between px-5 p-2 rounded-lg bg-opacity-25  text-sm"
           onSubmit={handleSub}
         >
           <input
             type="email"
-            className="p-3 w-[70%] bg-transparent focus:outline-none"
-            placeholder="Enter your email"
+            className="p-3 text-white  bg-transparent focus:outline-none"
+            placeholder="Enter  email address"
             required
             onChange={(e) => {
               setData({ ...data, email: e.target.value });
@@ -71,16 +71,17 @@ const FooterSub = () => {
           />
           <button
             type="submit"
-            className="py-3 w-[30%] bg-secondaryColor"
+            className=" bg-secondaryColor w-10 h-10 p-2 text-end rounded-full"
             // onClick={handleSub}
             disabled={sending}
           >
-            {sending ? "Please wait ..." : "Subscribe"}
+            {" "}
+            <AiOutlineSend className="text-2xl " />
           </button>
         </form>
       </div>
 
-      <div className="mt-20 hidden lg:block">
+      <div className=" hidden lg:block">
         <FooterCred />
       </div>
     </div>

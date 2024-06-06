@@ -2,6 +2,7 @@ import React from "react";
 import BODcard from "../custom/BODcard";
 import Link from "next/link";
 import { publicRequest } from "@/requestMethod";
+import { ImArrowUpRight2 } from "react-icons/im";
 
 async function getData() {
   const res = await publicRequest(`/aboutUs/bod`);
@@ -29,11 +30,10 @@ const HomeBOD = async ({ data }) => {
           ))}
         </div>
         <div>
-          <Link
-            href={"/about/officials"}
-            className="py-2.5 px-5 w-fit leading-normal bg-btn block shadow-lg mx-auto mt-14"
-          >
-            <p className="text-white font-semibold">View All</p>
+          <Link href={"/about/officials"} className="w-[200px]">
+            <p className="py-2.5 px-7 w-fit flex flex-row justify-center gap-2 leading-normal bg-btn items-center rounded-sm shadow-lg mx-auto mt-12 text-white font-semibold">
+              View All <ImArrowUpRight2 />
+            </p>
           </Link>
         </div>
       </div>

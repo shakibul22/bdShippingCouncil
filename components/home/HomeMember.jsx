@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { GrDocumentPdf } from "react-icons/gr";
 
 const HomeMember = ({ data }) => {
   return (
@@ -22,12 +23,16 @@ const HomeMember = ({ data }) => {
             </h2>
             <p className="font-medium opacity-70 flex flex-col">{data?.text}</p>
 
-            <div>
+            <div className=" bg-btn   my-10 lg:mx- py-2.5 px-5 w-fit ">
               <a
                 href={`/pdf/application.pdf`}
-                className="py-2.5 px-5 w-fit leading-normal font-semibold bg-btn shadow-lg mx-auto my-10 lg:mx-0"
+                className=" flex flex-row gap-2 items-center "
               >
-                Download PDF
+                <GrDocumentPdf className="text-rose-700 overflow-hidden text-2xl" />
+                <span className="leading-normal font-semibold">
+                  {" "}
+                  Download PDF
+                </span>
               </a>
             </div>
           </div>

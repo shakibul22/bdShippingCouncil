@@ -1,9 +1,7 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 
+import { ImArrowUpRight2 } from "react-icons/im";
 // import vid from "/public/vid/video.mp4";
 
 const HomeAboutUs = ({ data }) => {
@@ -26,24 +24,24 @@ const HomeAboutUs = ({ data }) => {
             alt="about"
           />
         </div>
-        <div className="bg-[#001e35] w-[400px] absolute right-[40%] h-[700px] z-10 p-10">
-          <p className="text-xs font-semibold lg:text-4xl border-b ">
+        <div className="bg-[#001e35] w-[500px] rounded absolute right-[40%]  h-[700px] z-10 p-10">
+          <h2 className="text-xs font-semibold lg:text-4xl border-b ">
             About <span className="text-blue-700">Us</span>
-          </p>
-          <h3 className="text-xl font-bold mt-3 lg:text-lg">{data?.title}</h3>
+          </h2>
+          <p className="text-xl font-bold mt-3 lg:text-lg">{data?.title}</p>{" "}
+          <br />
           <p className="mt-4 text-justify font-light text-sm">{data?.text}</p>
-
-          <div>
-            <Link
-              href={"/about"}
-              className="py-2.5 px-5 w-fit leading-normal bg-btn block shadow-lg mx-auto md:mx-0 mt-8"
-            >
-              <p className="text-white font-semibold">Explore Now</p>
+          <div className="max-w-[200px] rounded-lg">
+            <Link href={"/about"}>
+              <p className="py-2.5 px-7  flex flex-row justify-center gap-2 leading-normal bg-btn items-center rounded-sm shadow-lg mx-auto mt-12 text-white font-semibold">
+                Explore Now <ImArrowUpRight2 />
+              </p>
             </Link>
           </div>
         </div>
 
         <div>
+          
           {/* <ReactPlayer url="https://youtu.be/JJxZy-UW3mI?si=715f0sqJSRIsH1iK" /> */}
           <video
             controls

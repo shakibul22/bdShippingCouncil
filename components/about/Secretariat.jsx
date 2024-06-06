@@ -1,16 +1,25 @@
-import React from "react";
+'use client'
+import React, { useState, useEffect } from "react";
 import BODcard from "../custom/BODcard";
 import { publicRequest } from "@/requestMethod";
 
-async function getData() {
-  const res = await publicRequest(`/aboutUs/secretariat`);
-  return await res.data;
-}
+const Secretariat = () => {
+  const [secretariatData, setSecretariatData] = useState([]);
 
-const data = getData();
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const res = await publicRequest(`/aboutUs/secretariat`);
+        const data = await res.data;
+        setSecretariatData(data);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    }
 
-const Secretariat = async () => {
-  const secretariatData = await data;
+    fetchData();
+  }, []);
+
   return (
     <div className="px-2 py-10">
       <div className="max-w-screen-2xl mx-auto text-sm lg:text-base space-y-10">
