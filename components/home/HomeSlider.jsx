@@ -32,18 +32,17 @@ const HomeSlider = () => {
 
   return (
     <div
-      className="container py-10  mx-auto bg-primaryColor"
+      className="container py-10 px-4   mx-auto bg-primaryColor"
       onMouseLeave={() => setHighlightedIndex(defaultIndex)}
     >
       <h3 className="text-center text-4xl py-10 text-white ">
         Our Memorable Journey
       </h3>
 
-
       <div className="flex flex-row ">
         {imageData?.map((img, index) => (
           <div
-            className={`relative group activeSlide h-[400px] mb-16 rounded-lg overflow-hidden transition-all duration-500 ${
+            className={`relative group activeSlide h-[200px] lg:h-[400px] mb-16 rounded-lg overflow-hidden transition-all duration-500 ${
               highlightedIndex === index ? "flex-[5]" : "flex-[1]"
             }`}
             key={img.id}

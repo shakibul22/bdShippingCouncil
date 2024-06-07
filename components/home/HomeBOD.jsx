@@ -18,7 +18,7 @@ const HomeBOD = async ({ data }) => {
       <div className="max-w-screen-2xl mx-auto">
         <p className="text-xs font-semibold lg:text-lg">Organization Info</p>
         <h3 className="text-xl font-bold mt-3 lg:text-4xl">{data.title}</h3>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 md:gap-4 mt-10">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-2 md:gap-4 mt-10">
           {bod?.slice(0, 4).map((dir) => (
             <BODcard
               key={dir.id}

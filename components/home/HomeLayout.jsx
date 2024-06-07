@@ -37,33 +37,20 @@ const HomeLayout = async () => {
   const homeData = await data;
   return (
     <div>
-      <nav>
-        <Navbar />
-      </nav>
-      <div className="h-[60vh] sm:h-[70vh] md:h-[45vh] lg:h-screen 3xl:h-screen bg-transparent opacity-100    bg-[url('https://res.cloudinary.com/dgohi0iqm/image/upload/v1717481512/istockphoto-1317779371-1024x1024_1_migxdp.jpg')] bg-cover   bg-center -z-50 ">
-        <div className="h-screen ">
-          <div className="h-full flex flex-col max-w-7xl mx-auto ">
-            <Hero />
-            <div className="absolute bottom-0">
-              <HomeAffiliates />
-            </div>
-          </div>
-          {/* <HomeLatestNews /> */}
-          <div>
-            <div className="bg-primaryColor">
-              <HomeSlider />
-            </div>
-            <HomeAboutUs data={homeData[0]} />
-            <HomeChairmanProfile data={homeData[1]} />
-            <HomeBOD data={homeData[2]} />
-            <HomeMember data={homeData[3]} />
-            <HomeRnP />
-            <HomeAssociate />
-            <HomeGallery />
-          </div>
-          <Footer />
-        </div>
+      <Navbar />
+      <Hero />
+      <div className="absolute bottom-0">{/* <HomeAffiliates /> */}</div>
+      <div className="bg-primaryColor">
+        <HomeSlider />
       </div>
+      <HomeAboutUs data={homeData[0]} />
+      <HomeChairmanProfile data={homeData[1]} />
+      <HomeBOD data={homeData[2]} />
+      <HomeMember data={homeData[3]} />
+      <HomeRnP />
+      <HomeAssociate />
+      <HomeGallery />
+      <Footer />
     </div>
   );
 };

@@ -3,13 +3,14 @@ import React from "react";
 import { GrDocumentPdf } from "react-icons/gr";
 
 const HomeMember = ({ data }) => {
+  console.log(data);
   return (
     <div
-      className="  px-2 xl:px-0 py-8 lg:py-20 text-white"
+      className="px-4 xl:px-0 py-10 lg:py-20 text-white"
       style={{ backgroundImage: "url(/img/memberbg.webp)" }}
     >
       <div>
-        <div className="lg:flex flex-row justify-between max-w-7xl mx-auto items-center lg:mt-16">
+        <div className="flex flex-col lg:flex-row justify-between max-w-7xl mx-auto items-center gap-10 lg:mt-16">
           <div className="mt-7 text-sm lg:text-base space-y-8 text-justify lg:w-[500px]">
             <div className="flex items-center space-x-2">
               <p className="text-xs font-semibold lg:text-lg">
@@ -18,7 +19,7 @@ const HomeMember = ({ data }) => {
               <hr className="flex-grow border-b mt-4 " />
             </div>
 
-            <h2 className="text-2xl font-bold  lg:text-4xl mt-4 ">
+            <h2 className="text-lg font-bold  lg:text-4xl mt-4 ">
               {data?.title}
             </h2>
             <p className="font-medium opacity-70 flex flex-col">{data?.text}</p>
@@ -53,7 +54,7 @@ const HomeMember = ({ data }) => {
                 width={320}
                 height={280}
                 alt="ship"
-                className="border-2 w-56 xl:w-auto xl:h-96 h-64 object-cover object-top absolute top-[10%] right-[70%]  z-20 "
+                className="border-2 w-48 xl:w-auto xl:h-96 h-44 object-cover object-top absolute top-[15%] lg:top-[10%] right-[70%]  z-20 "
               />
             </div>
           </div>
