@@ -1,3 +1,4 @@
+import { ContextProvider } from "@/components/Context/context";
 import "./globals.css";
 import "animate.css";
 
@@ -18,8 +19,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={poppins.className}>
-        <Toaster position="top-right" reverseOrder={false} />
+       <ContextProvider>
+       <Toaster position="top-right" reverseOrder={false} />
         {children}
+       </ContextProvider>
       </body>
     </html>
   );

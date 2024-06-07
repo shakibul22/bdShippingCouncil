@@ -1,5 +1,4 @@
 import { publicRequest } from "@/requestMethod";
-import { useEffect } from "react";
 import Slider from "react-slick";
 
 async function getData() {

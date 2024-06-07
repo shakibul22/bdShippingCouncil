@@ -9,7 +9,7 @@ const NewsCard = ({ image, name, date, volume, pdf, index }) => {
       className={`pb-3 w-full border bg-white rounded-xl space-y-4  shadow-md relative overflow-hidden ${
         isLargeCard
           ? "w-full h-full lg:w-full lg:h-[500px]"
-          : "w-full h-[200px] flex flex-row justify-between items-start "
+          : "w-full h-[200px] lg:h-full flex flex-row justify-between items-start "
       }`}
     >
       <div

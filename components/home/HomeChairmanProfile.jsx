@@ -18,8 +18,7 @@ const HomeChairmanProfile = ({ data }) => {
             className="mx-auto lg:mx-0"
           />
         </div>
-        <div className="text-center min-w-[65%] lg:text-left flex-1 bg-slate-800 p-10 relative">
-          <div className="absolute inset-0 bg-black opacity-30 hover:opacity-25 space-y-3 transition-opacity"></div>
+        <div className="text-center min-w-[65%] lg:text-left flex-1 bg-gradient-to-r from-gray-900 to-gray-0 bg-opacity-70 p-10 relative">
           <p className="text-md lg:text-lg font-medium relative z-10">
             Chairman’s Profile
           </p>

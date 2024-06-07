@@ -54,7 +54,7 @@ const HomeMember = ({ data }) => {
                 width={320}
                 height={280}
                 alt="ship"
-                className="border-2 w-48 xl:w-auto xl:h-96 h-44 object-cover object-top absolute top-[15%] lg:top-[10%] right-[70%]  z-20 "
+                className="border-2 w-48 xl:w-auto xl:h-96 h-44 object-cover object-top absolute top-[15%] lg:top-[10%] right-[40%] sm:right-[60%] lg:right-[70%]  z-20 "
               />
             </div>
           </div>

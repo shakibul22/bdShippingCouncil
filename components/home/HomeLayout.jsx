@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-async-client-component */
 "use client";
-
 import { publicRequest } from "@/requestMethod";
 import Footer from "../footer/Footer";
 import Navbar from "../navbar/Navbar";
@@ -10,11 +9,11 @@ import HomeAssociate from "./HomeAssociate";
 import HomeBOD from "./HomeBOD";
 import HomeChairmanProfile from "./HomeChairmanProfile";
 import HomeGallery from "./HomeGallery";
-import HomeLatestNews from "./HomeLatestNews";
 import HomeMember from "./HomeMember";
 import HomeRnP from "./HomeRnP";
 import HomeSlider from "./HomeSlider";
 import Hero from "../custom/Hero";
+import HeadOffice from "../HeadOffice/HeadOffice";
 
 // async function getData() {
 //   const res = await fetch(`
@@ -39,7 +38,11 @@ const HomeLayout = async () => {
     <div>
       <Navbar />
       <Hero />
-      <div className="absolute bottom-0">{/* <HomeAffiliates /> */}</div>
+      <div className="max-w-7xl mx-auto">
+        <div className="flex justify-center">
+          <HomeAffiliates />
+        </div>
+      </div>
       <div className="bg-primaryColor">
         <HomeSlider />
       </div>
@@ -50,6 +53,7 @@ const HomeLayout = async () => {
       <HomeRnP />
       <HomeAssociate />
       <HomeGallery />
+      <HeadOffice />
       <Footer />
     </div>
   );

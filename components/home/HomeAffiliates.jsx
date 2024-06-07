@@ -15,8 +15,8 @@ const HomeAffiliates = async () => {
   const affiliates = await data;
 
   return (
-    <div className="">
-      <div className="mx-auto max-w-7xl">
+  
+      <div >
         <h3 className="text-xl font-bold lg:text-2xl text-white text-start">
           Our Affiliates
         </h3>
@@ -39,7 +39,7 @@ const HomeAffiliates = async () => {
           ))}
         </div>
       </div>
-    </div>
+ 
   );
 };
 

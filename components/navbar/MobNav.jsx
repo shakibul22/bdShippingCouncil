@@ -18,7 +18,7 @@ const MobNav = () => {
     <div className="h-screen flexCenter flex-col gap-6 text-lg">
       <div
         className={`py-1.5 px-2.5 rounded-md ${
-          pathname === "/" && "bg-secondaryColor"
+          pathname === "/" && "bg-secondaryColor text-white"
         }`}
       >
         <Link href={"/"}>Home</Link>
@@ -27,7 +27,7 @@ const MobNav = () => {
       <DropdownMenu>
         <DropdownMenuTrigger
           className={`flexCenter gap-1 cursor-pointer relative py-1.5 px-2.5 rounded-md flex items-center active:outline-none focus:outline-none ${
-            pathname.split("/")[1] === "about" && "bg-secondaryColor"
+            pathname.split("/")[1] === "about" && "bg-secondaryColor text-white"
           }`}
         >
           About Us
@@ -81,7 +81,7 @@ const MobNav = () => {
       <DropdownMenu>
         <DropdownMenuTrigger
           className={`flexCenter gap-1 cursor-pointer relative py-1.5 px-2.5 rounded-md flex items-center active:outline-none focus:outline-none ${
-            pathname.split("/")[1] === "news" && "bg-secondaryColor"
+            pathname.split("/")[1] === "news" && "bg-secondaryColor text-white"
           }`}
         >
           Research & Publication
@@ -108,7 +108,8 @@ const MobNav = () => {
       <DropdownMenu>
         <DropdownMenuTrigger
           className={`flexCenter gap-1 cursor-pointer relative py-1.5 px-2.5 rounded-md flex items-center active:outline-none focus:outline-none ${
-            pathname.split("/")[1] === "seminar" && "bg-secondaryColor"
+            pathname.split("/")[1] === "seminar" &&
+            "bg-secondaryColor text-white"
           }`}
         >
           Seminar
@@ -129,7 +130,7 @@ const MobNav = () => {
       <DropdownMenu>
         <DropdownMenuTrigger
           className={`flexCenter gap-1 cursor-pointer relative py-1.5 px-2.5 rounded-md flex items-center active:outline-none focus:outline-none ${
-            pathname.split("/")[1] === "media" && "bg-secondaryColor"
+            pathname.split("/")[1] === "media" && "bg-secondaryColor text-white"
           }`}
         >
           Media Corner
@@ -153,7 +154,8 @@ const MobNav = () => {
       <DropdownMenu>
         <DropdownMenuTrigger
           className={`flexCenter gap-1 cursor-pointer relative py-1.5 px-2.5 rounded-md flex items-center active:outline-none focus:outline-none ${
-            pathname.split("/")[1] === "member" && "bg-secondaryColor"
+            pathname.split("/")[1] === "member" &&
+            "bg-secondaryColor text-white"
           }`}
         >
           Become a Member
@@ -182,7 +184,8 @@ const MobNav = () => {
 
       <div
         className={`flexCenter gap-1 cursor-pointer relative py-1.5 px-2.5 rounded-md flex items-center ${
-          pathname.split("/")[1] === "useful-links" && "bg-secondaryColor"
+          pathname.split("/")[1] === "useful-links" &&
+          "bg-secondaryColor text-white"
         }`}
       >
         <Link href={"/useful-link"}>Useful Link</Link>
@@ -191,7 +194,7 @@ const MobNav = () => {
       <div>
         <Link
           href={"/contact"}
-          className="py-2.5 px-5 w-fit leading-normal bg-secondaryColor border border-white block"
+          className="py-2.5 px-5 w-fit leading-normal bg-secondaryColor text-white border border-white block"
         >
           Contact us
         </Link>
