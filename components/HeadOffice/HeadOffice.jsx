@@ -18,14 +18,7 @@ const HeadOffice = () => {
           id="map"
           className="relative h-[300px] overflow-hidden bg-cover rounded-xl bg-[50%] bg-no-repeat"
         >
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11672.945750644447!2d-122.42107853750231!3d37.7730507907087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858070cc2fbd55%3A0xa71491d736f62d5c!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1619524992238!5m2!1sen!2sus"
-            width="100%"
-            height="480"
-            style={{ border: 0 }}
-            allowFullScreen=""
-            loading="lazy"
-          ></iframe>
+         <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d58416.73451676248!2d90.36069709152436!3d23.781379533956283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d23.8256128!2d90.4293758!4m5!1s0x3755b92f13cbbed9%3A0xf7da80ae590fd78c!2sShippers&#39;%20Council%20of%20Bangladesh%2C%20Rangs%20Fortune%20Square%2C%20Level%20%23%20A-5%2C%20House%20%23%2032%20Road%20No.%202%2C%20Dhaka%201205!3m2!1d23.7388527!2d90.37870459999999!5e0!3m2!1sen!2sbd!4v1717831230799!5m2!1sen!2sbd" width="600" height="450"     style={{ border: 0 }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </div>

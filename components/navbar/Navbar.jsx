@@ -90,7 +90,7 @@ const Navbar = () => {
       {/* PC Nav */}
       <div
         className={` ${
-          pathname === "/" ? "bg-transparent" : "bg-primaryColor"
+          pathname === "/" ? "bg-transparent" : "bg-white"
         }  hidden lg:block  relative select-none z-10`}
       >
         {/* top bar */}
