@@ -84,6 +84,7 @@ const FooterSub = () => {
       <div className=" hidden lg:block">
         <FooterCred />
       </div>
+      
     </div>
   );
 };

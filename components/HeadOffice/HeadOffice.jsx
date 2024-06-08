@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const HeadOffice = () => {
   return (
-    <div className="h-auto max-w-7xl bg-gradient-to-r from-[#0f3654] to-[#0f3654]/10 mx-auto bg-opacity-10 py-10 my-10 flex items-center justify-between rounded-lg shadow-lg">
+    <div className="h-auto max-w-7xl px-4 gap-4 bg-gradient-to-r from-[#0f3654] to-[#0f3654]/10 mx-auto bg-opacity-10 py-10 my-10 flex flex-col lg:flex-row items-center justify-between rounded-lg shadow-lg">
       <div className="px-8">
         <h2 className="text-white text-xl font-semibold mb-4">
           Click the map to find the location of our head office
@@ -13,10 +13,10 @@ const HeadOffice = () => {
           Dhaka-1205, Bangladesh
         </p>
       </div>
-      <div className="h-full w-1/2">
+      <div className="h-full w-full lg:w-1/2">
         <div
           id="map"
-          className="relative h-[300px] overflow-hidden bg-cover  bg-[50%] bg-no-repeat"
+          className="relative h-[300px] overflow-hidden bg-cover rounded-xl bg-[50%] bg-no-repeat"
         >
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11672.945750644447!2d-122.42107853750231!3d37.7730507907087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858070cc2fbd55%3A0xa71491d736f62d5c!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1619524992238!5m2!1sen!2sus"
