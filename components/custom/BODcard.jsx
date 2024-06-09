@@ -8,7 +8,7 @@ const BODcard = ({ id, name, designation, image }) => {
 
   return (
     <div
-      className="relative  w-[140px] sm:w-[180px]  h-[270px] lg:w-[280px] lg:h-[400px]"
+      className="relative  w-[145px] sm:w-[180px]  h-[275px] lg:w-[280px] lg:h-[400px]"
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
