@@ -20,7 +20,7 @@ const HomeAffiliates = async () => {
         Our Affiliates
       </h3>
 
-      <div className="lg:mt-10 max-w-7xl mx-auto flex pb-6 xl:flex-row sm:flex-wrap justify-between gap-6 lg:gap-20 border-t bg-transparent opacity-70 items-center">
+      <div className="lg:mt-10 max-w-7xl mx-auto flex pb-6 xl:flex-row sm:flex-wrap justify-between gap-8 lg:gap-20 border-t bg-transparent opacity-70 items-center">
   {affiliates && Array.isArray(affiliates) &&
     affiliates.map((aff, index) => (
       <div
