@@ -57,7 +57,7 @@ const FooterSub = () => {
           </p>
         </div>
         <form
-          className="bg-[#FFF0F0] text-[#1b405d] flex flex-row justify-between px-5 p-2 rounded-lg bg-opacity-25  text-sm"
+          className="bg-[#FFF0F0] text-[#1b405d] w-[300px] lg:w-full flex flex-row justify-between px-5 p-2 rounded-lg bg-opacity-25  text-sm"
           onSubmit={handleSub}
         >
           <input
