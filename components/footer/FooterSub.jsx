@@ -71,7 +71,7 @@ const FooterSub = () => {
           />
           <button
             type="submit"
-            className=" bg-secondaryColor w-10 h-10 p-2 text-end rounded-full"
+            className=" bg-secondaryColor w-10 h-10 p-2 transform -translate-x-6 rounded-full"
             // onClick={handleSub}
             disabled={sending}
           >
