@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const HeadOffice = () => {
   return (
-    <div className="relative bg-[url('/img/office.png')] bg-cover  bg-center h-auto lg:h-[300px]  max-w-7xl  gap-4 mx-auto py-10 my-10 flex flex-col lg:flex-row items-center justify-between rounded-lg shadow-lg">
+    <div className="relative bg-[url('/img/office.png')] bg-cover px-3  bg-center h-auto lg:h-[300px]  max-w-7xl  gap-4 mx-auto py-10 my-10 flex flex-col lg:flex-row items-center justify-between rounded-lg shadow-lg">
       <div className="px-8">
         <h2 className="text-white text-xl font-semibold mb-4">
           Click the map to find the location of our head office

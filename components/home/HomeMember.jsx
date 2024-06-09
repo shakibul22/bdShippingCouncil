@@ -20,7 +20,8 @@ const HomeMember = ({ data }) => {
             </div>
 
             <h2 className="text-lg font-bold  lg:text-4xl mt-4 ">
-              {data?.title}
+              Members in the <span className="text-btn italic">Shippers'</span>{" "}
+              Council Bangladesh
             </h2>
             <p className="font-medium opacity-70 flex flex-col">{data?.text}</p>
 

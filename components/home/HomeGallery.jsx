@@ -20,8 +20,8 @@ const HomeGallery = async () => {
       <div className="max-w-7xl mx-auto">
         <p className="text-xs font-semibold lg:text-lg">Media Corner</p>
         <h3 className="text-xl font-bold mt-3 lg:text-4xl">
-          Our Photo <span className="text-btn"> Gallery</span> and{" "}
-          <span className="text-btn">Video</span>
+          Our Photo <span className="text-btn italic "> Gallery</span> and{" "}
+          <span className="text-btn italic">Video</span>
         </h3>
         <div className="mt-10 grid grid-cols-2 lg:grid-cols-4 gap-4">
           <div className="flex flex-col gap-4">

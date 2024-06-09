@@ -17,7 +17,7 @@ const HomeAssociate = async () => {
     <div className="bg-[url('/img/memberbg.png')] bg-cover bg-center px-2 xl:px-0 py-8 lg:py-20 text-white">
       <div className="mx-auto max-w-7xl">
         <h3 className="text-xl font-bold lg:text-4xl">
-          Some of Our Associate Members
+          Some of Our <span className="text-btn">Associate</span> Members
         </h3>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">

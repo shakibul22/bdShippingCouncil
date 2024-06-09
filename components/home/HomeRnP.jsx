@@ -26,37 +26,45 @@ const HomeRnP = async () => {
             </div>
           </div>
           <h3 className="text-xl font-bold mt-3 lg:text-4xl space-x-2">
-            Shippers News, <span className="text-btn">Reports</span> and
-            <span className="text-btn"> Publication</span>
+            Shippers News, <span className="text-btn italic">Reports</span> and
+            <span className="text-btn italic"> Publication</span>
           </h3>
         </div>
 
         <div className="grid grid-cols-2 gap-2 lg:gap-6 mt-10">
           <div className="flex flex-col gap-4 w-full">
-            {news && Array.isArray(news) && news?.slice(0, 2).map((n) => (
-              <NewsCard
-                key={n.id}
-                index={n.id}
-                image={n.image}
-                name={n.name}
-                date={n.date}
-                volume={n.volume}
-                pdf={n.pdf}
-              />
-            ))}
+            {news &&
+              Array.isArray(news) &&
+              news
+                ?.slice(0, 2)
+                .map((n) => (
+                  <NewsCard
+                    key={n.id}
+                    index={n.id}
+                    image={n.image}
+                    name={n.name}
+                    date={n.date}
+                    volume={n.volume}
+                    pdf={n.pdf}
+                  />
+                ))}
           </div>
           <div className="w-full">
-            {news && Array.isArray(news) && news?.slice(2, 4).map((n) => (
-              <NewsCard
-                key={n.id}
-                index={n.id}
-                image={n.image}
-                name={n.name}
-                date={n.date}
-                volume={n.volume}
-                pdf={n.pdf}
-              />
-            ))}
+            {news &&
+              Array.isArray(news) &&
+              news
+                ?.slice(2, 4)
+                .map((n) => (
+                  <NewsCard
+                    key={n.id}
+                    index={n.id}
+                    image={n.image}
+                    name={n.name}
+                    date={n.date}
+                    volume={n.volume}
+                    pdf={n.pdf}
+                  />
+                ))}
           </div>
         </div>
 
