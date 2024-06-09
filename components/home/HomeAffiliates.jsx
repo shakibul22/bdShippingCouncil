@@ -25,7 +25,7 @@ const HomeAffiliates = async () => {
     affiliates.map((aff, index) => (
       <div
         key={aff.id}
-        className={`hover:bg-[#063152] w-[60px] h-[16px] lg:w-[130px] lg:h-[44px] p-4 hover:border-t-4 border-white ${index >= 3 ? "hidden sm:block" : ""}`}
+        className={`hover:bg-[#063152] w-[60px] h-[16px] lg:w-[130px] lg:h-[44px] p-4 hover:border-t-4 border-white ${index >= 5 ? "hidden sm:block" : ""}`}
       >
         <Image
           src={`/img/affiliates/${aff.logo}`}
