@@ -23,7 +23,7 @@ const Hero = () => {
     <div className="relative w-full h-screen sm:h-[70vh] md:h-[45vh] lg:h-screen 3xl:h-screen bg-[url('')]">
       <figure>
         <Image
-          src="https://res.cloudinary.com/dgohi0iqm/image/upload/v1717481512/istockphoto-1317779371-1024x1024_1_migxdp.jpg"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/c0e96d6f18bec6a7ffe03febd7f57f6f868f969ca88a2d0b941e307354a58c09"
           width={1950}
           height={450}
           alt="banner"

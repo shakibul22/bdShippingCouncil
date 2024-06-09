@@ -38,10 +38,10 @@ const HomeAboutUs = ({ data }) => {
           </h2>
           <p className="text-md font-bold mt-3 lg:text-lg">{data?.title}</p>{" "}
           <br />
-          <p className=" mt-2 lg:mt-4 text-justify font-light text-xs lg:text-sm">
+          <p className=" mt-0 md:mt-2 lg:mt-4 text-justify font-light text-xs lg:text-sm">
             {data?.text}
           </p>
-          <div className="max-w-[200px] rounded-lg pb-6 absolute bottom-3">
+          <div className="max-w-[200px] rounded-lg bottom-1 lg:pb-6 absolute  lg:bottom-3">
             <Link href="/about">
               <p className="py-2.5 px-7 flex flex-row justify-center gap-2 leading-normal bg-btn items-center rounded-sm shadow-lg mx-auto  mt-4 lg:mt-12 text-white font-semibold">
                 Explore Now <ImArrowUpRight2 />
@@ -49,7 +49,7 @@ const HomeAboutUs = ({ data }) => {
             </Link>
           </div>
         </div>
-        <div className="relative flex flex-col gap-4 lg:w-[850px] h-[200px] lg:h-[500px]">
+        <div className="relative flex flex-col gap-2 lg:w-[850px] h-[250px] lg:h-[500px]">
           <div className="relative w-full h-full">
             <video
               ref={videoRef}
