@@ -237,7 +237,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-[2%] sm:bottom-[20%] md:bottom-[28%] left-[50%] lg:left-[54%] transform -translate-x-1/2 flex space-x-4 z-20">
+      <div className="absolute bottom-[25%] sm:bottom-[20%] md:bottom-[28%] left-[50%] lg:left-[54%] transform -translate-x-1/2 flex space-x-4 z-20">
         <button
           className="bg-primaryColor text-white p-2 rounded-full text-lg sm:text-xl btn hover:bg-btn h-8 sm:h-10 w-8 sm:w-10 flex items-center justify-center"
           onClick={handlePrev}
