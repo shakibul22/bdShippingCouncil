@@ -7,11 +7,11 @@ import { ImArrowUpRight2 } from "react-icons/im";
 
 const HomeChairmanProfile = ({ data }) => {
   return (
-    <div className="bg-[url('/img/chairmanProfilebg.webp')] bg-cover px-4 xl:px-0 py-8 lg:py-24 text-white">
+    <div className="bg-[url('/img/memberbg.png')] bg-cover px-4 xl:px-0 py-8 lg:py-24 text-white">
       <div className="flex flex-col  max-w-7xl mx-auto lg:flex-row items-center justify-center">
         <div className="lg:w-[30%] w-full">
           <Image
-            src={`/img/chairman/${data?.image.image}`}
+            src={`/img/chairman/${data?.image?.image}`}
             width={450}
             height={400}
             alt="Chairman"

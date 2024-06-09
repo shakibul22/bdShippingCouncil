@@ -52,7 +52,7 @@ const FooterSub = () => {
       <div className="flex flex-col gap-5">
         <div>
           <h3 className="text-2xl font-smeibold text-white">NEWSLETTER</h3>
-          <p className="text-[#6f8699] mt-1">
+          <p className="text-[#6f8699] text-sm lg:text-md mt-1">
             Subscribe to out newsletter and stay updated
           </p>
         </div>
@@ -84,7 +84,6 @@ const FooterSub = () => {
       <div className=" hidden lg:block">
         <FooterCred />
       </div>
-      
     </div>
   );
 };

@@ -33,7 +33,7 @@ const HomeRnP = async () => {
 
         <div className="grid grid-cols-2 gap-2 lg:gap-6 mt-10">
           <div className="flex flex-col gap-4 w-full">
-            {news?.slice(0, 2).map((n) => (
+            {news && Array.isArray(news) && news?.slice(0, 2).map((n) => (
               <NewsCard
                 key={n.id}
                 index={n.id}
@@ -46,7 +46,7 @@ const HomeRnP = async () => {
             ))}
           </div>
           <div className="w-full">
-            {news?.slice(2, 4).map((n) => (
+            {news && Array.isArray(news) && news?.slice(2, 4).map((n) => (
               <NewsCard
                 key={n.id}
                 index={n.id}

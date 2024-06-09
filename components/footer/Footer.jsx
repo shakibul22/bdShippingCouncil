@@ -14,7 +14,7 @@ const Footer = () => {
           <FooterForm />
         </div>
       </div>
-      <footer class="bg-[#10222B] text-white text-center py-3">
+      <footer class="bg-[#10222B] text-white text-center py-3 px-2">
         &copy; Copyright 2024, All Rights Reserved by Shippers Council Developed
         by
         <Link

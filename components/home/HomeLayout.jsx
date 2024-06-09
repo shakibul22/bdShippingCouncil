@@ -43,9 +43,7 @@ const HomeLayout = async () => {
           <HomeAffiliates />
         </div>
       </div>
-      <div className="bg-primaryColor">
-        <HomeSlider />
-      </div>
+      <div className="bg-primaryColor"> {/* <HomeSlider /> */}</div>
       <HomeAboutUs data={homeData[0]} />
       <HomeChairmanProfile data={homeData[1]} />
       <HomeBOD data={homeData[2]} />

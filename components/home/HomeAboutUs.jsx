@@ -16,17 +16,17 @@ const HomeAboutUs = ({ data }) => {
   return (
     <div className="bg-softWhite text-white overflow-hidden h-[850px] lg:h-full flex justify-center py-5">
       <div className="py-8 px-2 lg:py-20 xl:px-0 space-y-8 gap-8 flex flex-col lg:flex-row  md:gap-48 items-center justify-between max-w-7xl mx-auto">
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col justify-start items-start gap-4">
           <Image
-            className="rounded-lg w-full h-full lg:w-full lg:h-[300px] "
-            src="https://images.pexels.com/photos/2680058/pexels-photo-2680058.jpeg"
+            className="rounded-lg w-[300px] h-[200px] lg:w-[280px] lg:h-[300px] "
+            src="/img/about1.png"
             width={800}
             height={800}
             alt="about"
           />
           <Image
-            className="rounded-lg w-full h-full lg:w-full lg:h-[300px]"
-            src="https://images.pexels.com/photos/3856440/pexels-photo-3856440.jpeg"
+            className="rounded-lg w-[300px] h-[200px] lg:w-[280px] lg:h-[300px]"
+            src="/img/about2.png"
             width={800}
             height={800}
             alt="about"
@@ -55,7 +55,7 @@ const HomeAboutUs = ({ data }) => {
               ref={videoRef}
               autoPlay
               loop
-              src={`/${data?.image.video}`}
+              src={`/${data?.image?.video}`}
               className="rounded-lg w-full h-full"
               style={{ objectFit: "cover" }}
             />

@@ -129,7 +129,7 @@ const Hero = () => {
         <div class=" absolute top-[18%] right-[30%] lg:right-[20%]">
           <svg
             className="absolute top-2"
-            width="134"
+            width="95"
             height="34"
             viewBox="0 0 134 34"
             fill="#ffffff"
@@ -138,12 +138,10 @@ const Hero = () => {
             <circle cx="2" cy="17" r="1.66667" fill="#ffffff" />
             <circle cx="17" cy="17" r="1.66667" fill="#ffffff" />
             <circle cx="32" cy="17" r="1.66667" fill="#ffffff" />
-            <circle cx="47" cy="17" r="1.66667" fill="#ffffff" />
-            <circle cx="62" cy="17" r="1.66667" fill="#ffffff" />
           </svg>
           <svg
             className="absolute top-6"
-            width="134"
+            width="95"
             height="34"
             viewBox="0 0 134 34"
             fill="#ffffff"
@@ -152,8 +150,6 @@ const Hero = () => {
             <circle cx="2" cy="17" r="1.66667" fill="#ffffff" />
             <circle cx="17" cy="17" r="1.66667" fill="#ffffff" />
             <circle cx="32" cy="17" r="1.66667" fill="#ffffff" />
-            <circle cx="47" cy="17" r="1.66667" fill="#ffffff" />
-            <circle cx="62" cy="17" r="1.66667" fill="#ffffff" />
           </svg>
         </div>
         {/* <div class=" absolute top-[1%] right-2">

@@ -19,7 +19,7 @@ const HomeBOD = async ({ data }) => {
         <p className="text-xs font-semibold lg:text-lg">Organization Info</p>
         <h3 className="text-xl font-bold mt-3 lg:text-4xl">{data.title}</h3>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-5 mt-10">
-          {bod?.slice(0, 4).map((dir) => (
+          {bod && Array.isArray(bod) && bod?.slice(0, 4).map((dir) => (
             <BODcard
               key={dir.id}
               id={dir.id}

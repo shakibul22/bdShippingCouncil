@@ -7,7 +7,7 @@ const HomeMember = ({ data }) => {
   return (
     <div
       className="px-4 xl:px-0 py-10 lg:py-20 text-white"
-      style={{ backgroundImage: "url(/img/memberbg.webp)" }}
+      style={{ backgroundImage: "url(/img/memberbg.png)" }}
     >
       <div>
         <div className="flex flex-col lg:flex-row justify-between max-w-7xl mx-auto items-center gap-10 lg:mt-16">
@@ -42,7 +42,7 @@ const HomeMember = ({ data }) => {
             <div className="relative">
               <Image
                 // src={`/img/${JSON.parse(data.image).image1}`}
-                src={`/img/${data?.image.image1}`}
+                src={`/img/${data?.image?.image1}`}
                 width={320}
                 height={280}
                 alt="ship"
@@ -50,7 +50,7 @@ const HomeMember = ({ data }) => {
               />
               <Image
                 // src={`/img/${JSON.parse(data.image).image2}`}
-                src={`/img/${data?.image.image2}`}
+                src={`/img/${data?.image?.image2}`}
                 width={320}
                 height={280}
                 alt="ship"
