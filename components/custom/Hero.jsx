@@ -217,7 +217,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="relative rounded-lg h-[180px] bg-gradient-to-r from-gray-900 to-gray-0 bg-opacity-70 p-3 sm:p-6 right-6 w-[200px] lg:w-full sm:right-16 md:right-24 lg:right-[22%] top-[3%] sm:top-8 md:top-[5%] lg:top-[6%] text-white text-start max-w-sm sm:max-w-md md:max-w-lg z-20">
+        <div className="relative rounded-lg h-[190px] bg-gradient-to-r from-gray-900 to-gray-0 bg-opacity-70 p-3 sm:p-6 right-6 w-[200px] lg:w-full sm:right-16 md:right-24 lg:right-[22%] top-[3%] sm:top-8 md:top-[5%] lg:top-[6%] text-white text-start max-w-sm sm:max-w-md md:max-w-lg z-20">
           <h1 className="text-sm sm:text-xl md:text-2xl font-bold uppercase">
             Latest News
           </h1>
@@ -237,7 +237,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-[22%] sm:bottom-[20%] md:bottom-[28%] left-[50%] lg:left-[54%] transform -translate-x-1/2 flex space-x-4 z-20">
+      <div className="absolute bottom-[25%] sm:bottom-[20%] md:bottom-[28%] left-[50%] lg:left-[54%] transform -translate-x-1/2 flex space-x-4 z-20">
         <button
           className="bg-primaryColor text-white p-2 rounded-full text-lg sm:text-xl btn hover:bg-btn h-8 sm:h-10 w-8 sm:w-10 flex items-center justify-center"
           onClick={handlePrev}
