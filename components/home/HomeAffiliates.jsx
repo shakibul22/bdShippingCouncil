@@ -20,12 +20,12 @@ const HomeAffiliates = async () => {
         Our Affiliates
       </h3>
 
-      <div className="lg:mt-10 max-w-7xl mx-auto flex pb-6 xl:flex-row sm:flex-wrap justify-between gap-5 lg:gap-20 border-t bg-transparent opacity-70 items-center">
+      <div className="lg:mt-10 max-w-7xl mx-auto flex pb-6 xl:flex-row sm:flex-wrap justify-between gap-6 lg:gap-20 border-t bg-transparent opacity-70 items-center">
   {affiliates && Array.isArray(affiliates) &&
     affiliates.map((aff, index) => (
       <div
         key={aff.id}
-        className={`hover:bg-[#063152] w-[60px] h-[16px] lg:w-[130px] lg:h-[44px] p-4 hover:border-t-4 border-white ${index >= 5 ? "hidden sm:block" : ""}`}
+        className={`hover:bg-[#063152] w-[60px] h-[16px] lg:w-[130px] lg:h-[44px] p-4 hover:border-t-4 border-white ${index >= 4 ? "hidden sm:block" : ""}`}
       >
         <Image
           src={`/img/affiliates/${aff.logo}`}
