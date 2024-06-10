@@ -32,9 +32,9 @@ const Hero = () => {
       </figure>
 
       <div className="flex  justify-between">
-        <div class=" absolute top-[15%] left-[38%] lg:left-[50%]  lg:top-[20%]">
+        <div class=" absolute top-[20%] left-[38%]  lg:left-[50%]  lg:top-[35%]">
           <svg
-            className="absolute"
+            className="absolute top-1"
             width="134"
             height="34"
             viewBox="0 0 134 34"
@@ -49,22 +49,7 @@ const Hero = () => {
             <circle cx="77" cy="17" r="1.66667" fill="#ffffff" />
           </svg>
           <svg
-            className="absolute top-3"
-            width="134"
-            height="34"
-            viewBox="0 0 134 34"
-            fill="#ffffff"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle cx="2" cy="17" r="1.66667" fill="#ffffff" />
-            <circle cx="17" cy="17" r="1.66667" fill="#ffffff" />
-            <circle cx="32" cy="17" r="1.66667" fill="#ffffff" />
-            <circle cx="47" cy="17" r="1.66667" fill="#ffffff" />
-            <circle cx="62" cy="17" r="1.66667" fill="#ffffff" />
-            <circle cx="77" cy="17" r="1.66667" fill="#ffffff" />
-          </svg>
-          <svg
-            className="absolute top-6"
+            className="absolute top-5"
             width="134"
             height="34"
             viewBox="0 0 134 34"
@@ -79,36 +64,9 @@ const Hero = () => {
             <circle cx="77" cy="17" r="1.66667" fill="#ffffff" />
           </svg>
         </div>
-        <div class=" absolute top-[18%] left-[36%] lg:left-[47.5%] lg:top-[22%]">
+        <div class=" absolute top-[18%] left-[25%] lg:left-[47.5%] lg:top-[37%]">
           <svg
-            class="absolute -left-2"
-            width="34"
-            height="134"
-            viewBox="0 0 34 134"
-            fill="#ffffff"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle
-              className="hidden lg:block"
-              cx="17"
-              cy="2"
-              r="1.66667"
-              fill="#ffffff"
-            />
-            <circle
-              className="hidden lg:block"
-              cx="17"
-              cy="17"
-              r="1.66667"
-              fill="#ffffff"
-            />
-            <circle cx="17" cy="32" r="1.66667" fill="#ffffff" />
-            <circle cx="17" cy="47" r="1.66667" fill="#ffffff" />
-            <circle cx="17" cy="62" r="1.66667" fill="#ffffff" />
-            <circle cx="17" cy="77" r="1.66667" fill="#ffffff" />
-          </svg>
-          <svg
-            class="absolute left-2"
+            class="absolute left-1"
             width="34"
             height="134"
             viewBox="0 0 34 134"
@@ -162,9 +120,9 @@ const Hero = () => {
             <circle cx="17" cy="77" r="1.66667" fill="#ffffff" />
           </svg>
         </div>
-        <div class=" absolute top-[14%] lg:top-[18%] right-[20%] lg:right-[20%]">
+        <div class=" absolute top-[14%] lg:top-[18%] w-[70px] lg:w-[95px] right-[8%] lg:right-[20%]">
           <svg
-            className="absolute top-2"
+            className="absolute top-1"
             width="95"
             height="34"
             viewBox="0 0 134 34"
@@ -176,7 +134,7 @@ const Hero = () => {
             <circle cx="32" cy="17" r="1.66667" fill="#ffffff" />
           </svg>
           <svg
-            className="absolute top-6"
+            className="absolute  top-6"
             width="95"
             height="34"
             viewBox="0 0 134 34"
