@@ -38,7 +38,7 @@ const HomeLayout = async () => {
     <div>
       <Navbar />
       <Hero />
-      <div className="max-w-7xl mx-auto">
+      <div className="w-full lg:max-w-5xl 3xl:max-w-7xl mx-auto">
         <div className="flex justify-center absolute bottom-0">
           <HomeAffiliates />
         </div>

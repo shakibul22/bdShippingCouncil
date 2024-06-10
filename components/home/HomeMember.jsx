@@ -10,7 +10,7 @@ const HomeMember = ({ data }) => {
       style={{ backgroundImage: "url(/img/memberbg.png)" }}
     >
       <div>
-        <div className="flex flex-col lg:flex-row justify-between max-w-7xl mx-auto items-center gap-10 lg:mt-16">
+        <div className="flex flex-col lg:flex-row justify-between w-full lg:max-w-5xl 3xl:max-w-7xl mx-auto items-center gap-10 lg:mt-16">
           <div className="mt-7 text-sm lg:text-base space-y-8 text-justify lg:w-[500px]">
             <div className="flex items-center space-x-2">
               <p className="text-xs font-semibold lg:text-lg">
@@ -20,8 +20,9 @@ const HomeMember = ({ data }) => {
             </div>
 
             <h2 className="text-lg font-bold  lg:text-4xl mt-4 ">
-              Members in the <span className="text-btn italic">Shippers &apos;</span>{" "}
-              Council Bangladesh
+              Members in the{" "}
+              <span className="text-btn italic">Shippers &apos;</span> Council
+              Bangladesh
             </h2>
             <p className="font-medium opacity-70 flex flex-col">{data?.text}</p>
 
@@ -47,7 +48,7 @@ const HomeMember = ({ data }) => {
                 width={320}
                 height={280}
                 alt="ship"
-                className="border-2 w-56 h-64 xl:w-full xl:h-[500px] border-r-8 border-white object-cover"
+                className="border-2 w-56 h-64 lg:w-[370px] 3xl:w-full xl:h-[500px] border-r-8 border-white object-cover"
               />
               <Image
                 // src={`/img/${JSON.parse(data.image).image2}`}
@@ -55,7 +56,7 @@ const HomeMember = ({ data }) => {
                 width={320}
                 height={280}
                 alt="ship"
-                className="border-2 w-48 xl:w-auto xl:h-96 h-44 object-cover object-top absolute top-[15%] lg:top-[10%] right-[40%] sm:right-[60%] lg:right-[70%]  z-20 "
+                className="border-2 w-4 lg:w-[260px] 3xl:w-auto xl:h-96 h-44 object-cover object-top absolute top-[15%] lg:top-[10%] right-[40%] sm:right-[60%]  3xl:right-[70%]  z-20 "
               />
             </div>
           </div>

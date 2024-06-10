@@ -43,7 +43,7 @@ const HomeSlider = () => {
 
   return (
     <div
-      className="container py-10 px-10 mx-auto bg-primaryColor"
+      className=" py-10 px-10 w-full lg:max-w-5xl 3xl:max-w-7xl mx-auto bg-primaryColor"
       onMouseLeave={() => setHighlightedIndex(0)}
     >
       <h3 className="text-center text-xl  md:text-2xl pb-8 lg:text-4xl pt-5 text-white">

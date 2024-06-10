@@ -17,7 +17,7 @@ const HomeGallery = async () => {
 
   return (
     <div className="bg-softWhite px-4 py-8 lg:py-20">
-      <div className="max-w-7xl mx-auto">
+      <div className="w-full lg:max-w-5xl 3xl:max-w-7xl mx-auto">
         <p className="text-xs font-semibold lg:text-lg">Media Corner</p>
         <h3 className="text-xl font-bold mt-3 lg:text-4xl">
           Our Photo <span className="text-btn italic "> Gallery</span> and{" "}

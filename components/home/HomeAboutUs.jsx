@@ -15,10 +15,10 @@ const HomeAboutUs = ({ data }) => {
   };
   return (
     <div className="bg-softWhite text-white overflow-hidden h-[850px] lg:h-full flex justify-center py-5">
-      <div className="py-8 px-2 lg:py-20 xl:px-0 space-y-8 gap-8 flex flex-col lg:flex-row  md:gap-48 items-center justify-between max-w-7xl mx-auto">
+      <div className="py-8 px-2 lg:py-20 xl:px-0 space-y-8 gap-8 flex flex-col lg:flex-row  md:gap-48 items-center justify-between w-full lg:max-w-5xl 3xl:max-w-7xl mx-auto">
         <div className="flex flex-col justify-start items-start mr-20  gap-4">
           <Image
-            className="rounded-lg w-[320px] h-[200px] lg:w-[280px] lg:h-[300px] "
+            className="rounded-lg w-[320px]  h-[200px] lg:w-[280px] lg:h-[300px] "
             src="/img/about1.png"
             width={800}
             height={800}
@@ -32,7 +32,7 @@ const HomeAboutUs = ({ data }) => {
             alt="about"
           />
         </div>
-        <div className="bg-[#001e35] w-[250px] overflow-hidden  lg:w-[500px] h-[510px] trasform -translate-y-16 lg:translate-y-0 rounded absolute right-2  lg:right-[45%] lg:h-[700px] z-10 p-6 pb-12 lg:p-10">
+        <div className="bg-[#001e35] w-[250px] overflow-hidden lg:w-[470px] 3xl:w-[500px] h-[510px] trasform -translate-y-16 lg:translate-y-0 rounded absolute right-2 lg:right-[40%] 3xl:right-[45%] lg:h-[700px] z-10 p-6 pb-12 lg:p-10">
           <h2 className="text-2xl font-semibold lg:text-4xl border-b ">
             About <span className="text-blue-700">Us</span>
           </h2>

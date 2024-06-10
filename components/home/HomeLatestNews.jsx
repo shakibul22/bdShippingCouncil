@@ -26,7 +26,7 @@ const HomeLatestNews = async () => {
 
   return (
     <div className="bg-primaryColor text-white py-6 lg:py-10 px-2 md:px-6">
-      <div className="max-w-screen-2xl mx-auto">
+      <div className="w-full lg:max-w-5xl 3xl:max-w-7xl mx-auto">
         <h2 className="text-xl lg:text-2xl font-semibold">Latest News</h2>
         <div className="px-6 mt-6 text-sm lg:text-base font-extralight relative z-10">
           {latestNews ? (

@@ -47,7 +47,7 @@ const Navbar = () => {
   const [openMenu, setopenMenu] = useState(null);
 
   return (
-    <div className="absolute z-50 w-full top-0 bg-white">
+    <div className="absolute z-50  w-full top-0 bg-white">
       {/* Mobile Nav */}
       <div
         className={`h-[85px] flex items-end px-2 md:px-6 pb-3 ${
@@ -94,10 +94,12 @@ const Navbar = () => {
         }  hidden lg:block  relative select-none z-10`}
       >
         {/* top bar */}
-        <div className="max-w-7xl mx-auto flex flex-row justify-between items-center h-[90px]">
+        <div className="w-full lg:max-w-5xl 3xl:max-w-7xl mx-auto flex flex-row justify-between items-center h-[90px]">
           <div className="flex gap-3 items-center">
             <Image src={logo} width={50} height={50} alt="logo" />
-            <h2 className={`${inter.className} text-4xl  font-bold`}>
+            <h2
+              className={`${inter.className} text-4xl text-primaryColor font-bold`}
+            >
               Shippers’ Council of Bangladesh
             </h2>
           </div>
@@ -109,7 +111,7 @@ const Navbar = () => {
               <div className="p-3 rounded-full border-2 ring bg-primaryColor transform transition-transform duration-1000 hover:rotate-45">
                 <BsSend className="text-2xl text-white" />
               </div>
-              <span className="pr-2"> CONTACT US</span>
+              <span className="pr-2 text-primaryColor"> CONTACT US</span>
             </Link>
           </div>
         </div>
@@ -117,7 +119,7 @@ const Navbar = () => {
         {/* nav bar */}
         <div className="bg-[#0a4a77] py-1.5 mt-2  text-white">
           <div
-            className={`max-w-7xl mx-auto  flex items-center justify-between h-full font-light`}
+            className={`w-full lg:max-w-5xl 3xl:max-w-7xl mx-auto  flex items-center justify-between h-full font-light`}
           >
             {/* <div
               className={`py-1.5 px-2.5 rounded-md ${
@@ -187,7 +189,11 @@ const Navbar = () => {
             <NavigationMenu>
               <NavigationMenuList>
                 <NavigationMenuItem
-                  className={pathname === "/" ? "bg-white text-black " : null}
+                  className={
+                    pathname === "/"
+                      ? "bg-white  text-black rounded-none"
+                      : "hover:bg-white text-white hover:text-black"
+                  }
                 >
                   <Link href={"/"} legacyBehavior passHref>
                     <NavigationMenuLink
@@ -205,7 +211,7 @@ const Navbar = () => {
               <NavigationMenuList>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger
-                    className={`bg-transparent hover:bg-white hover:text-black ${
+                    className={`bg-transparent  hover:bg-white hover:text-black rounded-none ${
                       pathname.split("/")[1] === "about"
                         ? "bg-white text-black"
                         : null
@@ -327,7 +333,7 @@ const Navbar = () => {
               <NavigationMenuList>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger
-                    className={`bg-transparent hover:bg-white hover:text-black ${
+                    className={`bg-transparent hover:bg-white hover:text-black rounded-none ${
                       pathname.split("/")[1] === "news"
                         ? "bg-white text-black"
                         : null
@@ -378,7 +384,7 @@ const Navbar = () => {
               <NavigationMenuList>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger
-                    className={`bg-transparent hover:bg-white hover:text-black ${
+                    className={`bg-transparent hover:bg-white hover:text-black rounded-none ${
                       pathname.split("/")[1] === "seminar"
                         ? "bg-white text-black"
                         : null
@@ -414,7 +420,7 @@ const Navbar = () => {
               <NavigationMenuList>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger
-                    className={`bg-transparent hover:bg-white hover:text-black ${
+                    className={`bg-transparent hover:bg-white hover:text-black  rounded-none ${
                       pathname.split("/")[1] === "media"
                         ? "bg-white text-black"
                         : null
@@ -451,7 +457,7 @@ const Navbar = () => {
               <NavigationMenuList>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger
-                    className={`bg-transparent hover:bg-white hover:text-black ${
+                    className={`bg-transparent hover:bg-white hover:text-black  rounded-none ${
                       pathname.split("/")[1] === "member"
                         ? "bg-white text-black"
                         : null

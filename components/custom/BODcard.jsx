@@ -8,7 +8,7 @@ const BODcard = ({ id, name, designation, image }) => {
 
   return (
     <div
-      className="relative  w-[45vw] sm:w-[180px]  h-[275px] lg:w-[300px] lg:h-[400px]"
+      className="relative  w-[45vw] sm:w-[180px]  h-[275px] lg:w-[250px] 3xl:w-[300px] lg:h-[400px]"
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
@@ -26,9 +26,9 @@ const BODcard = ({ id, name, designation, image }) => {
           width={250}
           height={300}
           alt="bod"
-          className="h-40 md:h-52 lg:h-64 object-cover object-fill size-full"
+          className="h-40 md:h-52 lg:h-64  object-fill size-full"
         />
-        <h3 className="text-white text-sm lg:text-lg font-bold mt-2 ">
+        <h3 className="text-white text-sm lg:text-[16px] 3xl:text-lg font-bold mt-2 ">
           {name}
         </h3>
         <p className="text-white text-xs lg:text-sm">{designation}</p>
@@ -39,7 +39,7 @@ const BODcard = ({ id, name, designation, image }) => {
             height={20}
             loading="lazy"
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/f53e375dcf53aebd9fc598c683ad34fe4bb09d63a4babff70c58b8bea1cafde9?"
-            className="shrink-0 aspect-square w-[25px] lg:w-[42px]"
+            className="shrink-0 aspect-square w-[25px] lg:w-[35px] 3xl:w-[42px]"
           />
           <Image
             width={20}
@@ -47,7 +47,7 @@ const BODcard = ({ id, name, designation, image }) => {
             height={20}
             loading="lazy"
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/1243aecf6bf26addf589d81452493b9265e15a1eb8767e0c6e91a3526c4c90c6?"
-            className="shrink-0 aspect-square w-[25px] lg:w-[42px]"
+            className="shrink-0 aspect-square w-[25px] lg:w-[35px] 3xl:w-[42px]"
           />
           <Image
             width={20}
@@ -55,7 +55,7 @@ const BODcard = ({ id, name, designation, image }) => {
             height={20}
             loading="lazy"
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/fec738328eeb4ca5732b468096f30598c1711911fd17331491fbc89383130c6c?"
-            className="shrink-0 aspect-square w-[25px] lg:w-[42px]"
+            className="shrink-0 aspect-square w-[25px] lg:w-[35px] 3xl:w-[42px]"
           />
         </div>
       </div>
