@@ -16,9 +16,17 @@ module.exports = {
     //   },
     // },
     extend: {
+      fontFamily: {
+        sans: ["Poppins", "sans-serif"],
+        quattrocento: ["Quattrocento Sans", "serif"],
+      },
+
       rotate: {
-        '-135': '-135deg',
-        '45': '45deg',
+        "-135": "-135deg",
+        45: "45deg",
+      },
+      letterSpacing: {
+        1: "0.1em", // Adjust this value as needed
       },
       screens: {
         "2xl": "1180px",
@@ -52,7 +60,7 @@ module.exports = {
   },
   variants: {
     extend: {
-      rotate: ['hover'],
+      rotate: ["hover"],
     },
   },
   plugins: [require("tailwindcss-animate")],

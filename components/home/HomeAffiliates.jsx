@@ -51,7 +51,7 @@ const HomeAffiliates = () => {
                 width={100}
                 height={24}
                 alt={aff.name}
-                className="mx-auto"
+                className="mx-auto foreground-[#d6dbde]"
                 style={{ filter: "brightness(0) invert(1) contrast(100)" }}
               />
             </div>

@@ -83,7 +83,7 @@ const HomeSlider = () => {
                             : "opacity-0 group-hover:opacity-100"
                         }`}
                       >
-                        <p className="text-white text-sm font-extralight bg-black/60 backdrop-blur-sm p-2 rounded-lg">
+                        <p className="text-white text-sm font-extralight font-quattrocento italic tracking-1 bg-black/60 backdrop-blur-sm p-2 rounded-lg">
                           {img.caption}
                         </p>
                       </div>

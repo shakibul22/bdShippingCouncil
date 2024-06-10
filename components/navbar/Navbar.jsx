@@ -191,8 +191,8 @@ const Navbar = () => {
                 <NavigationMenuItem
                   className={
                     pathname === "/"
-                      ? "bg-white  text-black rounded-none"
-                      : "hover:bg-white text-white hover:text-black"
+                      ? "bg-white font-sans font-semibold text-primaryColor rounded-none"
+                      : "hover:bg-white font-sans font-semibold text-white hover:text-primaryColor"
                   }
                 >
                   <Link href={"/"} legacyBehavior passHref>

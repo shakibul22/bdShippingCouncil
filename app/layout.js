@@ -2,7 +2,7 @@ import { ContextProvider } from "@/components/Context/context";
 import "./globals.css";
 import "animate.css";
 
-import { Poppins } from "next/font/google";
+import { Poppins, Quattrocento_Sans } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 
 export const metadata = {
@@ -15,14 +15,19 @@ const poppins = Poppins({
   subsets: ["latin"],
 });
 
+const quattrocentoSans = Quattrocento_Sans({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+});
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={poppins.className}>
-       <ContextProvider>
-       <Toaster position="top-right" reverseOrder={false} />
-        {children}
-       </ContextProvider>
+      <body className={`${poppins.className} ${quattrocentoSans.className}`}>
+        <ContextProvider>
+          <Toaster position="top-right" reverseOrder={false} />
+          {children}
+        </ContextProvider>
       </body>
     </html>
   );
