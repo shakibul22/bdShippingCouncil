@@ -21,24 +21,26 @@ const HomeAffiliates = async () => {
       </h3>
 
       <div className="lg:mt-10 max-w-7xl mx-auto flex pb-6 xl:flex-row sm:flex-wrap justify-between gap-8 lg:gap-20 border-t bg-transparent opacity-70 items-center">
-  {affiliates && Array.isArray(affiliates) &&
-    affiliates.map((aff, index) => (
-      <div
-        key={aff.id}
-        className={`hover:bg-[#063152] w-[60px] h-[16px] lg:w-[130px] lg:h-[44px] p-4 hover:border-t-4 border-white ${index >= 4 ? "hidden sm:block" : ""}`}
-      >
-        <Image
-          src={`/img/affiliates/${aff.logo}`}
-          width={100}
-          height={24}
-          alt={aff.name}
-          className="mx-auto"
-          style={{ filter: "brightness(0) invert(1) contrast(100)" }}
-        />
+        {affiliates &&
+          Array.isArray(affiliates) &&
+          affiliates.map((aff, index) => (
+            <div
+              key={aff.id}
+              className={`hover:bg-[#063152] w-[90px] h-[30px] lg:w-[130px] lg:h-[44px] p-4 hover:border-t-4 border-white ${
+                index >= 3 ? "hidden sm:block" : ""
+              }`}
+            >
+              <Image
+                src={`/img/affiliates/${aff.logo}`}
+                width={100}
+                height={24}
+                alt={aff.name}
+                className="mx-auto"
+                style={{ filter: "brightness(0) invert(1) contrast(100)" }}
+              />
+            </div>
+          ))}
       </div>
-    ))}
-</div>
-
     </div>
   );
 };

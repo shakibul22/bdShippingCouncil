@@ -32,7 +32,7 @@ const Hero = () => {
       </figure>
 
       <div className="flex  justify-between">
-        <div class=" absolute top-[23%] left-[20%] lg:left-[50%]  lg:top-[20%]">
+        <div class=" absolute top-[15%] left-[38%] lg:left-[50%]  lg:top-[20%]">
           <svg
             className="absolute"
             width="134"
@@ -79,7 +79,7 @@ const Hero = () => {
             <circle cx="77" cy="17" r="1.66667" fill="#ffffff" />
           </svg>
         </div>
-        <div class=" absolute top-[26%] left-[10%] lg:left-[47.5%] lg:top-[22%]">
+        <div class=" absolute top-[18%] left-[36%] lg:left-[47.5%] lg:top-[22%]">
           <svg
             class="absolute -left-2"
             width="34"
@@ -88,8 +88,20 @@ const Hero = () => {
             fill="#ffffff"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <circle cx="17" cy="2" r="1.66667" fill="#ffffff" />
-            <circle cx="17" cy="17" r="1.66667" fill="#ffffff" />
+            <circle
+              className="hidden lg:block"
+              cx="17"
+              cy="2"
+              r="1.66667"
+              fill="#ffffff"
+            />
+            <circle
+              className="hidden lg:block"
+              cx="17"
+              cy="17"
+              r="1.66667"
+              fill="#ffffff"
+            />
             <circle cx="17" cy="32" r="1.66667" fill="#ffffff" />
             <circle cx="17" cy="47" r="1.66667" fill="#ffffff" />
             <circle cx="17" cy="62" r="1.66667" fill="#ffffff" />
@@ -103,8 +115,20 @@ const Hero = () => {
             fill="#ffffff"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <circle cx="17" cy="2" r="1.66667" fill="#ffffff" />
-            <circle cx="17" cy="17" r="1.66667" fill="#ffffff" />
+            <circle
+              className="hidden lg:block"
+              cx="17"
+              cy="2"
+              r="1.66667"
+              fill="#ffffff"
+            />
+            <circle
+              className="hidden lg:block"
+              cx="17"
+              cy="17"
+              r="1.66667"
+              fill="#ffffff"
+            />
             <circle cx="17" cy="32" r="1.66667" fill="#ffffff" />
             <circle cx="17" cy="47" r="1.66667" fill="#ffffff" />
             <circle cx="17" cy="62" r="1.66667" fill="#ffffff" />
@@ -118,15 +142,27 @@ const Hero = () => {
             fill="#ffffff"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <circle cx="17" cy="2" r="1.66667" fill="#ffffff" />
-            <circle cx="17" cy="17" r="1.66667" fill="#ffffff" />
+            <circle
+              className="hidden lg:block"
+              cx="17"
+              cy="2"
+              r="1.66667"
+              fill="#ffffff"
+            />
+            <circle
+              className="hidden lg:block"
+              cx="17"
+              cy="17"
+              r="1.66667"
+              fill="#ffffff"
+            />
             <circle cx="17" cy="32" r="1.66667" fill="#ffffff" />
             <circle cx="17" cy="47" r="1.66667" fill="#ffffff" />
             <circle cx="17" cy="62" r="1.66667" fill="#ffffff" />
             <circle cx="17" cy="77" r="1.66667" fill="#ffffff" />
           </svg>
         </div>
-        <div class=" absolute top-[18%] right-[30%] lg:right-[20%]">
+        <div class=" absolute top-[14%] lg:top-[18%] right-[20%] lg:right-[20%]">
           <svg
             className="absolute top-2"
             width="95"
@@ -211,9 +247,9 @@ const Hero = () => {
       </div>
 
       <div className="absolute inset-0 flex items-center justify-end">
-        <div className="absolute bg-white bg-opacity-20 w-[150px] h-[150px] sm:w-[150px] sm:h-[150px] md:w-[200px] md:h-[200px] lg:w-[400px] lg:h-[400px] top-[40%] lg:top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full z-10 flex items-center justify-center">
-          <div className="bg-white bg-opacity-30 w-[100px] h-[100px] sm:w-[100px] sm:h-[100px] md:w-[150px] md:h-[150px] lg:w-[300px] lg:h-[300px] rounded-full flex items-center justify-center">
-            <div className="bg-white w-[40px] h-[40px] sm:w-[60px] sm:h-[60px] md:w-[75px] md:h-[75px] lg:w-[150px] lg:h-[150px] bg-opacity-40 rounded-full"></div>
+        <div className="absolute bg-white bg-opacity-20 w-[180px] h-[180px] sm:w-[150px] sm:h-[150px] md:w-[200px] md:h-[200px] lg:w-[400px] lg:h-[400px] top-[40%] lg:top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full z-10 flex items-center justify-center">
+          <div className="bg-white bg-opacity-30 w-[140px] h-[140px] sm:w-[100px] sm:h-[100px] md:w-[150px] md:h-[150px] lg:w-[300px] lg:h-[300px] rounded-full flex items-center justify-center">
+            <div className="bg-white w-[90px] h-[90px] sm:w-[60px] sm:h-[60px] md:w-[75px] md:h-[75px] lg:w-[150px] lg:h-[150px] bg-opacity-40 rounded-full"></div>
           </div>
         </div>
 
