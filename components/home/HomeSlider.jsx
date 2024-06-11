@@ -186,7 +186,7 @@ const HomeSlider = () => {
                 <div class=" absolute -top-10 right-24">
                   <svg
                     className="absolute top-0"
-                    width="134"
+                    width="120"
                     height="34"
                     viewBox="0 0 134 34"
                     fill="#ffffff"
@@ -202,7 +202,7 @@ const HomeSlider = () => {
                   </svg>
                   <svg
                     className="absolute top-4"
-                    width="134"
+                    width="120"
                     height="34"
                     viewBox="0 0 134 34"
                     fill="#ffffff"
