@@ -213,8 +213,8 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="relative rounded-lg h-[190px] bg-gradient-to-r from-gray-900 to-gray-0 bg-opacity-70 p-3 sm:p-6 right-6 w-[200px] lg:w-full sm:right-16 md:right-24 lg:right-[12%] 3xl:right-[22%] top-[3%] sm:top-8 md:top-[5%] lg:top-[6%] text-[#d6dbde] text-start max-w-sm sm:max-w-md md:max-w-lg z-20">
-          <h1 className="text-sm sm:text-xl md:text-2xl font-bold uppercase">
+        <div className="relative rounded-lg border-t-2 border-t-slate-50 h-[190px] bg-gradient-to-r from-gray-900 to-gray-0 bg-opacity-70 p-3 sm:p-6 right-6 w-[200px] lg:w-full sm:right-16 md:right-24 lg:right-[12%] 3xl:right-[22%] top-[3%] sm:top-8 md:top-[5%] lg:top-[6%] text-[#d6dbde] text-start max-w-sm sm:max-w-md md:max-w-lg z-20">
+          <h1 className="text-sm sm:text-xl md:text-2xl lg:text-3xl font-bold uppercase">
             Latest News
           </h1>
           <AnimatePresence initial={false} custom={direction}>

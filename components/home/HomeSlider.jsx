@@ -47,10 +47,10 @@ const HomeSlider = () => {
       onMouseLeave={() => setHighlightedIndex(0)}
     >
       <div className="flex flex-col justify-center mb-10 items-center">
-        <h3 className="text-center text-xl  md:text-2xl pb-2 lg:pb-8 lg:text-4xl pt-5 text-white">
+        <h3 className="text-center text-xl font-semibold  md:text-2xl pb-2 lg:pb-8 lg:text-3xl pt-5 text-white">
           Our Memorable Journey
         </h3>
-        <div className="border w-[260px] lg:w-[400px]"></div>
+        <div className="border w-[260px] lg:w-[380px]"></div>
       </div>
       <section className="relative z-10 overflow-hi lg:py-[0px]">
         <div className="">
