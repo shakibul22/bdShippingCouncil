@@ -38,7 +38,7 @@ const HomeChairmanProfile = ({ data }) => {
           <p className="text-md lg:text-sm relative z-10">Chairman</p>
 
           <div className="flex flex-col lg:flex-row justify-evenly  lg:justify-between items-center relative z-10">
-            <div className="flex items-center gap-2 w-fit mx-auto lg:mx-0 mt-2 lg:mt-4 text-sm lg:text-2xl">
+            <div className="flex items-center gap-4 w-fit mx-auto lg:mx-0 mt-2 lg:mt-4 text-sm lg:text-2xl">
               <Image
                 src="https://res.cloudinary.com/dgohi0iqm/image/upload/v1717734139/Gmail_Logo_brnzwh.svg"
                 width={30}

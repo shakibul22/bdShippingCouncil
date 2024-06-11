@@ -117,7 +117,7 @@ const Navbar = () => {
         </div>
 
         {/* nav bar */}
-        <div className="bg-[#0a4a77] py-1.5 mt-2  text-white">
+        <div className="bg-[#0a4a77] py-1.5 mt-2 font-poppins  text-white">
           <div
             className={`w-full lg:max-w-5xl 3xl:max-w-7xl mx-auto  flex items-center justify-between h-full font-light`}
           >

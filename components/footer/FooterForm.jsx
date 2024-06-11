@@ -34,7 +34,7 @@ const FooterForm = () => {
   };
 
   return (
-    <div className="space-y-6 flex-1 flex flex-col items-start">
+    <div className="space-y-6 flex-1 flex font-poppins flex-col items-start">
       <div>
         <h4 className="text-2xl text-white">Contact with us</h4>
       </div>

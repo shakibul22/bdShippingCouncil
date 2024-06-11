@@ -16,7 +16,7 @@ const HomeGallery = async () => {
   const images = galleryData[0]?.photos || [];
 
   return (
-    <div className="bg-softWhite px-4 py-8 lg:py-20">
+    <div className="bg-softWhite px-4 font-poppins py-8 lg:py-20">
       <div className="w-full lg:max-w-5xl 3xl:max-w-7xl mx-auto">
         <p className="text-xs font-semibold lg:text-lg">Media Corner</p>
         <h3 className="text-xl font-bold mt-3 lg:text-4xl">

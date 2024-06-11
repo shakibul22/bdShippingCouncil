@@ -46,7 +46,7 @@ const HomeSlider = () => {
       className=" py-10 px-10 w-full lg:max-w-5xl 3xl:max-w-7xl mx-auto bg-primaryColor"
       onMouseLeave={() => setHighlightedIndex(0)}
     >
-      <h3 className="text-center text-xl  md:text-2xl pb-8 lg:text-4xl pt-5 text-white">
+      <h3 className="text-center text-xl font-poppins md:text-2xl pb-8 lg:text-4xl pt-5 text-white">
         Our Memorable Journey
       </h3>
       <section className="relative z-10 overflow-hi lg:py-[80px]">
@@ -90,7 +90,7 @@ const HomeSlider = () => {
                     </div>
                   ))}
                 </div>
-                <div class=" absolute bottom-16 -left-4 lg:bottom-[16%]">
+                <div class=" absolute bottom-20 -left-4 lg:bottom-[16%]">
                   <svg
                     className="absolute top-3"
                     width="134"
@@ -123,7 +123,7 @@ const HomeSlider = () => {
                   </svg>
                 </div>
 
-                <div class=" absolute bottom-16 -left-4 lg:bottom-[16%]">
+                <div class="hidden lg:block absolute bottom-16 -left-4 lg:bottom-[16%]">
                   <svg
                     className="absolute top-3"
                     width="134"
@@ -153,7 +153,7 @@ const HomeSlider = () => {
                     <circle cx="122" cy="17" r="1.66667" fill="#ffffff" />
                   </svg>
                 </div>
-                <div class=" absolute bottom-[55%] lg:bottom-[39%] -left-10">
+                <div class=" absolute bottom-[70%] lg:bottom-[39%] -left-10">
                   <svg
                     class="absolute left-2"
                     width="34"
@@ -217,7 +217,7 @@ const HomeSlider = () => {
                     <circle cx="92" cy="17" r="1.66667" fill="#ffffff" />
                   </svg>
                 </div>
-                <div class=" absolute -top-[5.5%] right-3">
+                <div class=" absolute -top-[5.5%] right-3.5">
                   <svg
                     class="absolute left-1"
                     width="34"

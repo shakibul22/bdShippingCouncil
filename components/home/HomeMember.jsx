@@ -3,10 +3,9 @@ import React from "react";
 import { GrDocumentPdf } from "react-icons/gr";
 
 const HomeMember = ({ data }) => {
-  console.log(data);
   return (
     <div
-      className="px-4 xl:px-0 py-10 lg:py-20 text-white"
+      className="px-4 xl:px-0 py-10 lg:py-20 text-white font-poppins"
       style={{ backgroundImage: "url(/img/memberbg.png)" }}
     >
       <div>

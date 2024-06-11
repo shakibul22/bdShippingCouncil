@@ -14,7 +14,7 @@ const bod_data = getData();
 const HomeBOD = async ({ data }) => {
   const bod = await bod_data;
   return (
-    <div className="bg-softWhite px-4 py-8 lg:py-20">
+    <div className="bg-softWhite font-poppins px-4 py-8 lg:py-20">
       <div className="w-full lg:max-w-5xl 3xl:max-w-7xl mx-auto">
         <p className="text-xs font-semibold lg:text-lg">Organization Info</p>
         {/* <h3 className="text-xl font-bold mt-3 lg:text-4xl">{data.title}</h3> */}
