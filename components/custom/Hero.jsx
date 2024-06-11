@@ -20,14 +20,14 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative w-full h-screen sm:h-[70vh] md:h-[45vh] lg:h-screen 3xl:h-screen b">
+    <div className="relative w-full h-screen sm:h-[70vh] md:h-[45vh] lg:h-screen 3xl:h-screen ">
       <figure>
         <Image
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/c0e96d6f18bec6a7ffe03febd7f57f6f868f969ca88a2d0b941e307354a58c09"
           width={1950}
           height={450}
           alt="banner"
-          className="bg-center bg-cover w-full h-[750px] lg:h-screen"
+          className="bg-center bg-cover w-full h-screen"
         />
       </figure>
 
@@ -235,13 +235,13 @@ const Hero = () => {
 
       <div className="absolute bottom-[25%] sm:bottom-[20%] lg:bottom-[21%] 3xl:bottom-[27%]  left-[50%] lg:left-[54%] transform -translate-x-1/2 flex space-x-4 z-20">
         <button
-          className="bg-primaryColor bg-transparent border-2 border-primaryColor text-white p-2 rounded-full text-lg sm:text-xl btn hover:bg-primaryColor h-8 sm:h-10 w-8 sm:w-10 flex items-center justify-center"
+          className="bg-primaryColor/40 border border-slate-400  text-white p-2 rounded-full text-lg sm:text-xl btn hover:bg-btn h-8 sm:h-10 w-8 sm:w-10 flex items-center justify-center"
           onClick={handlePrev}
         >
           &lt;
         </button>
         <button
-          className="bg-primaryColor bg-transparent border-2  border-primaryColor text-white p-2 rounded-full text-lg sm:text-xl btn hover:bg-primaryColor h-8 sm:h-10 w-8 sm:w-10 flex items-center justify-center"
+          className="bg-primaryColor/40 border border-slate-400 text-white p-2 rounded-full text-lg sm:text-xl btn hover:bg-btn h-8 sm:h-10 w-8 sm:w-10 flex items-center justify-center"
           onClick={handleNext}
         >
           &gt;
