@@ -10,7 +10,7 @@ const HomeMember = ({ data }) => {
       style={{ backgroundImage: "url(/img/memberbg.png)" }}
     >
       <div>
-        <div className="flex flex-col lg:flex-row justify-between w-full lg:max-w-5xl 3xl:max-w-7xl mx-auto items-center gap-10 lg:mt-16">
+        <div className="flex flex-col lg:flex-row  justify-between w-full lg:max-w-5xl 3xl:max-w-7xl mx-auto items-center gap-10 lg:mt-16">
           <div className="mt-7 text-sm lg:text-base space-y-8 text-justify lg:w-[500px]">
             <div className="flex items-center space-x-2">
               <p className="text-xs font-semibold lg:text-lg">
@@ -19,12 +19,14 @@ const HomeMember = ({ data }) => {
               <hr className="flex-grow border-b mt-4 " />
             </div>
 
-            <h2 className="text-lg font-bold  lg:text-4xl mt-4 ">
+            <h2 className="text-lg font-bold font-poppins lg:text-3xl mt-4 ">
               Members in the{" "}
-              <span className="text-btn italic">Shippers &apos;</span> Council
+              <span className="text-btn italic ">Shippers&apos;</span> Council
               Bangladesh
             </h2>
-            <p className="font-medium opacity-70 flex flex-col">{data?.text}</p>
+            <p className="font-medium opacity-70 flex flex-col font-poppins">
+              {data?.text}
+            </p>
 
             <div className=" bg-btn   my-10 lg:mx- py-2.5 px-5 w-fit ">
               <a

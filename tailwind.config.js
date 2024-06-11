@@ -8,17 +8,10 @@ module.exports = {
     "./src/**/*.{js,jsx}",
   ],
   theme: {
-    // container: {
-    //   center: true,
-    //   padding: "2rem",
-    //   screens: {
-    //     "2xl": "1366px",
-    //   },
-    // },
     extend: {
       fontFamily: {
-        sans: ["Poppins", "sans-serif"],
-        quattrocento: ["Quattrocento Sans", "serif"],
+        poppins: ["Poppins"],
+        quattrocento: ["Quattrocento Sans",],
       },
 
       rotate: {
@@ -29,7 +22,7 @@ module.exports = {
         1: "0.1em", // Adjust this value as needed
       },
       screens: {
-        "2xl": "1180px",
+        "2xl": "1380px",
         "3xl": "1600px",
       },
 

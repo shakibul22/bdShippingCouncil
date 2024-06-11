@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React, { useState, useEffect } from "react";
 import BODcard from "../custom/BODcard";
 import { publicRequest } from "@/requestMethod";
@@ -22,10 +22,11 @@ const Officials = () => {
 
   return (
     <div className="px-2 py-10">
-      <div className="max-w-screen-2xl mx-auto text-sm lg:text-base space-y-14">
-        <div className="space-y-8 max-w-[950px] mx-auto">
+      <div className="w-full lg:max-w-5xl 3xl:max-w-7xl mx-auto text-sm lg:text-base space-y-14">
+        <div className="space-y-8 w-full lg:max-w-[770px] 3xl:max-w-[950px] mx-auto">
           <h4 className="text-lg lg:text-xl font-semibold text-center">
-            Office Bearers and Directors (2022 & 2023)
+            Office Bearers and Directors ({new Date().getFullYear() - 1} &{" "}
+            {new Date().getFullYear()})
           </h4>
           <div className="md:hidden">
             {bodData.length > 0 && (

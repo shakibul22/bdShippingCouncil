@@ -33,12 +33,12 @@ const HomeAboutUs = ({ data }) => {
           />
         </div>
         <div className="bg-[#001e35] w-[250px] overflow-hidden lg:w-[470px] 3xl:w-[500px] h-[510px] trasform -translate-y-16 lg:translate-y-0 rounded absolute right-2 lg:right-[40%] 3xl:right-[45%] lg:h-[700px] z-10 p-6 pb-12 lg:p-10">
-          <h2 className="text-2xl font-semibold lg:text-4xl border-b ">
+          <h2 className="text-2xl font-semibold font-poppins lg:text-4xl border-b ">
             About <span className="text-blue-700">Us</span>
           </h2>
           <p className="text-md font-bold mt-3 lg:text-lg">{data?.title}</p>{" "}
           <br />
-          <p className=" mt-0 md:mt-2 lg:mt-4 text-justify font-light text-xs lg:text-sm">
+          <p className=" mt-0 md:mt-2 lg:mt-4 text-justify font-poppins  font-light text-xs lg:text-sm">
             {data?.text}
           </p>
           <div className="max-w-[200px] rounded-lg pb-2 lg:pb-6 absolute  lg:bottom-3">

@@ -98,7 +98,7 @@ const Navbar = () => {
           <div className="flex gap-3 items-center">
             <Image src={logo} width={50} height={50} alt="logo" />
             <h2
-              className={`${inter.className} text-4xl text-primaryColor font-bold`}
+              className={`${inter.className} text-4xl text-primaryColor font-bold font-Inter`}
             >
               Shippers’ Council of Bangladesh
             </h2>

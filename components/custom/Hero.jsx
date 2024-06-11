@@ -32,7 +32,7 @@ const Hero = () => {
       </figure>
 
       <div className="flex  justify-between">
-        <div class=" absolute top-[20%] left-[38%] lg:left-[45%] 3xl:left-[50%] lg:top-[34%] 3xl:top-[35%]">
+        <div class=" absolute top-[20%] left-[38%] lg:left-[48%]  3xl:left-[50%] lg:top-[34%] 3xl:top-[35%]">
           <svg
             className="absolute top-1"
             width="134"
@@ -64,7 +64,7 @@ const Hero = () => {
             <circle cx="77" cy="17" r="1.66667" fill="#ffffff" />
           </svg>
         </div>
-        <div class=" absolute top-[18%] left-[25%] lg:left-[41%] 3xl:left-[47.5%] lg:top-[37%]">
+        <div class=" absolute top-[18%] left-[25%] lg:left-[44%] 3xl:left-[47.5%] lg:top-[37%]">
           <svg
             class="absolute left-1"
             width="34"

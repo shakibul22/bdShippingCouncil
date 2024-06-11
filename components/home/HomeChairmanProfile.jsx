@@ -25,11 +25,11 @@ const HomeChairmanProfile = ({ data }) => {
           {/* <h3 className="font-semibold text-lg leading-8 lg:text-4xl lg:mt-2 relative z-10">
             {data?.title}
           </h3> */}
-          <h3 className="font-semibold text-lg leading-8 lg:text-4xl lg:mt-2 relative z-10 space-x-1">
+          <h3 className="font-semibold text-lg leading-8 font-poppins lg:text-4xl lg:mt-2 relative z-10 space-x-1">
             Shippers’ <span className="text-btn italic ">Council </span> Of
             Bangladesh
           </h3>
-          <p className="font-light text-sm lg:text-base opacity-70 text-justify mt-4 lg:mt-7 sm:w-[60%] lg:w-auto mx-auto relative z-10">
+          <p className="font-light text-sm lg:text-base font-poppins opacity-70 text-justify mt-4 lg:mt-7 sm:w-[60%] lg:w-auto mx-auto relative z-10">
             {data?.text}
           </p>
           <p className="mt-7 text-xl lg:text-lg relative z-10">

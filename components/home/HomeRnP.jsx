@@ -14,7 +14,7 @@ const data = getData();
 const HomeRnP = async () => {
   const news = await data;
   return (
-    <div className=" px-4 py-8 lg:py-20">
+    <div className=" px-4 py-8 lg:py-20 ">
       <div className="w-full lg:max-w-5xl 3xl:max-w-7xl mx-auto">
         <div className="w-full">
           <div className="flex items-center space-x-2">
@@ -25,7 +25,7 @@ const HomeRnP = async () => {
               <hr className="flex-grow border-b mt-4 " />
             </div>
           </div>
-          <h3 className="text-xl font-bold mt-3 lg:text-4xl space-x-2">
+          <h3 className="text-xl font-poppins font-bold mt-3 lg:text-4xl space-x-2">
             Shippers News, <span className="text-btn italic">Reports</span> and
             <span className="text-btn italic"> Publication</span>
           </h3>
