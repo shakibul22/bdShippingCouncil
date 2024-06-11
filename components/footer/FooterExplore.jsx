@@ -3,7 +3,7 @@ import React from "react";
 
 const FooterExplore = () => {
   return (
-    <div className="text-sm text-center flex flex-col items-center font-poppins justify-center lg:text-base lg:text-left font-medium">
+    <div className="text-sm text-center flex flex-col items-center  justify-center lg:text-base lg:text-left font-medium">
       <h2 className="text-white text-2xl">Explore</h2>
       <div className="flex flex-col items-center gap-6 mt-5 ">
         <Link

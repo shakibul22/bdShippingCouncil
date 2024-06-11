@@ -14,9 +14,9 @@ const HomeAssociate = async () => {
   // const res = await publicRequest("/member/memberlist");
   const memberList = await data;
   return (
-    <div className="bg-[url('/img/memberbg.png')] bg-cover font-poppins bg-center px-2 xl:px-0 py-8 lg:py-20 text-white">
+    <div className="bg-[url('/img/memberbg.png')] bg-cover  bg-center px-2 xl:px-0 py-8 lg:py-20 text-white">
       <div className="w-full lg:max-w-5xl 3xl:max-w-7xl mx-auto">
-        <h3 className="text-xl font-bold font-poppins lg:text-4xl">
+        <h3 className="text-xl font-bold  lg:text-4xl">
           Some of Our <span className="text-btn">Associate</span> Members
         </h3>
 

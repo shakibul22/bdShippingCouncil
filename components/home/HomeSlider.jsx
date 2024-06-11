@@ -43,14 +43,17 @@ const HomeSlider = () => {
 
   return (
     <div
-      className=" py-10 px-10 w-full lg:max-w-5xl 3xl:max-w-7xl mx-auto bg-primaryColor"
+      className="py-5  px-10 w-full lg:max-w-7xl 3xl:container mx-auto bg-primaryColor"
       onMouseLeave={() => setHighlightedIndex(0)}
     >
-      <h3 className="text-center text-xl font-poppins md:text-2xl pb-8 lg:text-4xl pt-5 text-white">
-        Our Memorable Journey
-      </h3>
-      <section className="relative z-10 overflow-hi lg:py-[80px]">
-        <div className="container">
+      <div className="flex flex-col justify-center mb-10 items-center">
+        <h3 className="text-center text-xl  md:text-2xl pb-2 lg:pb-8 lg:text-4xl pt-5 text-white">
+          Our Memorable Journey
+        </h3>
+        <div className="border w-[260px] lg:w-[400px]"></div>
+      </div>
+      <section className="relative z-10 overflow-hi lg:py-[0px]">
+        <div className="">
           <div className="-mx-4 flex flex-wrap lg:justify-between">
             <div className="relative rounded-lg ">
               <div>

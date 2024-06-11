@@ -5,7 +5,7 @@ import { GrDocumentPdf } from "react-icons/gr";
 const HomeMember = ({ data }) => {
   return (
     <div
-      className="px-4 xl:px-0 py-10 lg:py-20 text-white font-poppins"
+      className="px-4 xl:px-0 py-10 lg:py-20 text-white "
       style={{ backgroundImage: "url(/img/memberbg.png)" }}
     >
       <div>
@@ -18,12 +18,12 @@ const HomeMember = ({ data }) => {
               <hr className="flex-grow border-b mt-4 " />
             </div>
 
-            <h2 className="text-lg font-bold font-poppins lg:text-3xl mt-4 ">
+            <h2 className="text-lg font-bold  lg:text-3xl mt-4 ">
               Members in the{" "}
               <span className="text-btn italic ">Shippers&apos;</span> Council
               Bangladesh
             </h2>
-            <p className="font-medium opacity-70 flex flex-col font-poppins">
+            <p className="font-medium opacity-70 flex flex-col ">
               {data?.text}
             </p>
 
@@ -57,7 +57,7 @@ const HomeMember = ({ data }) => {
                 width={320}
                 height={280}
                 alt="ship"
-                className="border-2 w-[170px] lg:w-[260px] 3xl:w-auto xl:h-96 h-44 object-cover object-top absolute top-[15%] lg:top-[10%] right-[40%] sm:right-[60%]  3xl:right-[70%]  z-20 "
+                className="border-2 w-[190px] lg:w-[260px] 3xl:w-auto xl:h-96 h-48 object-cover object-top absolute top-[13%] lg:top-[10%] right-[40%] sm:right-[60%]  3xl:right-[70%]  z-20 "
               />
             </div>
           </div>

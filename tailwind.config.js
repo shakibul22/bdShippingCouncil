@@ -9,11 +9,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        poppins: ["Poppins"],
-        quattrocento: ["Quattrocento Sans",],
-      },
-
       rotate: {
         "-135": "-135deg",
         45: "45deg",

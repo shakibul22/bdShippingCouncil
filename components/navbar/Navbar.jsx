@@ -51,7 +51,7 @@ const Navbar = () => {
       {/* Mobile Nav */}
       <div
         className={`h-[85px] flex items-end px-2 md:px-6 pb-3 ${
-          pathname === "/" ? "bg-transparent" : "bg-white"
+          pathname === "/" ? "bg-transparent text-lg" : "bg-white"
         }  text-white relative lg:hidden`}
       >
         <div className="flex justify-between items-center flex-1">
@@ -90,7 +90,7 @@ const Navbar = () => {
       {/* PC Nav */}
       <div
         className={` ${
-          pathname === "/" ? "bg-transparent" : "bg-white"
+          pathname === "/" ? "bg-transparent text-lg" : "bg-white"
         }  hidden lg:block  relative select-none z-10`}
       >
         {/* top bar */}
@@ -103,10 +103,10 @@ const Navbar = () => {
               Shippers’ Council of Bangladesh
             </h2>
           </div>
-          <div className="border border-primaryColor rounded-tl-3xl  rounded-bl-3xl rounded-br-[40px] w-[220px] ">
+          <div className="border border-primaryColor rounded-tl-3xl  rounded-bl-3xl rounded-br-[40px] w-[208px] ">
             <Link
               href="/contact"
-              className="font-bold text-xl col-span-1 flex items-center gap-3 w-fit leading-normal"
+              className="font-bold text-xl col-span-1 flex items-center gap-2 w-fit leading-normal"
             >
               <div className="p-3 rounded-full border-2 ring bg-primaryColor transform transition-transform duration-1000 hover:rotate-45">
                 <BsSend className="text-2xl text-white" />
@@ -117,89 +117,25 @@ const Navbar = () => {
         </div>
 
         {/* nav bar */}
-        <div className="bg-[#0a4a77] py-1.5 mt-2 font-poppins  text-white">
+        <div className="bg-[#0a4a77] py-1.5 mt-2  text-white">
           <div
             className={`w-full lg:max-w-5xl 3xl:max-w-7xl mx-auto  flex items-center justify-between h-full font-light`}
           >
-            {/* <div
-              className={`py-1.5 px-2.5 rounded-md ${
-                pathname === "/" && "bg-white text-black"
-              }`}
-            >
-              <Link href={"/"}>Home</Link>
-            </div> */}
-
-            {/* <div
-              className={`flexCenter gap-1 cursor-pointer relative py-1.5 px-2.5 rounded-md ${
-                pathname.split("/")[1] === "about" && "bg-white text-black"
-              }`}
-              onClick={() => setopenMenu("about")}
-            >
-              <button>About Us</button>
-              <FaAngleDown size={15} className="opacity-50" />
-              {openMenu === "about" && <AboutUsMenu close={setopenMenu} />}
-            </div> */}
-
-            {/* <div
-              className={`flexCenter gap-1 cursor-pointer relative py-1.5 px-2.5 rounded-md ${
-                pathname.split("/")[1] === "research-publication" &&
-                "bg-white text-black"
-              }`}
-              onClick={() => setopenMenu("rnp")}
-            >
-              <button>Research & Publication</button>
-              <FaAngleDown size={15} className="opacity-50" />
-              {openMenu === "rnp" && <RnPMenu />}
-            </div> */}
-
-            {/* <div
-              className={`flexCenter gap-1 cursor-pointer relative py-1.5 px-2.5 rounded-md ${
-                pathname.split("/")[1] === "seminar" && "bg-white text-black"
-              }`}
-              onClick={() => setopenMenu("seminar")}
-            >
-              <button>Seminar</button>
-              <FaAngleDown size={15} className="opacity-50" />
-              {openMenu === "seminar" && <SeminarMenu />}
-            </div> */}
-
-            {/* <div
-              className={`flexCenter gap-1 cursor-pointer relative py-1.5 px-2.5 rounded-md ${
-                pathname.split("/")[1] === "media" && "bg-white text-black"
-              }`}
-              onClick={() => setopenMenu("media")}
-            >
-              <button>Media Corner</button>
-              <FaAngleDown size={15} className="opacity-50" />
-              {openMenu === "media" && <MediaMenu />}
-            </div> */}
-
-            {/* <div
-              className={`flexCenter gap-1 cursor-pointer relative py-1.5 px-2.5 rounded-md ${
-                pathname.split("/")[1] === "member" && "bg-white text-black"
-              }`}
-              onClick={() => setopenMenu("member")}
-            >
-              <button>Become a Member</button>
-              <FaAngleDown size={15} className="opacity-50" />
-              {openMenu === "member" && <MemberMenu />}
-            </div> */}
-
             {/* Home */}
             <NavigationMenu>
               <NavigationMenuList>
                 <NavigationMenuItem
                   className={
                     pathname === "/"
-                      ? "bg-white font-sans font-semibold text-primaryColor rounded-none"
-                      : "hover:bg-white font-sans font-semibold text-white hover:text-primaryColor"
+                      ? "bg-white text-lg font-sans font-semibold text-primaryColor rounded-none"
+                      : "hover:bg-white font-sans text-lg font-semibold text-white hover:text-primaryColor"
                   }
                 >
                   <Link href={"/"} legacyBehavior passHref>
                     <NavigationMenuLink
                       className={navigationMenuTriggerStyle()}
                     >
-                      Home
+                      <span className="text-lg">Home</span>
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
@@ -211,7 +147,7 @@ const Navbar = () => {
               <NavigationMenuList>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger
-                    className={`bg-transparent  hover:bg-white hover:text-black rounded-none ${
+                    className={`bg-transparent text-lg  hover:bg-white hover:text-black rounded-none ${
                       pathname.split("/")[1] === "about"
                         ? "bg-white text-black"
                         : null
@@ -333,7 +269,7 @@ const Navbar = () => {
               <NavigationMenuList>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger
-                    className={`bg-transparent hover:bg-white hover:text-black rounded-none ${
+                    className={`bg-transparent text-lg  hover:bg-white hover:text-black rounded-none ${
                       pathname.split("/")[1] === "news"
                         ? "bg-white text-black"
                         : null
@@ -384,7 +320,7 @@ const Navbar = () => {
               <NavigationMenuList>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger
-                    className={`bg-transparent hover:bg-white hover:text-black rounded-none ${
+                    className={`bg-transparent text-lg hover:bg-white hover:text-black rounded-none ${
                       pathname.split("/")[1] === "seminar"
                         ? "bg-white text-black"
                         : null
@@ -420,7 +356,7 @@ const Navbar = () => {
               <NavigationMenuList>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger
-                    className={`bg-transparent hover:bg-white hover:text-black  rounded-none ${
+                    className={`bg-transparent text-lg hover:bg-white hover:text-black  rounded-none ${
                       pathname.split("/")[1] === "media"
                         ? "bg-white text-black"
                         : null
@@ -457,7 +393,7 @@ const Navbar = () => {
               <NavigationMenuList>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger
-                    className={`bg-transparent hover:bg-white hover:text-black  rounded-none ${
+                    className={`bg-transparent text-lg hover:bg-white hover:text-black  rounded-none ${
                       pathname.split("/")[1] === "member"
                         ? "bg-white text-black"
                         : null
@@ -512,7 +448,7 @@ const Navbar = () => {
                 <NavigationMenuItem
                   className={
                     pathname === "/useful-link"
-                      ? "bg-white text-black hover:bg-white hover:text-black"
+                      ? "bg-white text-black  hover:bg-white hover:text-black"
                       : "hover:bg-white hover:text-black  "
                   }
                 >
@@ -520,7 +456,8 @@ const Navbar = () => {
                     <NavigationMenuLink
                       className={navigationMenuTriggerStyle()}
                     >
-                      Useful Link
+                      {" "}
+                      <span className="text-lg"> Useful Link</span>
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
@@ -530,7 +467,7 @@ const Navbar = () => {
 
           {openMenu && (
             <div
-              className="fixed h-screen w-screen max-w-full top-0 left-0 bg-gradient-to-b from-black/40 to-transparent z-0"
+              className="fixed h-screen w-screen max-w-full top-0 left-0 bg-gradient-to-b from-black/40 to-transparent text-lg z-0"
               onClick={() => setopenMenu(null)}
             />
           )}

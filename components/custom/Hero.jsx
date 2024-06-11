@@ -64,7 +64,7 @@ const Hero = () => {
             <circle cx="77" cy="17" r="1.66667" fill="#ffffff" />
           </svg>
         </div>
-        <div class=" absolute top-[18%] left-[25%] lg:left-[44%] 3xl:left-[47.5%] lg:top-[33%]">
+        <div class=" absolute top-[18%] left-[25%] lg:left-[44%] 3xl:left-[47.5%] 3xl:top-[37.5%] lg:top-[33%]">
           <svg
             class="absolute left-1"
             width="34"
@@ -207,9 +207,9 @@ const Hero = () => {
       </div>
 
       <div className="absolute inset-0 flex items-center justify-end">
-        <div className="absolute bg-white bg-opacity-20 w-[180px] h-[180px] sm:w-[150px] sm:h-[150px] md:w-[200px] md:h-[200px] lg:w-[400px] lg:h-[400px] top-[40%] lg:top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full z-10 flex items-center justify-center">
-          <div className="bg-white bg-opacity-30 w-[140px] h-[140px] sm:w-[100px] sm:h-[100px] md:w-[150px] md:h-[150px] lg:w-[300px] lg:h-[300px] rounded-full flex items-center justify-center">
-            <div className="bg-white w-[90px] h-[90px] sm:w-[60px] sm:h-[60px] md:w-[75px] md:h-[75px] lg:w-[150px] lg:h-[150px] bg-opacity-40 rounded-full"></div>
+        <div className="absolute bg-white/10 bg-opacity-20 w-[180px] h-[180px] sm:w-[150px] sm:h-[150px] md:w-[200px] md:h-[200px] lg:w-[400px] lg:h-[400px] top-[40%] lg:top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full z-10 flex items-center justify-center">
+          <div className="bg-white/20 bg-opacity-30 w-[140px] h-[140px] sm:w-[100px] sm:h-[100px] md:w-[150px] md:h-[150px] lg:w-[300px] lg:h-[300px] rounded-full flex items-center justify-center">
+            <div className="bg-white/25 w-[90px] h-[90px] sm:w-[60px] sm:h-[60px] md:w-[75px] md:h-[75px] lg:w-[150px] lg:h-[150px] bg-opacity-40 rounded-full"></div>
           </div>
         </div>
 
@@ -235,13 +235,13 @@ const Hero = () => {
 
       <div className="absolute bottom-[25%] sm:bottom-[20%] lg:bottom-[21%] 3xl:bottom-[27%]  left-[50%] lg:left-[54%] transform -translate-x-1/2 flex space-x-4 z-20">
         <button
-          className="bg-primaryColor text-white p-2 rounded-full text-lg sm:text-xl btn hover:bg-btn h-8 sm:h-10 w-8 sm:w-10 flex items-center justify-center"
+          className="bg-primaryColor bg-transparent border-2 border-primaryColor text-white p-2 rounded-full text-lg sm:text-xl btn hover:bg-primaryColor h-8 sm:h-10 w-8 sm:w-10 flex items-center justify-center"
           onClick={handlePrev}
         >
           &lt;
         </button>
         <button
-          className="bg-primaryColor text-white p-2 rounded-full text-lg sm:text-xl btn hover:bg-btn h-8 sm:h-10 w-8 sm:w-10 flex items-center justify-center"
+          className="bg-primaryColor bg-transparent border-2  border-primaryColor text-white p-2 rounded-full text-lg sm:text-xl btn hover:bg-primaryColor h-8 sm:h-10 w-8 sm:w-10 flex items-center justify-center"
           onClick={handleNext}
         >
           &gt;

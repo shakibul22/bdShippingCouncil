@@ -49,7 +49,7 @@ const FooterSub = () => {
         </h2>
       </div>
 
-      <div className="flex flex-col gap-5 font-poppins">
+      <div className="flex flex-col gap-5 ">
         <div>
           <h3 className="text-2xl font-smeibold text-white">NEWSLETTER</h3>
           <p className="text-[#6f8699] text-sm lg:text-md mt-1">
@@ -71,7 +71,7 @@ const FooterSub = () => {
           />
           <button
             type="submit"
-            className=" bg-secondaryColor w-10 h-10 p-2 transform lg:translate-x-0 -translate-x-12 rounded-full"
+            className=" bg-secondaryColor w-10 h-10 p-2 transform lg:translate-x-0 -translate-x-6 rounded-full"
             // onClick={handleSub}
             disabled={sending}
           >
