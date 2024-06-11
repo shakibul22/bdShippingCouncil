@@ -43,7 +43,7 @@ const HomeSlider = () => {
 
   return (
     <div
-      className="py-5  px-10 w-full lg:max-w-7xl 3xl:container mx-auto bg-primaryColor"
+      className="py-5  px-10 w-full lg:min-w-7xl xl:container mx-auto bg-primaryColor"
       onMouseLeave={() => setHighlightedIndex(0)}
     >
       <div className="flex flex-col justify-center mb-10 items-center">
