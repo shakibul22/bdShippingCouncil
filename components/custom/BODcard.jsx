@@ -8,7 +8,7 @@ const BODcard = ({ id, name, designation, image }) => {
 
   return (
     <div
-      className="relative  w-[45vw] sm:w-[180px]  h-[275px] lg:w-[250px] 3xl:w-[300px] lg:h-[400px]"
+      className="relative  w-[45vw] sm:w-[180px]  h-[275px] lg:w-[250px] 3xl:w-[300px] lg:h-[410px]"
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
@@ -31,7 +31,7 @@ const BODcard = ({ id, name, designation, image }) => {
         <h3 className="text-white text-sm lg:text-[16px] 3xl:text-lg font-bold mt-2 ">
           {name}
         </h3>
-        <p className="text-white text-xs lg:text-sm">{designation}</p>
+        <p className="text-white text-xs lg:text-lg">{designation}</p>
         <div className="flex relative  gap-2.5 pr-20 mt-1">
           <Image
             width={20}
