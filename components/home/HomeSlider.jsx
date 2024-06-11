@@ -90,25 +90,7 @@ const HomeSlider = () => {
                     </div>
                   ))}
                 </div>
-                <div class=" absolute bottom-16 lg:bottom-[16%]">
-                  <svg
-                    className="absolute"
-                    width="134"
-                    height="34"
-                    viewBox="0 0 134 34"
-                    fill="#ffffff"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <circle cx="2" cy="17" r="1.66667" fill="#ffffff" />
-                    <circle cx="17" cy="17" r="1.66667" fill="#ffffff" />
-                    <circle cx="32" cy="17" r="1.66667" fill="#ffffff" />
-                    <circle cx="47" cy="17" r="1.66667" fill="#ffffff" />
-                    <circle cx="62" cy="17" r="1.66667" fill="#ffffff" />
-                    <circle cx="77" cy="17" r="1.66667" fill="#ffffff" />
-                    <circle cx="92" cy="17" r="1.66667" fill="#ffffff" />
-                    <circle cx="107" cy="17" r="1.66667" fill="#ffffff" />
-                    <circle cx="122" cy="17" r="1.66667" fill="#ffffff" />
-                  </svg>
+                <div class=" absolute bottom-16 -left-4 lg:bottom-[16%]">
                   <svg
                     className="absolute top-3"
                     width="134"
@@ -123,9 +105,6 @@ const HomeSlider = () => {
                     <circle cx="47" cy="17" r="1.66667" fill="#ffffff" />
                     <circle cx="62" cy="17" r="1.66667" fill="#ffffff" />
                     <circle cx="77" cy="17" r="1.66667" fill="#ffffff" />
-                    <circle cx="92" cy="17" r="1.66667" fill="#ffffff" />
-                    <circle cx="107" cy="17" r="1.66667" fill="#ffffff" />
-                    <circle cx="122" cy="17" r="1.66667" fill="#ffffff" />
                   </svg>
                   <svg
                     className="absolute top-6"
@@ -141,30 +120,40 @@ const HomeSlider = () => {
                     <circle cx="47" cy="17" r="1.66667" fill="#ffffff" />
                     <circle cx="62" cy="17" r="1.66667" fill="#ffffff" />
                     <circle cx="77" cy="17" r="1.66667" fill="#ffffff" />
+                  </svg>
+                </div>
+
+                <div class=" absolute bottom-16 -left-4 lg:bottom-[16%]">
+                  <svg
+                    className="absolute top-3"
+                    width="134"
+                    height="34"
+                    viewBox="0 0 134 34"
+                    fill="#ffffff"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="62" cy="17" r="1.66667" fill="#ffffff" />
+                    <circle cx="77" cy="17" r="1.66667" fill="#ffffff" />
+                    <circle cx="92" cy="17" r="1.66667" fill="#ffffff" />
+                    <circle cx="107" cy="17" r="1.66667" fill="#ffffff" />
+                    <circle cx="122" cy="17" r="1.66667" fill="#ffffff" />
+                  </svg>
+                  <svg
+                    className="absolute top-6"
+                    width="134"
+                    height="34"
+                    viewBox="0 0 134 34"
+                    fill="#ffffff"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="62" cy="17" r="1.66667" fill="#ffffff" />
+                    <circle cx="77" cy="17" r="1.66667" fill="#ffffff" />
                     <circle cx="92" cy="17" r="1.66667" fill="#ffffff" />
                     <circle cx="107" cy="17" r="1.66667" fill="#ffffff" />
                     <circle cx="122" cy="17" r="1.66667" fill="#ffffff" />
                   </svg>
                 </div>
-                <div class=" absolute bottom-[55%] lg:bottom-[33%] -left-10">
-                  <svg
-                    class="absolute "
-                    width="34"
-                    height="134"
-                    viewBox="0 0 34 134"
-                    fill="#ffffff"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <circle cx="17" cy="2" r="1.66667" fill="#ffffff" />
-                    <circle cx="17" cy="17" r="1.66667" fill="#ffffff" />
-                    <circle cx="17" cy="32" r="1.66667" fill="#ffffff" />
-                    <circle cx="17" cy="47" r="1.66667" fill="#ffffff" />
-                    <circle cx="17" cy="62" r="1.66667" fill="#ffffff" />
-                    <circle cx="17" cy="77" r="1.66667" fill="#ffffff" />
-                    <circle cx="17" cy="92" r="1.66667" fill="#ffffff" />
-                    <circle cx="17" cy="107" r="1.66667" fill="#ffffff" />
-                    <circle cx="17" cy="122" r="1.66667" fill="#ffffff" />
-                  </svg>
+                <div class=" absolute bottom-[55%] lg:bottom-[39%] -left-10">
                   <svg
                     class="absolute left-2"
                     width="34"
@@ -173,10 +162,6 @@ const HomeSlider = () => {
                     fill="#ffffff"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <circle cx="17" cy="2" r="1.66667" fill="#ffffff" />
-                    <circle cx="17" cy="17" r="1.66667" fill="#ffffff" />
-                    <circle cx="17" cy="32" r="1.66667" fill="#ffffff" />
-                    <circle cx="17" cy="47" r="1.66667" fill="#ffffff" />
                     <circle cx="17" cy="62" r="1.66667" fill="#ffffff" />
                     <circle cx="17" cy="77" r="1.66667" fill="#ffffff" />
                     <circle cx="17" cy="92" r="1.66667" fill="#ffffff" />
@@ -191,10 +176,6 @@ const HomeSlider = () => {
                     fill="#ffffff"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <circle cx="17" cy="2" r="1.66667" fill="#ffffff" />
-                    <circle cx="17" cy="17" r="1.66667" fill="#ffffff" />
-                    <circle cx="17" cy="32" r="1.66667" fill="#ffffff" />
-                    <circle cx="17" cy="47" r="1.66667" fill="#ffffff" />
                     <circle cx="17" cy="62" r="1.66667" fill="#ffffff" />
                     <circle cx="17" cy="77" r="1.66667" fill="#ffffff" />
                     <circle cx="17" cy="92" r="1.66667" fill="#ffffff" />
@@ -204,7 +185,7 @@ const HomeSlider = () => {
                 </div>
                 <div class=" absolute -top-10 right-24">
                   <svg
-                    className="absolute"
+                    className="absolute top-0"
                     width="134"
                     height="34"
                     viewBox="0 0 134 34"
@@ -218,26 +199,6 @@ const HomeSlider = () => {
                     <circle cx="62" cy="17" r="1.66667" fill="#ffffff" />
                     <circle cx="77" cy="17" r="1.66667" fill="#ffffff" />
                     <circle cx="92" cy="17" r="1.66667" fill="#ffffff" />
-                    <circle cx="107" cy="17" r="1.66667" fill="#ffffff" />
-                    <circle cx="122" cy="17" r="1.66667" fill="#ffffff" />
-                  </svg>
-                  <svg
-                    className="absolute top-2"
-                    width="134"
-                    height="34"
-                    viewBox="0 0 134 34"
-                    fill="#ffffff"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <circle cx="2" cy="17" r="1.66667" fill="#ffffff" />
-                    <circle cx="17" cy="17" r="1.66667" fill="#ffffff" />
-                    <circle cx="32" cy="17" r="1.66667" fill="#ffffff" />
-                    <circle cx="47" cy="17" r="1.66667" fill="#ffffff" />
-                    <circle cx="62" cy="17" r="1.66667" fill="#ffffff" />
-                    <circle cx="77" cy="17" r="1.66667" fill="#ffffff" />
-                    <circle cx="92" cy="17" r="1.66667" fill="#ffffff" />
-                    <circle cx="107" cy="17" r="1.66667" fill="#ffffff" />
-                    <circle cx="122" cy="17" r="1.66667" fill="#ffffff" />
                   </svg>
                   <svg
                     className="absolute top-4"
@@ -254,13 +215,11 @@ const HomeSlider = () => {
                     <circle cx="62" cy="17" r="1.66667" fill="#ffffff" />
                     <circle cx="77" cy="17" r="1.66667" fill="#ffffff" />
                     <circle cx="92" cy="17" r="1.66667" fill="#ffffff" />
-                    <circle cx="107" cy="17" r="1.66667" fill="#ffffff" />
-                    <circle cx="122" cy="17" r="1.66667" fill="#ffffff" />
                   </svg>
                 </div>
-                <div class=" absolute top-[1%] right-4">
+                <div class=" absolute -top-[5.5%] right-3">
                   <svg
-                    class="absolute "
+                    class="absolute left-1"
                     width="34"
                     height="134"
                     viewBox="0 0 34 134"
@@ -274,11 +233,9 @@ const HomeSlider = () => {
                     <circle cx="17" cy="62" r="1.66667" fill="#ffffff" />
                     <circle cx="17" cy="77" r="1.66667" fill="#ffffff" />
                     <circle cx="17" cy="92" r="1.66667" fill="#ffffff" />
-                    <circle cx="17" cy="107" r="1.66667" fill="#ffffff" />
-                    <circle cx="17" cy="122" r="1.66667" fill="#ffffff" />
                   </svg>
                   <svg
-                    class="absolute left-2"
+                    class="absolute -left-1 md:left-2 lg:left-4"
                     width="34"
                     height="134"
                     viewBox="0 0 34 134"
@@ -292,26 +249,6 @@ const HomeSlider = () => {
                     <circle cx="17" cy="62" r="1.66667" fill="#ffffff" />
                     <circle cx="17" cy="77" r="1.66667" fill="#ffffff" />
                     <circle cx="17" cy="92" r="1.66667" fill="#ffffff" />
-                    <circle cx="17" cy="107" r="1.66667" fill="#ffffff" />
-                    <circle cx="17" cy="122" r="1.66667" fill="#ffffff" />
-                  </svg>
-                  <svg
-                    class="absolute left-4"
-                    width="34"
-                    height="134"
-                    viewBox="0 0 34 134"
-                    fill="#ffffff"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <circle cx="17" cy="2" r="1.66667" fill="#ffffff" />
-                    <circle cx="17" cy="17" r="1.66667" fill="#ffffff" />
-                    <circle cx="17" cy="32" r="1.66667" fill="#ffffff" />
-                    <circle cx="17" cy="47" r="1.66667" fill="#ffffff" />
-                    <circle cx="17" cy="62" r="1.66667" fill="#ffffff" />
-                    <circle cx="17" cy="77" r="1.66667" fill="#ffffff" />
-                    <circle cx="17" cy="92" r="1.66667" fill="#ffffff" />
-                    <circle cx="17" cy="107" r="1.66667" fill="#ffffff" />
-                    <circle cx="17" cy="122" r="1.66667" fill="#ffffff" />
                   </svg>
                 </div>
               </div>

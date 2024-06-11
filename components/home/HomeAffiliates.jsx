@@ -42,7 +42,7 @@ const HomeAffiliates = () => {
             <div
               key={aff.id}
               onClick={() => handleAffiliateClick(aff.id)}
-              className={`hover:bg-[#063152] w-[90px] h-auto lg:w-[130px] lg:h-[74px] p-4 hover:border-t-4 border-white ${
+              className={`hover:bg-[#063152] w-[80px] h-auto lg:w-[130px] lg:h-[74px] p-4 hover:border-t-4 border-white ${
                 index >= 3 ? "hidden sm:block" : ""
               } ${activeAffiliate === aff.id ? "bg-[#063152] border-t-4" : ""}`}
             >
