@@ -21,18 +21,21 @@ const Hero = () => {
 
   return (
     <div className="relative w-full h-screen sm:h-[70vh] md:h-[45vh] lg:h-screen 3xl:h-screen ">
-      <figure>
-        <Image
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/c0e96d6f18bec6a7ffe03febd7f57f6f868f969ca88a2d0b941e307354a58c09"
-          width={1950}
-          height={450}
-          alt="banner"
-          className="bg-center bg-cover w-full h-screen"
-        />
+      <figure className="relative w-full h-screen">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage:
+              "url('https://res.cloudinary.com/dgohi0iqm/image/upload/v1718215045/banner_qnj9ow.gif')",
+          }}
+        ></div>
+
+        {/* Overlay color */}
+        <div className="absolute inset-0 bg-primaryColor/40 bg-opacity-10"></div>
       </figure>
 
       <div className="flex  justify-between">
-        <div class=" absolute top-[20%] left-[38%] lg:left-[48%]  3xl:left-[50%] lg:top-[30%] 3xl:top-[35%]">
+        <div class=" absolute top-[25%] left-[38%] lg:left-[48%]  3xl:left-[50%] lg:top-[30%] 3xl:top-[35%]">
           <svg
             className="absolute top-1"
             width="134"
@@ -64,7 +67,7 @@ const Hero = () => {
             <circle cx="77" cy="17" r="1.66667" fill="#ffffff" />
           </svg>
         </div>
-        <div class=" absolute top-[18%] left-[25%] lg:left-[44%] 3xl:left-[47.5%] 3xl:top-[37.5%] lg:top-[33%]">
+        <div class=" absolute top-[24%] left-[25%] lg:left-[44%] 3xl:left-[47.5%] 3xl:top-[37.5%] lg:top-[33%]">
           <svg
             class="absolute left-1"
             width="34"
@@ -213,7 +216,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="relative rounded-lg border-t-2 border-t-slate-50 h-[190px] bg-gradient-to-r from-gray-900 to-gray-0 bg-opacity-70 p-3 sm:p-6 right-6 w-[200px] lg:w-full sm:right-16 md:right-24 lg:right-[12%] 3xl:right-[22%] top-[3%] sm:top-8 md:top-[5%] lg:top-[6%] text-[#d6dbde] text-start max-w-sm sm:max-w-md md:max-w-lg z-20">
+        <div className="relative rounded-lg border-t-2 border-t-slate-50 h-auto bg-gradient-to-r from-gray-900 to-gray-0 bg-opacity-70 p-3 sm:p-6  right-6 w-[180px] lg:w-full sm:right-16 md:right-24 lg:right-[12%] 3xl:right-[22%] top-[3%] sm:top-8 md:top-[5%] lg:top-[6%] text-[#d6dbde] text-start max-w-sm sm:max-w-md md:max-w-lg z-20">
           <h1 className="text-sm sm:text-xl md:text-2xl lg:text-3xl font-bold uppercase">
             Latest News
           </h1>
@@ -233,7 +236,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-[25%] sm:bottom-[20%] lg:bottom-[21%] 3xl:bottom-[27%]  left-[50%] lg:left-[54%] transform -translate-x-1/2 flex space-x-4 z-20">
+      <div className="absolute bottom-[25%] sm:bottom-[20%] lg:bottom-[21%] 3xl:bottom-[27%]  left-[54%] sm:left-[60%] lg:left-[54%] transform -translate-x-1/2 flex space-x-4 z-20">
         <button
           className="bg-primaryColor/40 border border-slate-400  text-white p-2 rounded-full text-lg sm:text-xl btn hover:bg-btn h-8 sm:h-10 w-8 sm:w-10 flex items-center justify-center"
           onClick={handlePrev}
