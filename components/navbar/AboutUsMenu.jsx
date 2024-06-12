@@ -47,7 +47,7 @@ const AboutUsMenu = ({ close }) => {
               <Link href={"/"}>Chairman Profile</Link>
             </li>
             <li>
-              <Link href={"/"}>Office Bearers and Directors (2022 & 2023)</Link>
+              <Link href={"/"}>Office Bearers and Directors ({new Date().getFullYear()-1} & {new Date().getFullYear()})</Link>
             </li>
             <li>
               <Link href={"/"}>SCB Secretariat</Link>

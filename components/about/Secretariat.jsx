@@ -24,7 +24,7 @@ const Secretariat = () => {
     <div className="px-2 py-10">
       <div className="max-w-screen-2xl mx-auto text-sm lg:text-base space-y-10">
         <h4 className="text-lg lg:text-xl font-semibold text-center">
-          SCB Secretariats of Term 2022-2023
+          SCB Secretariats of Term ({new Date().getFullYear()-1} & {new Date().getFullYear()})
         </h4>
 
         <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-2 sm:gap-x-4 sm:gap-y-8">
