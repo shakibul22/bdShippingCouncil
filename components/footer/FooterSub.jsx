@@ -42,7 +42,7 @@ const FooterSub = () => {
 
   return (
     <div className="flex-1 flex flex-col gap-12 ">
-      <div className="flex items-center gap-2 w-fit mx-auto lg:mx-0">
+      <div className="flex items-center gap-2  w-fit mx-auto lg:mx-0">
         <Image src={"/img/logo.webp"} width={45} height={45} alt="logo" />
         <h2 className="font-semibold text-2xl text-white">
           Shippers’ Council of Bangladesh

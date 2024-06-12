@@ -17,7 +17,7 @@ module.exports = {
         1: "0.1em", // Adjust this value as needed
       },
       screens: {
-        "2xl": "1380px",
+        "2xl": "1280px",
         "3xl": "1600px",
       },
 
