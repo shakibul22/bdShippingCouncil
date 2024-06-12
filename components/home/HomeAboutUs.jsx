@@ -38,7 +38,7 @@ const HomeAboutUs = ({ data }) => {
           </h2>
           <p className="text-md font-bold mt-3 lg:text-lg">{data?.title}</p>{" "}
           <br />
-          <p className=" mt-0 md:mt-2 lg:mt-4 text-justify text-slate-200 tracking-wide lg:tracking-widest text-xs lg:text-sm">
+          <p className=" mt-0 md:mt-2 lg:mt-4 text-justify text-slate-200  text-xs lg:text-lg">
             {data?.text}
           </p>
           <div className="max-w-[200px] rounded-lg pb-2 lg:pb-6 absolute  lg:bottom-3">
