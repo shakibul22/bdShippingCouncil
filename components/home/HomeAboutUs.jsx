@@ -38,12 +38,12 @@ const HomeAboutUs = ({ data }) => {
           </h2>
           <p className="text-md font-bold mt-3 lg:text-lg">{data?.title}</p>{" "}
           <br />
-          <p className=" mt-0 md:mt-2 lg:mt-4 text-justify   font-light text-xs lg:text-light">
+          <p className=" mt-0 md:mt-2 lg:mt-4 text-justify text-slate-200 tracking-wide lg:tracking-widest text-xs lg:text-sm">
             {data?.text}
           </p>
           <div className="max-w-[200px] rounded-lg pb-2 lg:pb-6 absolute  lg:bottom-3">
             <Link href="/about">
-              <p className="py-2.5 px-7 flex flex-row justify-center gap-2 leading-normal bg-btn items-center rounded-sm shadow-lg mx-auto  mt-4 lg:mt-12 text-white font-semibold">
+              <p className="py-2.5 px-7 flex flex-row  justify-center gap-2 leading-normal bg-btn items-center rounded-sm shadow-lg mx-auto  mt-4 lg:mt-12 text-white font-semibold">
                 Explore Now <ImArrowUpRight2 />
               </p>
             </Link>
