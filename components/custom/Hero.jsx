@@ -220,7 +220,7 @@ const Hero = () => {
           <h1 className="text-sm sm:text-xl md:text-2xl lg:text-3xl font-bold uppercase">
             Latest News
           </h1>
-          <AnimatePresence initial={false} custom={direction}>
+          {/* <AnimatePresence initial={false} custom={direction}> */}
             {latestNews.length > 0 && (
               <motion.p
                 key={currentIndex}
@@ -232,7 +232,7 @@ const Hero = () => {
                 {latestNews[currentIndex].news}
               </motion.p>
             )}
-          </AnimatePresence>
+          {/* </AnimatePresence> */}
         </div>
       </div>
 
