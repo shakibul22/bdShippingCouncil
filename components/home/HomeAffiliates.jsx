@@ -35,7 +35,7 @@ const HomeAffiliates = () => {
         Our Affiliates
       </h3>
 
-      <div className="lg:mt-10 w-full lg:max-w-5xl 3xl:max-w-7xl mx-auto flex  xl:flex-row sm:flex-wrap justify-between gap-12 lg:gap-12 3xl:gap-20 border-t bg-transparent opacity-70 items-center">
+      <div className="mt-6 lg:mt-10 w-full lg:max-w-5xl 3xl:max-w-7xl mx-auto flex  xl:flex-row sm:flex-wrap justify-between gap-14 lg:gap-12 3xl:gap-20 border-t bg-transparent opacity-70 items-center">
         {affiliates &&
           Array.isArray(affiliates) &&
           affiliates.map((aff, index) => (
