@@ -98,7 +98,7 @@ const Navbar = () => {
           <div className="flex gap-3 items-center">
             <Image src={logo} width={50} height={50} alt="logo" />
             <h2
-              className={`${inter.className} text-4xl text-primaryColor font-bold font-Inter`}
+              className={`${inter.className} text-3xl text-primaryColor font-bold font-Inter`}
             >
               Shippers’ Council of Bangladesh
             </h2>
@@ -106,7 +106,7 @@ const Navbar = () => {
           <div className="border border-primaryColor rounded-tl-3xl  rounded-bl-3xl rounded-br-[40px] w-[208px] ">
             <Link
               href="/contact"
-              className="font-bold text-xl col-span-1 flex items-center gap-2 w-fit leading-normal"
+              className="font-bold text-lg col-span-1 flex items-center gap-2 w-fit leading-normal"
             >
               <div className="p-3 rounded-full border-2 ring bg-primaryColor transform transition-transform duration-1000 hover:rotate-45">
                 <BsSend className="text-2xl text-white" />
@@ -238,7 +238,9 @@ const Navbar = () => {
                           <li>
                             <NavigationMenuLink>
                               <Link href={"/about/officials"}>
-                                Office Bearers and Directors ({new Date().getFullYear()-1} & {new Date().getFullYear()})
+                                Office Bearers and Directors (
+                                {new Date().getFullYear() - 1} &{" "}
+                                {new Date().getFullYear()})
                               </Link>
                             </NavigationMenuLink>
                           </li>

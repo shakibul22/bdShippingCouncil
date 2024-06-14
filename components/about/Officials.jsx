@@ -28,7 +28,7 @@ const Officials = () => {
             Office Bearers and Directors ({new Date().getFullYear() - 1} &{" "}
             {new Date().getFullYear()})
           </h4>
-          <div className="md:hidden">
+          <div className="md:hidden flex justify-center items-center">
             {bodData.length > 0 && (
               <BODcard
                 name={bodData[0].name}
