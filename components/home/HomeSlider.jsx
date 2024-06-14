@@ -60,7 +60,7 @@ const HomeSlider = () => {
                 <div className="flex flex-row ">
                   {imageData?.map((img, index) => (
                     <div
-                      className={`relative group activeSlide h-[200px] lg:h-[400px] mb-16 rounded-lg overflow-hidden transition-all duration-500 ${
+                      className={`relative group activeSlide h-[200px] lg:h-[520px] mb-16 rounded-lg overflow-hidden transition-all duration-500 ${
                         highlightedIndex === index ? "flex-[5]" : "flex-[1]"
                       }`}
                       key={img.id}
@@ -93,7 +93,7 @@ const HomeSlider = () => {
                     </div>
                   ))}
                 </div>
-                <div class=" absolute bottom-20 -left-4 lg:bottom-[16%]">
+                <div class=" absolute bottom-20 -left-6 lg:bottom-[12%]">
                   <svg
                     className="absolute top-3"
                     width="134"
@@ -126,39 +126,9 @@ const HomeSlider = () => {
                   </svg>
                 </div>
 
-                <div class="hidden lg:block absolute bottom-16 -left-4 lg:bottom-[16%]">
+                <div class=" absolute bottom-[70%] lg:bottom-[30%] -left-10">
                   <svg
-                    className="absolute top-3"
-                    width="134"
-                    height="34"
-                    viewBox="0 0 134 34"
-                    fill="#ffffff"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <circle cx="62" cy="17" r="1.66667" fill="#ffffff" />
-                    <circle cx="77" cy="17" r="1.66667" fill="#ffffff" />
-                    <circle cx="92" cy="17" r="1.66667" fill="#ffffff" />
-                    <circle cx="107" cy="17" r="1.66667" fill="#ffffff" />
-                    <circle cx="122" cy="17" r="1.66667" fill="#ffffff" />
-                  </svg>
-                  <svg
-                    className="absolute top-6"
-                    width="134"
-                    height="34"
-                    viewBox="0 0 134 34"
-                    fill="#ffffff"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <circle cx="62" cy="17" r="1.66667" fill="#ffffff" />
-                    <circle cx="77" cy="17" r="1.66667" fill="#ffffff" />
-                    <circle cx="92" cy="17" r="1.66667" fill="#ffffff" />
-                    <circle cx="107" cy="17" r="1.66667" fill="#ffffff" />
-                    <circle cx="122" cy="17" r="1.66667" fill="#ffffff" />
-                  </svg>
-                </div>
-                <div class=" absolute bottom-[70%] lg:bottom-[39%] -left-10">
-                  <svg
-                    class="absolute left-2"
+                    class="absolute left-0"
                     width="34"
                     height="134"
                     viewBox="0 0 34 134"
@@ -186,12 +156,12 @@ const HomeSlider = () => {
                     <circle cx="17" cy="122" r="1.66667" fill="#ffffff" />
                   </svg>
                 </div>
-                <div class=" absolute -top-10 right-24">
+                <div class=" absolute -top-10 right-20 hidden lg:block">
                   <svg
                     className="absolute top-0"
                     width="120"
                     height="34"
-                    viewBox="0 0 134 34"
+                    viewBox="0 0 120 34"
                     fill="#ffffff"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -220,7 +190,7 @@ const HomeSlider = () => {
                     <circle cx="92" cy="17" r="1.66667" fill="#ffffff" />
                   </svg>
                 </div>
-                <div class=" absolute -top-[5.5%] right-3.5">
+                <div class=" absolute -top-[4%] right-2">
                   <svg
                     class="absolute left-1"
                     width="34"
