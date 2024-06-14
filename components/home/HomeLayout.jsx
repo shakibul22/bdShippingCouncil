@@ -38,12 +38,15 @@ const HomeLayout = async () => {
     <div>
       <Navbar />
       <Hero />
-      <div className="w-full lg:max-w-5xl 3xl:max-w-7xl mx-auto">
-        <div className="flex justify-center absolute bottom-0">
+      <div className="relative w-full lg:max-w-5xl 3xl:max-w-7xl mx-auto">
+        <div className="flex justify-center items-center absolute bottom-0 w-full">
           <HomeAffiliates />
         </div>
       </div>
-      <div className="bg-primaryColor"><HomeSlider /> </div>
+
+      <div className="bg-primaryColor">
+        <HomeSlider />{" "}
+      </div>
       <HomeAboutUs data={homeData[0]} />
       <HomeChairmanProfile data={homeData[1]} />
       <HomeBOD data={homeData[2]} />
