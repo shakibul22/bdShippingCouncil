@@ -94,7 +94,7 @@ const Navbar = () => {
         }  hidden lg:block  relative select-none z-10`}
       >
         {/* top bar */}
-        <div className="w-full lg:max-w-5xl 3xl:max-w-7xl mx-auto flex flex-row justify-between items-center h-[90px]">
+        <div className="w-full lg:max-w-5xl 3xl:max-w-7xl mx-auto flex flex-row justify-between items-center h-[70px]">
           <div className="flex gap-3 items-center">
             <Image src={logo} width={50} height={50} alt="logo" />
             <h2
