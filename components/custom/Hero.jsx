@@ -237,7 +237,7 @@ const Hero = () => {
                 {latestNews[currentIndex].news}
               </motion.p>
             )}
-            <div className="transform translate-y-14 md:translate-y-20 2lg:translate-y-24 flex space-x-4 z-20">
+            <div className="transform translate-y-14 md:translate-y-16 2lg:translate-y-24 flex space-x-4 z-20">
               <button
                 className="bg-primaryColor/40 border border-slate-400  text-white p-2 rounded-full text-lg sm:text-xl btn hover:bg-btn h-8 sm:h-10 w-8 sm:w-10 flex items-center justify-center"
                 onClick={handlePrev}
