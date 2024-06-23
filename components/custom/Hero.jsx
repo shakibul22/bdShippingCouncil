@@ -122,14 +122,14 @@ const Hero = () => {
       </div>
 
       <div className="absolute inset-0 flex items-center justify-center">
-        <div className="absolute bg-white/10 bg-opacity-20 w-[180px] h-[180px] sm:w-[150px] sm:h-[150px] md:w-[200px] md:h-[200px] lg:w-[400px] lg:h-[400px] top-[40%] lg:top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full z-10 flex items-center justify-center">
-          <div className="bg-white/10 bg-opacity-30 w-[140px] h-[140px] sm:w-[100px] sm:h-[100px] md:w-[150px] md:h-[150px] lg:w-[300px] lg:h-[300px] rounded-full flex items-center justify-center">
-            <div className="bg-white/20 w-[90px] h-[90px] sm:w-[60px] sm:h-[60px] md:w-[75px] md:h-[75px] lg:w-[150px] lg:h-[150px] bg-opacity-40 rounded-full"></div>
+        <div className="absolute bg-white/10 bg-opacity-20 w-[180px] h-[180px] sm:w-[150px] sm:h-[150px] md:w-[200px] md:h-[200px] lg:w-[300px] lg:h-[300px] 3xl:w-[400px] 3xl:h-[400px] top-[40%] lg:top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full z-10 flex items-center justify-center">
+          <div className="bg-white/10 bg-opacity-30 w-[140px] h-[140px] sm:w-[100px] sm:h-[100px] md:w-[150px] md:h-[150px] lg:w-[220px] lg:h-[220px] 3xl:w-[300px] 3xl:h-[300px] rounded-full flex items-center justify-center">
+            <div className="bg-white/20 w-[90px] h-[90px] sm:w-[60px] sm:h-[60px] md:w-[75px] md:h-[75px] lg:w-[120px] lg:h-[120px] 3xl:w-[150px] 3xl:h-[150px] bg-opacity-40 rounded-full"></div>
           </div>
         </div>
 
-        <div className="relative flex justify-start items-start transform translate-x-14 -translate-y-0 md:-translate-y-4 lg:translate-x-[53%] lg:translate-y-20">
-          <div class=" transform -translate-y-14 lg:-translate-y-20 -translate-x-7">
+        <div className="relative flex justify-start items-start transform translate-x-14 -translate-y-0 md:-translate-y-4 lg:translate-x-[53%] lg:translate-y-11 z-50 3xl:translate-y-20">
+          <div class=" transform -translate-y-12 lg:-translate-y-20 -translate-x-3">
             <svg
               className="absolute top-0"
               width="134"
@@ -161,7 +161,7 @@ const Hero = () => {
               <circle cx="77" cy="17" r="1.66667" fill="#ffffff" />
             </svg>
           </div>
-          <div class="transform -translate-x-20 -translate-y-16 lg:-translate-y-16">
+          <div class="transform -translate-x-16 -translate-y-16 lg:-translate-y-16">
             <svg
               class="absolute left-1"
               width="34"
@@ -220,7 +220,7 @@ const Hero = () => {
             </svg>
           </div>
           <div
-            className="rounded-lg border-t-2 border-t-slate-50 h-auto bg-gradient-to-r from-gray-950 to-gray-0  bg-opacity-70 p-3 sm:p-6
+            className="rounded-lg border-t-2 border-t-slate-50 h-auto  bg-gradient-to-r from-gray-950 to-gray-0 p-3 bg-opacity-70
           w-[180px] md:w-[280px] max-w-sm md:max-w-lg lg:w-full text-[#d6dbde] text-start z-50"
           >
             <h1 className="text-sm sm:text-xl md:text-2xl lg:text-3xl font-bold uppercase">
@@ -237,7 +237,7 @@ const Hero = () => {
                 {latestNews[currentIndex].news}
               </motion.p>
             )}
-            <div className="transform translate-y-14 md:translate-y-16 lg:translate-y-24 overflow-hidden flex space-x-4 z-50">
+            <div className="transform translate-y-14 md:translate-y-16 lg:translate-y-16 3xl:translate-y-24 overflow-hidden flex space-x-4 z-50">
               <button
                 className="bg-primaryColor/40 border border-slate-400  text-white p-2 rounded-full text-lg sm:text-xl btn hover:bg-btn h-8 sm:h-10 w-8 sm:w-10 flex items-center justify-center"
                 onClick={handlePrev}

@@ -57,7 +57,7 @@ const HomeSlider = () => {
           <div className="-mx-4 flex flex-wrap lg:justify-between">
             <div className="relative rounded-lg ">
               <div>
-                <div className="flex flex-row ">
+                <div className="flex flex-row p-2">
                   {imageData?.map((img, index) => (
                     <div
                       className={`relative group activeSlide h-[200px] lg:h-[520px] mb-16 rounded-lg overflow-hidden transition-all duration-500 ${
@@ -93,7 +93,7 @@ const HomeSlider = () => {
                     </div>
                   ))}
                 </div>
-                <div class=" absolute bottom-20 -left-6 lg:bottom-[12%]">
+                <div class=" absolute bottom-20 -left-5 3xl:-left-6 lg:bottom-[12%]">
                   <svg
                     className="absolute top-3"
                     width="134"
@@ -126,7 +126,7 @@ const HomeSlider = () => {
                   </svg>
                 </div>
 
-                <div class=" absolute bottom-[70%] lg:bottom-[30%] -left-10">
+                <div class=" absolute bottom-[70%] lg:bottom-[30%] -left-9 3xl:-left-10">
                   <svg
                     class="absolute left-0"
                     width="34"
@@ -156,10 +156,10 @@ const HomeSlider = () => {
                     <circle cx="17" cy="122" r="1.66667" fill="#ffffff" />
                   </svg>
                 </div>
-                <div class=" absolute -top-10 right-20 hidden lg:block">
+                <div class=" absolute -top-10 right-20 ">
                   <svg
                     className="absolute top-0"
-                    width="120"
+                    width="100"
                     height="34"
                     viewBox="0 0 120 34"
                     fill="#ffffff"
@@ -175,7 +175,7 @@ const HomeSlider = () => {
                   </svg>
                   <svg
                     className="absolute top-4"
-                    width="120"
+                    width="100"
                     height="34"
                     viewBox="0 0 134 34"
                     fill="#ffffff"
@@ -190,10 +190,10 @@ const HomeSlider = () => {
                     <circle cx="92" cy="17" r="1.66667" fill="#ffffff" />
                   </svg>
                 </div>
-                <div class=" absolute -top-[4%] right-2">
+                <div class=" absolute -top-[12%] lg:-top-[5%]  3xl:-top-[5%]  right-1">
                   <svg
                     class="absolute left-1"
-                    width="34"
+                    width="30"
                     height="134"
                     viewBox="0 0 34 134"
                     fill="#ffffff"
@@ -209,7 +209,7 @@ const HomeSlider = () => {
                   </svg>
                   <svg
                     class="absolute -left-1 md:left-2 lg:left-4"
-                    width="34"
+                    width="30"
                     height="134"
                     viewBox="0 0 34 134"
                     fill="#ffffff"

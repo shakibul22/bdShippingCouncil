@@ -35,14 +35,14 @@ const HomeAffiliates = () => {
         Our Affiliates
       </h3>
 
-      <div className="mt-6 lg:mt-10 w-full lg:max-w-5xl 3xl:max-w-7xl mx-auto flex  xl:flex-row sm:flex-wrap justify-between gap-14 lg:gap-12 3xl:gap-20 border-t bg-transparent opacity-70 items-center">
+      <div className="mt-6  3xl:mt-10 w-full lg:max-w-5xl 3xl:max-w-7xl mx-auto flex  xl:flex-row sm:flex-wrap justify-between gap-14 lg:gap-12 3xl:gap-20 border-t bg-transparent opacity-70 items-center">
         {affiliates &&
           Array.isArray(affiliates) &&
           affiliates.map((aff, index) => (
             <div
               key={aff.id}
               onClick={() => handleAffiliateClick(aff.id)}
-              className={`hover:bg-[#063152] w-[80px] h-auto lg:w-[130px] lg:h-[74px] p-4 hover:border-t-4 border-white ${
+              className={`hover:bg-[#063152] w-[75px] h-auto lg:w-[130px] 3xl:w-[130px] lg:h-[60px] 3xl:h-[74px] p-4 hover:border-t-4 border-white ${
                 index >= 3 ? "hidden sm:block" : ""
               } ${activeAffiliate === aff.id ? "bg-[#063152] border-t-4" : ""}`}
             >
