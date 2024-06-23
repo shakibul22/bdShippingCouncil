@@ -128,7 +128,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="relative flex justify-start items-start transform translate-x-14 -translate-y-0 md:-translate-y-4 lg:translate-x-[53%] lg:translate-y-11 z-50 3xl:translate-y-20">
+        <div className="relative flex justify-start items-start transform translate-x-14 -translate-y-0 md:-translate-y-4 lg:translate-x-[53%] lg:translate-y-11 z-40 3xl:translate-y-20">
           <div class=" transform -translate-y-12 lg:-translate-y-20 -translate-x-3">
             <svg
               className="absolute top-0"
