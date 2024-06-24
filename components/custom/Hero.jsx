@@ -122,8 +122,8 @@ const Hero = () => {
       </div>
 
       <div className="absolute inset-0 flex items-center justify-center">
-        <div className="absolute bg-white/10 bg-opacity-20 w-[180px] h-[180px] sm:w-[150px] sm:h-[150px] md:w-[200px] md:h-[200px] lg:w-[300px] lg:h-[300px] 3xl:w-[400px] 3xl:h-[400px] top-[40%] lg:top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full z-10 flex items-center justify-center">
-          <div className="bg-white/10 bg-opacity-30 w-[140px] h-[140px] sm:w-[100px] sm:h-[100px] md:w-[150px] md:h-[150px] lg:w-[220px] lg:h-[220px] 3xl:w-[300px] 3xl:h-[300px] rounded-full flex items-center justify-center">
+        <div className="absolute bg-white/5 shadow-transparent bg-opacity-20 w-[180px] h-[180px] sm:w-[150px] sm:h-[150px] md:w-[200px] md:h-[200px] lg:w-[300px] lg:h-[300px] 3xl:w-[400px] 3xl:h-[400px] top-[40%] lg:top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full z-10 flex items-center justify-center">
+          <div className="bg-white/5 shadow-2xl bg-opacity-30 w-[140px] h-[140px] sm:w-[100px] sm:h-[100px] md:w-[150px] md:h-[150px] lg:w-[220px] lg:h-[220px] 3xl:w-[300px] 3xl:h-[300px] rounded-full flex items-center justify-center">
             <div className="bg-white/20 w-[90px] h-[90px] sm:w-[60px] sm:h-[60px] md:w-[75px] md:h-[75px] lg:w-[120px] lg:h-[120px] 3xl:w-[150px] 3xl:h-[150px] bg-opacity-40 rounded-full"></div>
           </div>
         </div>
@@ -220,8 +220,11 @@ const Hero = () => {
             </svg>
           </div>
           <div
-            className="rounded-lg border-t-2 border-t-slate-50 h-auto  bg-gradient-to-r from-gray-950 to-gray-0 p-3 bg-opacity-70
-          w-[180px] md:w-[280px] max-w-sm md:max-w-lg lg:w-full text-[#d6dbde] text-start z-50"
+            className="rounded-lg border-t-2 border-t-slate-50 h-auto p-3 3xl:p-6 bg-opacity-70 w-[180px] md:w-[280px] 3xl:w-full max-w-sm md:max-w-lg 3xl:max-w-screen-sm lg:w-full text-[#d6dbde] text-start z-50"
+            style={{
+              background:
+                "linear-gradient(90deg, rgba(0, 30, 53, 0.95) 0%, rgba(0, 30, 53, 0) 100%)",
+            }}
           >
             <h1 className="text-sm sm:text-xl md:text-2xl lg:text-3xl font-bold uppercase">
               Latest News
@@ -232,14 +235,18 @@ const Hero = () => {
                 initial={{ opacity: 0, x: direction === 1 ? 50 : -50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 2 }}
-                className="mt-2 font-quattrocento  italic tracking-1 text-[#d7d7d7] text-xs lg:text-sm"
+                className="custom-quote mt-3 "
               >
+                <span className="bold">“</span>
+                <span className="text-sm md:text-[16px] 3xl:normal 3xl:text-[20px]">
                 {latestNews[currentIndex].news}
+                </span>
+                <span className="bold">”</span>
               </motion.p>
             )}
             <div className="transform translate-y-14 md:translate-y-16 lg:translate-y-16 3xl:translate-y-24 overflow-hidden flex space-x-4 z-50">
               <button
-                className="bg-primaryColor/40 border border-slate-400  text-white p-2 rounded-full text-lg sm:text-xl btn hover:bg-btn h-8 sm:h-10 w-8 sm:w-10 flex items-center justify-center"
+                className="bg-primaryColor/40 border border-slate-400 text-white p-2 rounded-full text-lg sm:text-xl btn hover:bg-btn h-8 sm:h-10 w-8 sm:w-10 flex items-center justify-center"
                 onClick={handlePrev}
               >
                 &lt;

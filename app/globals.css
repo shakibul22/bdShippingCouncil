@@ -49,3 +49,27 @@
     border: 1px solid rgba(255, 255, 255, 0.25);
   }
 }
+
+/* css for latest news text */
+.custom-quote {
+  font-family: "Quattrocento Sans", sans-serif;
+  font-style: italic;
+  font-size: 27px;
+  line-height: 27.4px;
+  color: rgba(
+    215,
+    215,
+    215,
+    0.8
+  ); /* Adjusted to match the image more closely */
+  word-wrap: break-word;
+  text-shadow: 5px 4px 2px rgba(0, 0, 0, 0.5); /* Added subtle shadow */
+}
+
+.custom-quote .bold {
+  font-weight: 700;
+}
+
+.custom-quote .normal {
+  font-weight: 400;
+}
