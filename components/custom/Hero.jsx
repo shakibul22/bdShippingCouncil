@@ -232,7 +232,7 @@ const Hero = () => {
                 initial={{ opacity: 0, x: direction === 1 ? 50 : -50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 2 }}
-                className="mt-2 font-quattrocento  italic tracking-1 text-xs lg:text-sm"
+                className="mt-2 font-quattrocento  italic tracking-1 text-[#d7d7d7] text-xs lg:text-sm"
               >
                 {latestNews[currentIndex].news}
               </motion.p>

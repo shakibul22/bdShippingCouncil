@@ -94,11 +94,11 @@ const Navbar = () => {
         }  hidden lg:block  relative select-none z-10`}
       >
         {/* top bar */}
-        <div className="w-full lg:max-w-5xl 3xl:max-w-7xl mx-auto flex flex-row justify-between items-center h-[70px]">
+        <div className="w-full lg:max-w-5xl 3xl:max-w-7xl mx-auto flex flex-row justify-between items-center h-[80px]">
           <div className="flex gap-3 items-center">
             <Image src={logo} width={50} height={50} alt="logo" />
             <h2
-              className={`${inter.className} text-3xl text-primaryColor font-bold font-Inter`}
+              className={`${inter.className} lg:text-2xl 3xl:text-3xl text-primaryColor font-bold font-Inter`}
             >
               Shippers’ Council of Bangladesh
             </h2>
@@ -109,7 +109,7 @@ const Navbar = () => {
               className="font-bold text-lg col-span-1 flex items-center gap-2 w-fit leading-normal"
             >
               <div className="p-3 rounded-full border-2 ring bg-primaryColor transform transition-transform duration-1000 hover:rotate-45">
-                <BsSend className="text-2xl text-white" />
+                <BsSend className="lg:text-xl 3xl:text-2xl text-white" />
               </div>
               <span className="pr-2 text-primaryColor"> CONTACT US</span>
             </Link>
