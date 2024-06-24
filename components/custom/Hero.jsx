@@ -141,9 +141,6 @@ const Hero = () => {
               <circle cx="2" cy="17" r="1.66667" fill="#ffffff" />
               <circle cx="17" cy="17" r="1.66667" fill="#ffffff" />
               <circle cx="32" cy="17" r="1.66667" fill="#ffffff" />
-              <circle cx="47" cy="17" r="1.66667" fill="#ffffff" />
-              <circle cx="62" cy="17" r="1.66667" fill="#ffffff" />
-              <circle cx="77" cy="17" r="1.66667" fill="#ffffff" />
             </svg>
             <svg
               className="absolute top-4"
@@ -156,9 +153,6 @@ const Hero = () => {
               <circle cx="2" cy="17" r="1.66667" fill="#ffffff" />
               <circle cx="17" cy="17" r="1.66667" fill="#ffffff" />
               <circle cx="32" cy="17" r="1.66667" fill="#ffffff" />
-              <circle cx="47" cy="17" r="1.66667" fill="#ffffff" />
-              <circle cx="62" cy="17" r="1.66667" fill="#ffffff" />
-              <circle cx="77" cy="17" r="1.66667" fill="#ffffff" />
             </svg>
           </div>
           <div class="transform -translate-x-16 -translate-y-16 lg:-translate-y-16">
@@ -187,8 +181,20 @@ const Hero = () => {
               <circle cx="17" cy="32" r="1.66667" fill="#ffffff" />
               <circle cx="17" cy="47" r="1.66667" fill="#ffffff" />
               <circle cx="17" cy="62" r="1.66667" fill="#ffffff" />
-              <circle cx="17" cy="77" r="1.66667" fill="#ffffff" />
-              <circle cx="17" cy="97" r="1.66667" fill="#ffffff" />
+              <circle
+                className="lg:hidden block"
+                cx="17"
+                cy="77"
+                r="1.66667"
+                fill="#ffffff"
+              />
+              <circle
+                className="lg:hidden block"
+                cx="17"
+                cy="92"
+                r="1.66667"
+                fill="#ffffff"
+              />
             </svg>
             <svg
               class="absolute left-5"
@@ -215,8 +221,20 @@ const Hero = () => {
               <circle cx="17" cy="32" r="1.66667" fill="#ffffff" />
               <circle cx="17" cy="47" r="1.66667" fill="#ffffff" />
               <circle cx="17" cy="62" r="1.66667" fill="#ffffff" />
-              <circle cx="17" cy="77" r="1.66667" fill="#ffffff" />
-              <circle cx="17" cy="97" r="1.66667" fill="#ffffff" />
+              <circle
+                className="lg:hidden block"
+                cx="17"
+                cy="77"
+                r="1.66667"
+                fill="#ffffff"
+              />
+              <circle
+                className="lg:hidden block"
+                cx="17"
+                cy="92"
+                r="1.66667"
+                fill="#ffffff"
+              />
             </svg>
           </div>
           <div
@@ -238,8 +256,8 @@ const Hero = () => {
                 className="custom-quote mt-3 "
               >
                 <span className="bold">“</span>
-                <span className="text-sm md:text-[16px] 3xl:normal 3xl:text-[20px]">
-                {latestNews[currentIndex].news}
+                <span className="text-[12px] leading-[1.15]  md:text-[16px] 3xl:normal 3xl:text-[20px]">
+                  {latestNews[currentIndex].news}
                 </span>
                 <span className="bold">”</span>
               </motion.p>
