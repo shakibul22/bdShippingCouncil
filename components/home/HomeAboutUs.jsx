@@ -19,14 +19,14 @@ const HomeAboutUs = ({ data }) => {
       <div className="py-8 px-2 lg:py-20 xl:px-0 space-y-8 gap-8 flex flex-col lg:flex-row md:gap-48 items-center justify-between w-full lg:max-w-5xl 3xl:max-w-7xl mx-auto">
         <div className="flex flex-col justify-start items-start mr-20 gap-4">
           <Image
-            className="rounded-lg w-[320px] h-[200px] lg:w-[280px] lg:h-[300px]"
+            className="rounded-lg w-[320px] h-[200px] lg:w-[280px] lg:h-[300px] xl:w-[320px]"
             src="/img/about1.png"
             width={800}
             height={800}
             alt="about"
           />
           <Image
-            className="rounded-lg w-[320px] h-[200px] lg:w-[280px] lg:h-[300px]"
+            className="rounded-lg w-[320px] h-[200px] lg:w-[280px] lg:h-[300px] xl:w-[320px]"
             src="/img/about2.png"
             width={800}
             height={800}
