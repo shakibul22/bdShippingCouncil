@@ -54,7 +54,9 @@ const HomeLayout = async () => {
       <HomeRnP />
       <HomeAssociate />
       <HomeGallery />
-      <HeadOffice />
+      <div className="bg-[#e9f5ff] w-full h-full py-10">
+        <HeadOffice />{" "}
+      </div>
       <Footer />
     </div>
   );

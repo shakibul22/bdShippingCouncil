@@ -8,12 +8,12 @@ const BODcard = ({ id, name, designation, image }) => {
 
   return (
     <div
-      className="relative  w-[45vw] sm:w-[180px]  h-[275px] lg:w-[250px] 3xl:w-[300px] lg:h-[410px]"
+      className="relative  w-[45vw] sm:w-[180px]  h-[275px] lg:w-[250px] 3xl:w-[300px] lg:h-[410px] transition duration-1000"
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
       <div
-        className="w-full h-full bg-primaryColor shadow-lg rounded-2xl transition-all duration-500"
+        className="w-full h-full bg-cardColor shadow-lg rounded-2xl transition-all duration-500"
         style={{
           clipPath: hover
             ? "polygon(-9% -4%, -8% 101%, 78% 105%, 106% 75%, 105% -4%)"
@@ -32,14 +32,14 @@ const BODcard = ({ id, name, designation, image }) => {
           {name}
         </h3>
         <p className="text-white text-xs lg:text-lg">{designation}</p>
-        <div className="flex relative  gap-2.5 pr-20 mt-1">
+        <div className="flex relative   gap-2.5 pr-20 mt-1">
           <Image
             width={20}
             alt="card"
             height={20}
             loading="lazy"
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/f53e375dcf53aebd9fc598c683ad34fe4bb09d63a4babff70c58b8bea1cafde9?"
-            className="shrink-0 aspect-square w-[25px] lg:w-[35px] 3xl:w-[42px]"
+            className="shrink-0 aspect-square hover:bg-blue-600 hover:transition hover:duration-500 w-[25px] lg:w-[35px] 3xl:w-[42px]"
           />
           <Image
             width={20}

@@ -109,7 +109,7 @@ const Navbar = () => {
               className="font-bold text-lg col-span-1 flex items-center gap-2 w-fit leading-normal"
             >
               <div className="p-3 rounded-full border-2 ring bg-primaryColor transform transition-transform duration-1000 hover:rotate-45">
-                <BsSend className="lg:text-xl 3xl:text-2xl text-white" />
+                <BsSend className="lg:text-lg 3xl:text-xl text-white" />
               </div>
               <span className="pr-2 text-primaryColor"> CONTACT US</span>
             </Link>
@@ -119,7 +119,7 @@ const Navbar = () => {
         {/* nav bar */}
         <div className="bg-[#0a4a77] py-1.5 mt-2  text-white">
           <div
-            className={`w-full lg:max-w-5xl 3xl:max-w-7xl mx-auto  flex items-center justify-between h-full font-light`}
+            className={`w-full lg:max-w-5xl 3xl:max-w-6xl mx-auto  flex items-center justify-between h-full font-light`}
           >
             {/* Home */}
             <NavigationMenu>
@@ -147,7 +147,7 @@ const Navbar = () => {
               <NavigationMenuList>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger
-                    className={`bg-transparent text-lg  hover:bg-white hover:text-black rounded-none ${
+                    className={`bg-transparent text-lg  hover:bg-white hover:text-[#0a4a77] rounded-none ${
                       pathname.split("/")[1] === "about"
                         ? "bg-white text-black"
                         : null
@@ -271,7 +271,7 @@ const Navbar = () => {
               <NavigationMenuList>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger
-                    className={`bg-transparent text-lg  hover:bg-white hover:text-black rounded-none ${
+                    className={`bg-transparent text-lg  hover:bg-white hover:text-[#0a4a77] rounded-none ${
                       pathname.split("/")[1] === "news"
                         ? "bg-white text-black"
                         : null
@@ -322,7 +322,7 @@ const Navbar = () => {
               <NavigationMenuList>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger
-                    className={`bg-transparent text-lg hover:bg-white hover:text-black rounded-none ${
+                    className={`bg-transparent text-lg hover:bg-white hover:text-[#0a4a77] rounded-none ${
                       pathname.split("/")[1] === "seminar"
                         ? "bg-white text-black"
                         : null
@@ -358,7 +358,7 @@ const Navbar = () => {
               <NavigationMenuList>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger
-                    className={`bg-transparent text-lg hover:bg-white hover:text-black  rounded-none ${
+                    className={`bg-transparent text-lg hover:bg-white hover:text-[#0a4a77]  rounded-none ${
                       pathname.split("/")[1] === "media"
                         ? "bg-white text-black"
                         : null
@@ -395,7 +395,7 @@ const Navbar = () => {
               <NavigationMenuList>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger
-                    className={`bg-transparent text-lg hover:bg-white hover:text-black  rounded-none ${
+                    className={`bg-transparent text-lg hover:bg-white hover:text-[#0a4a77]  rounded-none ${
                       pathname.split("/")[1] === "member"
                         ? "bg-white text-black"
                         : null
@@ -450,8 +450,8 @@ const Navbar = () => {
                 <NavigationMenuItem
                   className={
                     pathname === "/useful-link"
-                      ? "bg-white text-black  hover:bg-white hover:text-black"
-                      : "hover:bg-white hover:text-black  "
+                      ? "bg-white text-black  hover:bg-white hover:text-[#0a4a77]"
+                      : "hover:bg-white hover:text-[#0a4a77]  "
                   }
                 >
                   <Link href={"/useful-link"} legacyBehavior passHref>

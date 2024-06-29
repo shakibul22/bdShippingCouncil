@@ -1,11 +1,14 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
+import { ImArrowUpRight2 } from "react-icons/im";
 
 const HomeSlider = () => {
   const [allImageData, setAllImageData] = useState([]);
   const [imageData, setImageData] = useState([]);
   const [highlightedIndex, setHighlightedIndex] = useState(0);
+  const [hoveredIndex, setHoveredIndex] = useState(null);
 
   useEffect(() => {
     async function fetchData() {
@@ -41,16 +44,20 @@ const HomeSlider = () => {
     return shuffled.slice(0, count);
   }
 
+  const getActiveIndex = () => {
+    return hoveredIndex !== null ? hoveredIndex : highlightedIndex;
+  };
+
   return (
     <div
-      className="py-5  px-10 w-full lg:min-w-7xl xl:container mx-auto bg-primaryColor"
-      onMouseLeave={() => setHighlightedIndex(0)}
+      className="py-5 px-10 w-full lg:min-w-7xl xl:container mx-auto bg-primaryColor"
+      onMouseLeave={() => setHoveredIndex(null)}
     >
       <div className="flex flex-col justify-center mb-10 items-center">
-        <h3 className="text-center text-xl font-semibold  md:text-2xl pb-2 lg:pb-8 lg:text-3xl pt-5 text-white">
+        <h3 className="text-center text-xl font-semibold md:text-2xl pb-2 lg:pb-8 lg:text-3xl pt-5 text-white relative">
           Our Memorable Journey
+          <span className="block h-0.5 w-full bg-current mt-2"></span>
         </h3>
-        <div className="border w-[260px] lg:w-[380px]"></div>
       </div>
       <section className="relative z-10 overflow-hi lg:py-[0px]">
         <div className="">
@@ -60,11 +67,15 @@ const HomeSlider = () => {
                 <div className="flex flex-row p-2">
                   {imageData?.map((img, index) => (
                     <div
-                      className={`relative group activeSlide h-[200px] lg:h-[520px] mb-16 rounded-lg overflow-hidden transition-all duration-500 ${
-                        highlightedIndex === index ? "flex-[5]" : "flex-[1]"
+                      className={`relative group activeSlide h-[200px] lg:h-[520px] mb-16 overflow-hidden transition-all duration-500 ${
+                        getActiveIndex() === index
+                          ? "flex-[5] opacity-100"
+                          : "flex-[1] opacity-50"
+                      } ${
+                        getActiveIndex() === index ? "shadow-none" : "shadow-md"
                       }`}
                       key={img.id}
-                      onMouseEnter={() => setHighlightedIndex(index)}
+                      onMouseEnter={() => setHoveredIndex(index)}
                     >
                       <Image
                         src={`/img/slider/${img.image}`}
@@ -72,7 +83,7 @@ const HomeSlider = () => {
                         width={800}
                         alt="sliderImage"
                         className={`mx-auto rounded-none overflow-hidden ${
-                          highlightedIndex === index
+                          getActiveIndex() === index
                             ? "w-full h-full"
                             : "w-full h-full object-cover"
                         } transition-all duration-500`}
@@ -81,13 +92,13 @@ const HomeSlider = () => {
 
                       <div
                         className={`absolute bottom-2 left-0 easyTrans px-4 hidden md:block z-10 ${
-                          highlightedIndex === index
+                          getActiveIndex() === index
                             ? "opacity-100"
                             : "opacity-0 group-hover:opacity-100"
                         }`}
                       >
                         <p className="text-white text-sm font-extralight font-quattrocento italic tracking-1 bg-black/60 backdrop-blur-sm p-2 rounded-lg">
-                          {img.caption}
+                          &ldquo;{img.caption}&ldquo;
                         </p>
                       </div>
                     </div>
@@ -207,6 +218,14 @@ const HomeSlider = () => {
                   </svg>
                 </div>
               </div>
+            </div>
+            <div className="relative inset-0 m-auto">
+              <Link
+                href={"/media"}
+                className="py-2.5 px-7 w-fit flex flex-row justify-center gap-2 leading-normal hover:bg-btn transition duration-500 text-btn bg-white items-center rounded-sm shadow-lg mx-auto  hover:text-white font-semibold"
+              >
+                See More <ImArrowUpRight2 />
+              </Link>
             </div>
           </div>
         </div>

@@ -13,12 +13,13 @@ const HomeAboutUs = ({ data }) => {
     setIsPlaying(true);
     videoRef.current.play();
   };
+
   return (
     <div className="bg-softWhite text-white overflow-hidden h-[850px] lg:h-full flex justify-center py-5">
-      <div className="py-8 px-2 lg:py-20 xl:px-0 space-y-8 gap-8 flex flex-col lg:flex-row  md:gap-48 items-center justify-between w-full lg:max-w-5xl 3xl:max-w-7xl mx-auto">
-        <div className="flex flex-col justify-start items-start mr-20  gap-4">
+      <div className="py-8 px-2 lg:py-20 xl:px-0 space-y-8 gap-8 flex flex-col lg:flex-row md:gap-48 items-center justify-between w-full lg:max-w-5xl 3xl:max-w-7xl mx-auto">
+        <div className="flex flex-col justify-start items-start mr-20 gap-4">
           <Image
-            className="rounded-lg w-[320px]  h-[200px] lg:w-[280px] lg:h-[300px] "
+            className="rounded-lg w-[320px] h-[200px] lg:w-[280px] lg:h-[300px]"
             src="/img/about1.png"
             width={800}
             height={800}
@@ -32,18 +33,18 @@ const HomeAboutUs = ({ data }) => {
             alt="about"
           />
         </div>
-        <div className="bg-[#001e35] w-[250px] overflow-hidden lg:w-[470px] 3xl:w-[500px] h-[510px] trasform -translate-y-16 lg:translate-y-0 rounded absolute right-2 lg:right-[40%] 3xl:right-[45%] lg:h-[700px] z-10 p-6 pb-12 lg:p-10">
-          <h2 className="text-2xl font-semibold  lg:text-4xl border-b ">
+        <div className="bg-[#001e35] w-[250px] overflow-hidden lg:w-[470px] 3xl:w-[500px] h-[510px] transform -translate-y-16 lg:translate-y-0 rounded absolute right-2 lg:right-[40%] 3xl:right-[45%] lg:h-[700px] z-10 p-6 pb-12 lg:p-10">
+          <h2 className="text-2xl font-semibold lg:text-4xl border-b">
             About <span className="text-[#0081e9]">Us</span>
           </h2>
-          <p className="text-md font-bold mt-3 lg:text-lg">{data?.title}</p>{" "}
+          <p className="text-md font-bold mt-3 lg:text-lg">{data?.title}</p>
           <br />
-          <p className=" mt-0 md:mt-2 lg:mt-4 text-justify text-slate-200  text-xs lg:text-lg">
+          <p className="mt-0 md:mt-2 lg:mt-4 text-justify text-slate-200 text-xs lg:text-lg">
             {data?.text}
           </p>
-          <div className="max-w-[200px] rounded-lg pb-2 lg:pb-6 absolute  lg:bottom-3">
+          <div className="max-w-[200px] rounded-lg pb-2 lg:pb-6 absolute lg:bottom-3">
             <Link href="/about">
-              <p className="py-2.5 px-7 flex flex-row  justify-center gap-2 leading-normal bg-btn items-center rounded-sm shadow-lg mx-auto  mt-4 lg:mt-12 text-white font-semibold">
+              <p className="py-2.5 px-7 flex flex-row justify-center gap-2 leading-normal bg-btn hover:bg-white hover:text-black transition duration-500 items-center rounded-sm shadow-lg mx-auto mt-4 lg:mt-12 text-white font-semibold">
                 Explore Now <ImArrowUpRight2 />
               </p>
             </Link>
@@ -57,8 +58,9 @@ const HomeAboutUs = ({ data }) => {
               loop
               src={`/${data?.image?.video}`}
               className="rounded-lg w-full h-full"
-              style={{ objectFit: "cover" }}
+              style={{ objectFit: "cover", filter: "brightness(50%)" }}
             />
+            <div className="absolute inset-0 bg-blue-500/40 bg-opacity-50 rounded-lg"></div>
             {!isPlaying && (
               <div className="absolute inset-0 flex items-center justify-center">
                 <button

@@ -15,7 +15,9 @@ const HomeMember = ({ data }) => {
               <p className="text-xs font-semibold lg:text-lg">
                 Become a member
               </p>
-              <hr className="flex-grow border-b mt-4 " />
+              <div className="w-[100px]">
+                <hr className="flex-grow border-b mt-6 " />
+              </div>
             </div>
 
             <h2 className="text-lg font-bold  lg:text-3xl mt-4 ">

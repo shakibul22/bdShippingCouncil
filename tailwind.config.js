@@ -22,7 +22,8 @@ module.exports = {
       },
 
       colors: {
-        primaryColor: "#0a4a77",
+        primaryColor: "#0c3352",
+        cardColor: "#0a4a77",
         footerbg: "#0c3352",
         secondaryColor: "#dc963c",
         softWhite: "#e9f5ff",
@@ -46,6 +47,7 @@ module.exports = {
       },
     },
   },
+  
   variants: {
     extend: {
       rotate: ["hover"],
