@@ -22,8 +22,10 @@ const HomeMember = ({ data }) => {
 
             <h2 className="text-lg font-bold  lg:text-3xl mt-4 ">
               Members in the{" "}
-              <span className="text-btn italic ">Shippers&apos;</span> Council
-              Bangladesh
+              <span className="text-btn font-poppins italic font-bold tracking-wide break-words ">
+                Shippers&apos;
+              </span>{" "}
+              Council Bangladesh
             </h2>
             <p className="font-medium opacity-70 flex flex-col text-base lg:text-lg">
               {data?.text}
@@ -34,7 +36,13 @@ const HomeMember = ({ data }) => {
                 href={`/pdf/application.pdf`}
                 className=" flex flex-row gap-2 items-center "
               >
-                <GrDocumentPdf className="text-rose-700 overflow-hidden text-2xl" />
+                <Image
+                  width={6}
+                  height={6}
+                  alt="image"
+                  class="w-6 h-6"
+                  src="https://res.cloudinary.com/dgohi0iqm/image/upload/v1719694586/2d3d842ad48c8da4089f795b2b01102a_uelvof.png"
+                />
                 <span className="leading-normal font-semibold">
                   {" "}
                   Download PDF

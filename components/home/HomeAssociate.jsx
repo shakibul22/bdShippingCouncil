@@ -23,7 +23,11 @@ const HomeAssociate = async () => {
           </div>
         </div>
         <h3 className="text-xl font-bold lg:text-4xl">
-          Some of Our <span className="glow-text">Associate</span> Members
+          Some of Our{" "}
+          <span className="text-[#0081E9] text-[40px] font-poppins font-bold tracking-[0.8px] break-words">
+            Associate
+          </span>{" "}
+          Members
         </h3>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
@@ -32,7 +36,7 @@ const HomeAssociate = async () => {
             memberList?.slice(0, 1).map((associate, i) => (
               <div
                 key={i}
-                className="border border-white shadow-md rounded-tl-3xl p-5 rounded-bl-3xl hover:bg-sky-400/30 rounded-br-3xl rounded-tr-none hover:rounded-tr-3xl hover:rounded-br-none glass_bg "
+                className="border border-white shadow-md rounded-tl-3xl p-5 rounded-bl-3xl hover:bg-sky-400/30 transition duration-500 rounded-br-3xl rounded-tr-none hover:rounded-tr-3xl hover:rounded-br-none glass_bg "
               >
                 <MemberListCard
                   bg={"glass"}
@@ -46,7 +50,7 @@ const HomeAssociate = async () => {
             memberList?.slice(1, 2).map((associate, i) => (
               <div
                 key={i}
-                className="border border-white shadow-md rounded-3xl p-5  hover:rounded-tr-none hover:rounded-bl-none hover:bg-sky-400/30 glass_bg "
+                className="border border-white shadow-md rounded-3xl p-5  hover:rounded-tr-none hover:rounded-bl-none hover:bg-sky-400/30 transition duration-500 glass_bg "
               >
                 <MemberListCard
                   name={associate.name}
@@ -59,7 +63,7 @@ const HomeAssociate = async () => {
             memberList?.slice(2, 3).map((associate, i) => (
               <div
                 key={i}
-                className="border border-white shadow-md rounded-tl-none p-5 hover:bg-sky-400/30 rounded-bl-3xl rounded-br-3xl rounded-tr-3xl hover:rounded-bl-none hover:rounded-tl-3xl glass_bg "
+                className="border border-white shadow-md rounded-tl-none p-5 hover:bg-sky-400/30 transition duration-500 rounded-bl-3xl rounded-br-3xl rounded-tr-3xl hover:rounded-bl-none hover:rounded-tl-3xl glass_bg "
               >
                 <MemberListCard
                   name={associate.name}
@@ -72,7 +76,7 @@ const HomeAssociate = async () => {
             memberList?.slice(3, 4).map((associate, i) => (
               <div
                 key={i}
-                className="border border-white shadow-md rounded-tl-3xl p-5 rounded-bl-3xl hover:bg-sky-400/30 rounded-br-none rounded-tr-3xl hover:rounded-tr-none hover:rounded-br-3xl glass_bg "
+                className="border border-white shadow-md rounded-tl-3xl p-5 rounded-bl-3xl hover:bg-sky-400/30 transition duration-500 rounded-br-none rounded-tr-3xl hover:rounded-tr-none hover:rounded-br-3xl glass_bg "
               >
                 <MemberListCard
                   bg={"glass"}
@@ -86,7 +90,7 @@ const HomeAssociate = async () => {
             memberList?.slice(4, 5).map((associate, i) => (
               <div
                 key={i}
-                className="border border-white shadow-md rounded-3xl p-5  hover:rounded-tr-none hover:rounded-bl-none hover:bg-sky-400/30 glass_bg "
+                className="border border-white shadow-md rounded-3xl p-5  hover:rounded-tr-none hover:rounded-bl-none hover:bg-sky-400/30 transition duration-500 glass_bg "
               >
                 <MemberListCard
                   name={associate.name}
@@ -99,7 +103,7 @@ const HomeAssociate = async () => {
             memberList?.slice(5, 6).map((associate, i) => (
               <div
                 key={i}
-                className="border border-white shadow-md rounded-tl-3xl p-5 hover:bg-sky-400/30 rounded-bl-none rounded-br-3xl rounded-tr-3xl hover:rounded-bl-3xl hover:rounded-tl-none glass_bg "
+                className="border border-white shadow-md rounded-tl-3xl p-5 hover:bg-sky-400/30 transition duration-500 rounded-bl-none rounded-br-3xl rounded-tr-3xl hover:rounded-bl-3xl hover:rounded-tl-none glass_bg "
               >
                 <MemberListCard
                   name={associate.name}
@@ -109,12 +113,13 @@ const HomeAssociate = async () => {
             ))}
         </div>
 
-        <div>
+        <div className="flex justify-end items-center mt-12">
           <Link
             href={"/member/list"}
-            className="py-2.5 px-7 w-fit flex flex-row justify-center gap-2 leading-normal bg-btn hover:bg-white hover:border-btn hover:border hover:text-btn items-center rounded-md transition duration-500 shadow-lg mx-auto mt-12 text-white font-semibold"
+            className="py-2.5 px-6 flex items-center gap-2 bg-btn hover:bg-white hover:border-btn hover:border hover:text-btn rounded-md transition duration-500 shadow-lg text-white font-semibold"
           >
-            See More <ImArrowUpRight2 />
+            <span className="whitespace-nowrap">See More</span>
+            <ImArrowUpRight2 className="ml-1" />
           </Link>
         </div>
       </div>

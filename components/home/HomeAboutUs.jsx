@@ -51,16 +51,16 @@ const HomeAboutUs = ({ data }) => {
           </div>
         </div>
         <div className="relative flex flex-col gap-2 lg:w-[850px] h-[250px] lg:h-[500px]">
-          <div className="relative w-full h-full">
+          <div className="relative w-full h-full ">
             <video
               ref={videoRef}
               autoPlay
               loop
               src={`/${data?.image?.video}`}
               className="rounded-lg w-full h-full"
-              style={{ objectFit: "cover", filter: "brightness(50%)" }}
+              style={{ objectFit: "cover", filter: "brightness(100%)" }}
             />
-            <div className="absolute inset-0 bg-blue-500/40 bg-opacity-50 rounded-lg"></div>
+            <div className="absolute inset-0 bg-[rgba(1,99,160,0.50)] rounded-t-lg"></div>
             {!isPlaying && (
               <div className="absolute inset-0 flex items-center justify-center">
                 <button

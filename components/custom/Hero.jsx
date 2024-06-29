@@ -31,7 +31,7 @@ const Hero = () => {
         ></div>
 
         {/* Overlay color */}
-        <div className="absolute inset-0 bg-primaryColor/40 bg-opacity-40 lg:bg-opacity-10"></div>
+        <div className="absolute inset-0 bg-primaryColor/50 bg-opacity-40 lg:bg-opacity-10"></div>
       </figure>
 
       <div className="flex  justify-between">

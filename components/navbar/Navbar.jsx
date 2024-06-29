@@ -128,7 +128,7 @@ const Navbar = () => {
                   className={
                     pathname === "/"
                       ? "bg-white text-lg font-sans font-semibold text-primaryColor rounded-none"
-                      : "hover:bg-white font-sans text-lg font-semibold text-white hover:text-primaryColor"
+                      : "hover:bg-white transition duration-700 font-sans text-lg font-semibold text-white hover:text-primaryColor"
                   }
                 >
                   <Link href={"/"} legacyBehavior passHref>
@@ -147,7 +147,7 @@ const Navbar = () => {
               <NavigationMenuList>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger
-                    className={`bg-transparent text-lg  hover:bg-white hover:text-[#0a4a77] rounded-none ${
+                    className={`bg-transparent text-lg  hover:bg-white transition duration-700 hover:text-[#0a4a77] rounded-none ${
                       pathname.split("/")[1] === "about"
                         ? "bg-white text-black"
                         : null
@@ -271,7 +271,7 @@ const Navbar = () => {
               <NavigationMenuList>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger
-                    className={`bg-transparent text-lg  hover:bg-white hover:text-[#0a4a77] rounded-none ${
+                    className={`bg-transparent text-lg  hover:bg-white transition duration-700 hover:text-[#0a4a77] rounded-none ${
                       pathname.split("/")[1] === "news"
                         ? "bg-white text-black"
                         : null
@@ -322,7 +322,7 @@ const Navbar = () => {
               <NavigationMenuList>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger
-                    className={`bg-transparent text-lg hover:bg-white hover:text-[#0a4a77] rounded-none ${
+                    className={`bg-transparent text-lg hover:bg-white transition duration-700 hover:text-[#0a4a77] rounded-none ${
                       pathname.split("/")[1] === "seminar"
                         ? "bg-white text-black"
                         : null
@@ -358,7 +358,7 @@ const Navbar = () => {
               <NavigationMenuList>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger
-                    className={`bg-transparent text-lg hover:bg-white hover:text-[#0a4a77]  rounded-none ${
+                    className={`bg-transparent text-lg hover:bg-white transition duration-700 hover:text-[#0a4a77]  rounded-none ${
                       pathname.split("/")[1] === "media"
                         ? "bg-white text-black"
                         : null
@@ -395,7 +395,7 @@ const Navbar = () => {
               <NavigationMenuList>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger
-                    className={`bg-transparent text-lg hover:bg-white hover:text-[#0a4a77]  rounded-none ${
+                    className={`bg-transparent text-lg hover:bg-white transition duration-700 hover:text-[#0a4a77]  rounded-none ${
                       pathname.split("/")[1] === "member"
                         ? "bg-white text-black"
                         : null
@@ -450,8 +450,8 @@ const Navbar = () => {
                 <NavigationMenuItem
                   className={
                     pathname === "/useful-link"
-                      ? "bg-white text-black  hover:bg-white hover:text-[#0a4a77]"
-                      : "hover:bg-white hover:text-[#0a4a77]  "
+                      ? "bg-white text-black  hover:bg-white transition duration-700 hover:text-[#0a4a77]"
+                      : "hover:bg-white transition duration-700 hover:text-[#0a4a77]  "
                   }
                 >
                   <Link href={"/useful-link"} legacyBehavior passHref>

@@ -60,16 +60,16 @@ const HomeSlider = () => {
         </h3>
       </div>
       <section className="relative z-10 overflow-hi lg:py-[0px]">
-        <div className="">
+        <div className=" py-6">
           <div className="-mx-4 flex flex-wrap lg:justify-between">
-            <div className="relative rounded-lg ">
+            <div className="relative">
               <div>
-                <div className="flex flex-row p-2">
+                <div className="flex rounded-2xl flex-row p-2">
                   {imageData?.map((img, index) => (
                     <div
-                      className={`relative group activeSlide h-[200px] lg:h-[520px] mb-16 overflow-hidden transition-all duration-500 ${
+                      className={`relative group activeSlide h-[200px] lg:h-[500px] mb-16 overflow-hidden transition-all duration-500 ${
                         getActiveIndex() === index
-                          ? "flex-[5] opacity-100"
+                          ? "flex-[7] opacity-100"
                           : "flex-[1] opacity-50"
                       } ${
                         getActiveIndex() === index ? "shadow-none" : "shadow-md"

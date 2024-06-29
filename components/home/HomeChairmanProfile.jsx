@@ -37,33 +37,34 @@ const HomeChairmanProfile = ({ data }) => {
           </p>
           <p className="text-md lg:text-sm relative z-10">Chairman</p>
 
-          <div className="flex flex-col lg:flex-row justify-evenly  lg:justify-between items-center relative z-10">
+          <div className="flex flex-col lg:flex-row justify-evenly lg:justify-between items-center relative z-10">
             <div className="flex items-center gap-4 w-fit mx-auto lg:mx-0 mt-2 lg:mt-4 text-sm lg:text-2xl">
-              <Image
-                src="https://res.cloudinary.com/dgohi0iqm/image/upload/v1717734139/Gmail_Logo_brnzwh.svg"
-                width={30}
-                height={30}
-                alt="email"
-                className="cursor-pointer"
-                onClick={() => {
-                  window.open("mailto:test@example.com");
-                }}
-              />
-              <Image
-                src="https://res.cloudinary.com/dgohi0iqm/image/upload/v1717734462/LinkedIn_icon_qef1m9.svg"
-                width={30}
-                height={30}
-                className="cursor-pointer"
-                alt="linkedin"
-              />
-              {/* <FaRegEnvelope
-                className="opacity-50 hover:opacity-90 cursor-pointer"
-                
-              />
-              <FaLinkedin className="opacity-50 hover:opacity-90 cursor-pointer" /> */}
+              <div className="flex gap-2 items-center">
+                <div className="relative  w-[30px] h-[30px] lg:w-[38px] lg:h-[38px] border-2 bg-white border-sky-600 hover:bg-blue-500 rounded-full overflow-hidden flex items-center justify-center transition duration-500">
+                  <Image
+                    width={16}
+                    alt="gmail"
+                    height={16}
+                    loading="lazy"
+                    src="https://res.cloudinary.com/dgohi0iqm/image/upload/v1719690838/Gmail_icon__2020_ybntks.svg"
+                    className="w-full h-full p-2"
+                  />
+                </div>
+
+                <div className="relative  w-[30px] h-[30px] lg:w-[38px] lg:h-[38px] bg-white hover:bg-blue-600 rounded-full overflow-hidden flex items-center justify-center transition duration-500">
+                  <Image
+                    width={16}
+                    alt="linkedin"
+                    height={16}
+                    loading="lazy"
+                    src="https://res.cloudinary.com/dgohi0iqm/image/upload/v1719697559/linkedin_vgbynx.png"
+                    className=""
+                  />
+                </div>
+              </div>
             </div>
 
-            <Link href={"/chairman"} className="w-[200px]">
+            <Link href="/chairman" className="w-[200px]">
               <p className="py-2.5 px-7 w-fit flex flex-row justify-center gap-2 leading-normal bg-btn items-center rounded-sm shadow-lg mx-auto mt-4 lg:mt-12 text-white font-semibold">
                 Read More <ImArrowUpRight2 />
               </p>

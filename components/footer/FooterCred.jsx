@@ -14,7 +14,7 @@ const FooterCred = () => {
         <Link
           href="https://twitter.com/"
           aria-label="Go to twitter"
-          className="mr-3 flex h-8 w-8 items-center justify-center bg-white rounded-full border border-stroke  hover:border-primary hover:bg-btn text-white hover:text-whitey sm:mr-4 lg:mr-3 xl:mr-4"
+          className="mr-3 flex h-8 w-8 items-center justify-center bg-white rounded-full border border-stroke  hover:border-primary hover:bg-btn text-white hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
         >
           {" "}
           <RiTwitterXFill className="text-xl text-black" />
