@@ -31,7 +31,7 @@ const HomeMember = ({ data }) => {
               {data?.text}
             </p>
 
-            <div className=" bg-btn   my-10 lg:mx- py-2.5 px-5 w-fit ">
+            <div className=" bg-btn hover:bg-white hover:text-btn  my-10 lg:mx- py-2.5 px-5 w-fit ">
               <a
                 href={`/pdf/application.pdf`}
                 className=" flex flex-row gap-2 items-center "

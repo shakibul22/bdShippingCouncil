@@ -18,7 +18,7 @@ const HomeBOD = async ({ data }) => {
       <div className="w-full lg:max-w-5xl 3xl:max-w-7xl mx-auto">
         <div className="text-[#001e35] flex gap-2">
           <p className="text-xs font-semibold lg:text-lg">Organization Info</p>
-          <div className="w-[300px]">
+          <div className="w-[150px] lg:w-[300px]">
             <hr className="flex-grow border-b mt-6 " />
           </div>
         </div>

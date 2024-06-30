@@ -15,7 +15,7 @@ const Footer = () => {
         </div>
       </div>
       <footer class="bg-[#10222B] text-slate-400 text-center  py-3 px-2">
-        &copy; Copyright 2024, All Rights Reserved by Shippers Council Developed
+        &copy; Copyright 2024, All Rights Reserved by Shippers Council. Developed
         by
         <Link
           href="https://techsolutionfactory.com"

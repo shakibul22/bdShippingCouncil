@@ -15,10 +15,10 @@ const HomeChairmanProfile = ({ data }) => {
             width={450}
             height={400}
             alt="Chairman"
-            className="mx-auto lg:mx-0 lg:h-[400px] 3xl:h-full"
+            className="mx-auto lg:mx-0 lg:h-[410px] 3xl:h-full"
           />
         </div>
-        <div className="text-center min-w-[55%] lg:text-left flex-1 bg-gradient-to-r from-gray-900 to-gray-0 bg-opacity-70 p-10 relative">
+        <div className="text-center min-w-[55%] rounded-xl lg:text-left flex-1 bg-gradient-to-r from-gray-900 to-gray-0 bg-opacity-70 p-10 relative">
           <p className="text-md uppercase lg:text-lg font-normal relative z-10">
             Chairman’s Profile
           </p>
@@ -40,7 +40,7 @@ const HomeChairmanProfile = ({ data }) => {
           <div className="flex flex-col lg:flex-row justify-evenly lg:justify-between items-center relative z-10">
             <div className="flex items-center gap-4 w-fit mx-auto lg:mx-0 mt-2 lg:mt-4 text-sm lg:text-2xl">
               <div className="flex gap-2 items-center">
-                <div className="relative  w-[30px] h-[30px] lg:w-[38px] lg:h-[38px] border-2 bg-white border-sky-600 hover:bg-blue-500 rounded-full overflow-hidden flex items-center justify-center transition duration-500">
+                <div className="relative  w-[30px] h-[30px] lg:w-[38px] lg:h-[38px] border bg-white hover:bg-blue-500 cursor-pointer hover:border-white  rounded-full overflow-hidden flex items-center justify-center transition duration-500">
                   <Image
                     width={16}
                     alt="gmail"
@@ -51,7 +51,7 @@ const HomeChairmanProfile = ({ data }) => {
                   />
                 </div>
 
-                <div className="relative  w-[30px] h-[30px] lg:w-[38px] lg:h-[38px] bg-white hover:bg-blue-600 rounded-full overflow-hidden flex items-center justify-center transition duration-500">
+                <div className="relative  w-[30px] h-[30px] lg:w-[38px] lg:h-[38px] bg-white hover:bg-blue-500 cursor-pointer hover:border-white border rounded-full overflow-hidden flex items-center justify-center transition duration-500">
                   <Image
                     width={16}
                     alt="linkedin"
@@ -65,7 +65,7 @@ const HomeChairmanProfile = ({ data }) => {
             </div>
 
             <Link href="/chairman" className="w-[200px]">
-              <p className="py-2.5 px-7 w-fit flex flex-row justify-center gap-2 leading-normal bg-btn items-center rounded-sm shadow-lg mx-auto mt-4 lg:mt-12 text-white font-semibold">
+              <p className="py-2.5 px-7 w-fit flex flex-row justify-center gap-2 leading-normal bg-btn hover:bg-white hover:text-gray-950 items-center rounded-sm shadow-lg mx-auto mt-4 lg:mt-12 text-white font-semibold">
                 Read More <ImArrowUpRight2 />
               </p>
             </Link>

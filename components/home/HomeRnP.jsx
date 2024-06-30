@@ -21,7 +21,7 @@ const HomeRnP = async () => {
             <p className="text-md font-semibold lg:text-lg">
               Research & Publications
             </p>
-            <div className="w-[120px] lg:w-[500px]">
+            <div className="w-[100px] lg:w-[500px]">
               <hr className="flex-grow border-b mt-4 " />
             </div>
           </div>

@@ -24,7 +24,7 @@ const HomeAssociate = async () => {
         </div>
         <h3 className="text-xl font-bold lg:text-4xl">
           Some of Our{" "}
-          <span className="text-[#0081E9] text-[40px] font-poppins font-bold tracking-[0.8px] break-words">
+          <span className="text-[#0081E9] text-xl lg:text-[40px] font-poppins font-bold tracking-[0.8px] break-words">
             Associate
           </span>{" "}
           Members

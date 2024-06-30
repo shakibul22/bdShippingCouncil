@@ -29,14 +29,14 @@ const BODcard = ({ id, name, designation, image }) => {
           alt="bod"
           className="h-40 md:h-52 lg:h-64 object-fill size-full"
         />
-        <h3 className="text-white text-sm lg:text-[16px] 3xl:text-lg font-bold mt-2">
+        <h3 className="text-white text-xs md:text-sm lg:text-[16px] 3xl:text-lg font-bold mt-2">
           {name}
         </h3>
         <p className="text-white text-xs lg:text-lg">{designation}</p>
-        <div className="flex relative gap-2.5 pr-20 mt-1">
+        <div className="flex relative gap-2.5  mt-1">
           <div className="flex items-center justify-center">
             <div className="flex gap-2 items-center">
-              <div className="relative  w-[30px] h-[30px] lg:w-[35px] lg:h-[35px] border-2 bg-white border-sky-600 hover:bg-blue-500 rounded-full overflow-hidden flex items-center justify-center transition duration-500">
+              <div className="relative  w-[30px] h-[30px] lg:w-[35px] lg:h-[35px] bg-white hover:bg-blue-500 cursor-pointer hover:border-white border rounded-full overflow-hidden flex items-center justify-center transition duration-500">
                 <Image
                   width={16}
                   alt="gmail"
@@ -47,11 +47,11 @@ const BODcard = ({ id, name, designation, image }) => {
                 />
               </div>
 
-              <div className="relative w-[30px] h-[30px] lg:w-[35px] lg:h-[35px] bg-white hover:bg-blue-600 rounded-full overflow-hidden flex items-center justify-center transition duration-500">
+              <div className="relative w-[30px] h-[30px] lg:w-[35px] lg:h-[35px] bg-white hover:bg-blue-500 cursor-pointer hover:border-white border rounded-full overflow-hidden flex items-center justify-center transition duration-500">
                 <FaXTwitter />
               </div>
 
-              <div className="relative w-[30px] h-[30px] lg:w-[35px] lg:h-[35px] bg-white hover:bg-blue-600 rounded-full overflow-hidden flex items-center justify-center transition duration-500">
+              <div className="relative w-[30px] h-[30px] lg:w-[35px] lg:h-[35px] bg-white hover:bg-blue-500 cursor-pointer hover:border-white border rounded-full overflow-hidden flex items-center justify-center transition duration-500">
                 <Image
                   width={16}
                   alt="linkedin"

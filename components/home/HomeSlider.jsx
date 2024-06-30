@@ -67,13 +67,13 @@ const HomeSlider = () => {
                 <div className="flex rounded-2xl flex-row p-2">
                   {imageData?.map((img, index) => (
                     <div
-                      className={`relative group activeSlide h-[200px] lg:h-[500px] mb-16 overflow-hidden transition-all duration-500 ${
+                      className={`relative rounded group activeSlide h-[200px] lg:h-[500px] mb-16 overflow-hidden transition-all duration-500 ${
                         getActiveIndex() === index
-                          ? "flex-[7] opacity-100"
+                          ? "flex-[6] opacity-100"
                           : "flex-[1] opacity-50"
                       } ${
                         getActiveIndex() === index ? "shadow-none" : "shadow-md"
-                      }`}
+                      } `} // Add the rounded-xl class here
                       key={img.id}
                       onMouseEnter={() => setHoveredIndex(index)}
                     >
