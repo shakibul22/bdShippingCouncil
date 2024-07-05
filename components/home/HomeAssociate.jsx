@@ -2,7 +2,8 @@ import Link from "next/link";
 import MemberListCard from "../custom/MemberListCard";
 import { publicRequest } from "@/requestMethod";
 import { ImArrowUpRight2 } from "react-icons/im";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const getMembers = async () => {
   const res = await publicRequest("/member/memberlist");
   return res.data;
@@ -13,10 +14,15 @@ const data = getMembers();
 const HomeAssociate = async () => {
   // const res = await publicRequest("/member/memberlist");
   const memberList = await data;
+
   return (
     <div className="bg-[url('/img/memberbg.png')] bg-cover  bg-center px-2 xl:px-0 py-8 lg:py-20 text-white">
       <div className="w-full lg:max-w-5xl 3xl:max-w-7xl mx-auto">
-        <div className="flex gap-2 my-3">
+        <div
+          className="flex gap-2 my-3"
+          data-aos="fade-right"
+          data-aos-once="false"
+        >
           <h2>OUR ASSOCIATE MEMBERS</h2>
           <div className="w-[10px] lg:w-[30px]">
             <hr className="flex-grow border-b mt-4 " />
@@ -24,7 +30,7 @@ const HomeAssociate = async () => {
         </div>
         <h3 className="text-xl font-bold lg:text-4xl">
           Some of Our{" "}
-          <span className="text-[#0081E9] text-xl lg:text-[40px] font-poppins font-bold tracking-[0.8px] break-words">
+          <span className="text-[#0081E9] text-xl lg:text-[40px] font-poppins font-bold tracking-[0.8px] break-words outline-text">
             Associate
           </span>{" "}
           Members

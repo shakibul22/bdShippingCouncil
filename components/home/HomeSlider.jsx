@@ -54,12 +54,12 @@ const HomeSlider = () => {
       onMouseLeave={() => setHoveredIndex(null)}
     >
       <div className="flex flex-col justify-center mb-10 items-center">
-        <h3 className="text-center text-xl font-semibold md:text-2xl pb-2 lg:pb-8 lg:text-3xl pt-5 text-white relative">
+        <h3 className="text-center text-xl font-semibold md:text-2xl pb-2  lg:text-3xl pt-5 text-white relative">
           Our Memorable Journey
           <span className="block h-0.5 w-full bg-current mt-2"></span>
         </h3>
       </div>
-      <section className="relative z-10 overflow-hi lg:py-[0px]">
+      <section className="relative z-10 lg:py-[0px]">
         <div className=" py-6">
           <div className="-mx-4 flex flex-wrap lg:justify-between">
             <div className="relative">
@@ -67,7 +67,7 @@ const HomeSlider = () => {
                 <div className="flex rounded-2xl flex-row p-2">
                   {imageData?.map((img, index) => (
                     <div
-                      className={`relative rounded group activeSlide h-[200px] lg:h-[500px] mb-16 overflow-hidden transition-all duration-500 ${
+                      className={`relative rounded group activeSlide h-[200px] lg:h-[497px] mb-16 overflow-hidden transition-all duration-500 ${
                         getActiveIndex() === index
                           ? "flex-[6] opacity-100"
                           : "flex-[1] opacity-50"
@@ -97,132 +97,132 @@ const HomeSlider = () => {
                             : "opacity-0 group-hover:opacity-100"
                         }`}
                       >
-                        <p className="text-white text-sm font-extralight font-quattrocento italic tracking-1 bg-black/60 backdrop-blur-sm p-2 rounded-lg">
+                        <p className="text-white text-sm font-extralight font-quattrocento italic tracking-1 bg-black/60 backdrop-blur-sm p-4 rounded-lg">
                           &ldquo;{img.caption}&ldquo;
                         </p>
                       </div>
                     </div>
                   ))}
                 </div>
-                <div class=" absolute bottom-20 -left-5 3xl:-left-6 lg:bottom-[12%]">
+                <div class=" absolute bottom-20 -left-5 3xl:-left-6 lg:bottom-[14.5%]">
                   <svg
                     className="absolute top-3"
                     width="134"
                     height="34"
                     viewBox="0 0 134 34"
-                    fill="#ffffff"
+                    fill="#8599a8"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <circle cx="2" cy="17" r="1.66667" fill="#ffffff" />
-                    <circle cx="17" cy="17" r="1.66667" fill="#ffffff" />
-                    <circle cx="32" cy="17" r="1.66667" fill="#ffffff" />
-                    <circle cx="47" cy="17" r="1.66667" fill="#ffffff" />
-                    <circle cx="62" cy="17" r="1.66667" fill="#ffffff" />
+                    <circle cx="2" cy="17" r="2.5" fill="#8599a8" />
+                    <circle cx="17" cy="17" r="2.5" fill="#8599a8" />
+                    <circle cx="32" cy="17" r="2.5" fill="#8599a8" />
+                    <circle cx="47" cy="17" r="2.5" fill="#8599a8" />
+                    <circle cx="62" cy="17" r="2.5" fill="#8599a8" />
                   </svg>
                   <svg
                     className="absolute top-6"
                     width="134"
                     height="34"
                     viewBox="0 0 134 34"
-                    fill="#ffffff"
+                    fill="#8599a8"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <circle cx="2" cy="17" r="1.66667" fill="#ffffff" />
-                    <circle cx="17" cy="17" r="1.66667" fill="#ffffff" />
-                    <circle cx="32" cy="17" r="1.66667" fill="#ffffff" />
-                    <circle cx="47" cy="17" r="1.66667" fill="#ffffff" />
-                    <circle cx="62" cy="17" r="1.66667" fill="#ffffff" />
+                    <circle cx="2" cy="17" r="2.5" fill="#8599a8" />
+                    <circle cx="17" cy="17" r="2.5" fill="#8599a8" />
+                    <circle cx="32" cy="17" r="2.5" fill="#8599a8" />
+                    <circle cx="47" cy="17" r="2.5" fill="#8599a8" />
+                    <circle cx="62" cy="17" r="2.5" fill="#8599a8" />
                   </svg>
                 </div>
 
-                <div class=" absolute bottom-[66%] lg:bottom-[30%] -left-9 3xl:-left-10">
+                <div class=" absolute bottom-[66%] lg:bottom-[33%] -left-9 3xl:-left-10">
                   <svg
                     class="absolute left-0"
                     width="34"
                     height="134"
                     viewBox="0 0 34 134"
-                    fill="#ffffff"
+                    fill="#8599a8"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <circle cx="17" cy="92" r="1.66667" fill="#ffffff" />
-                    <circle cx="17" cy="107" r="1.66667" fill="#ffffff" />
-                    <circle cx="17" cy="122" r="1.66667" fill="#ffffff" />
+                    <circle cx="17" cy="92" r="2.5" fill="#8599a8" />
+                    <circle cx="17" cy="107" r="2.5" fill="#8599a8" />
+                    <circle cx="17" cy="122" r="2.5" fill="#8599a8" />
                   </svg>
                   <svg
                     class="absolute left-4"
                     width="34"
                     height="134"
                     viewBox="0 0 34 134"
-                    fill="#ffffff"
+                    fill="#8599a8"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <circle cx="17" cy="92" r="1.66667" fill="#ffffff" />
-                    <circle cx="17" cy="107" r="1.66667" fill="#ffffff" />
-                    <circle cx="17" cy="122" r="1.66667" fill="#ffffff" />
+                    <circle cx="17" cy="92" r="2.5" fill="#8599a8" />
+                    <circle cx="17" cy="107" r="2.5" fill="#8599a8" />
+                    <circle cx="17" cy="122" r="2.5" fill="#8599a8" />
                   </svg>
                 </div>
-                <div class=" absolute -top-10 right-20 ">
+                <div class=" absolute -top-8 right-20 ">
                   <svg
                     className="absolute top-0"
                     width="100"
                     height="34"
                     viewBox="0 0 134 34"
-                    fill="#ffffff"
+                    fill="#8599a8"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <circle cx="62" cy="17" r="1.66667" fill="#ffffff" />
-                    <circle cx="77" cy="17" r="1.66667" fill="#ffffff" />
-                    <circle cx="92" cy="17" r="1.66667" fill="#ffffff" />
+                    <circle cx="62" cy="17" r="2.5" fill="#8599a8" />
+                    <circle cx="77" cy="17" r="2.5" fill="#8599a8" />
+                    <circle cx="92" cy="17" r="2.5" fill="#8599a8" />
                   </svg>
                   <svg
                     className="absolute top-4"
                     width="100"
                     height="34"
                     viewBox="0 0 134 34"
-                    fill="#ffffff"
+                    fill="#8599a8"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <circle cx="62" cy="17" r="1.66667" fill="#ffffff" />
-                    <circle cx="77" cy="17" r="1.66667" fill="#ffffff" />
-                    <circle cx="92" cy="17" r="1.66667" fill="#ffffff" />
+                    <circle cx="62" cy="17" r="2.5" fill="#8599a8" />
+                    <circle cx="77" cy="17" r="2.5" fill="#8599a8" />
+                    <circle cx="92" cy="17" r="2.5" fill="#8599a8" />
                   </svg>
                 </div>
-                <div class=" absolute -top-[11.7%] lg:-top-[5%]  3xl:-top-[5.5%]  right-1">
+                <div class=" absolute -top-[9%] lg:-top-[4.1%]  3xl:-top-[4.1%]  right-1">
                   <svg
                     class="absolute -left-1 lg:left-0"
                     width="30"
                     height="134"
                     viewBox="0 0 34 134"
-                    fill="#ffffff"
+                    fill="#8599a8"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <circle cx="17" cy="2" r="1.66667" fill="#ffffff" />
-                    <circle cx="17" cy="20" r="1.66667" fill="#ffffff" />
-                    <circle cx="17" cy="35" r="1.66667" fill="#ffffff" />
-                    <circle cx="17" cy="50" r="1.66667" fill="#ffffff" />
-                    <circle cx="17" cy="65" r="1.66667" fill="#ffffff" />
+                    <circle cx="17" cy="2" r="2.5" fill="#8599a8" />
+                    <circle cx="17" cy="20" r="2.5" fill="#8599a8" />
+                    <circle cx="17" cy="35" r="2.5" fill="#8599a8" />
+                    <circle cx="17" cy="50" r="2.5" fill="#8599a8" />
+                    <circle cx="17" cy="65" r="2.5" fill="#8599a8" />
                   </svg>
                   <svg
                     class="absolute -left-3.5 md:left-2 lg:-left-3"
                     width="30"
                     height="134"
                     viewBox="0 0 34 134"
-                    fill="#ffffff"
+                    fill="#8599a8"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <circle cx="17" cy="2" r="1.66667" fill="#ffffff" />
-                    <circle cx="17" cy="20" r="1.66667" fill="#ffffff" />
-                    <circle cx="17" cy="35" r="1.66667" fill="#ffffff" />
-                    <circle cx="17" cy="50" r="1.66667" fill="#ffffff" />
-                    <circle cx="17" cy="65" r="1.66667" fill="#ffffff" />
+                    <circle cx="17" cy="2" r="2.5" fill="#8599a8" />
+                    <circle cx="17" cy="20" r="2.5" fill="#8599a8" />
+                    <circle cx="17" cy="35" r="2.5" fill="#8599a8" />
+                    <circle cx="17" cy="50" r="2.5" fill="#8599a8" />
+                    <circle cx="17" cy="65" r="2.5" fill="#8599a8" />
                   </svg>
                 </div>
               </div>
             </div>
-            <div className="relative inset-0 m-auto">
+            <div className="relative inset-0 m-auto rounded-lg overflow-hidden ">
               <Link
                 href={"/media"}
-                className="py-2.5 px-7 w-fit flex flex-row justify-center gap-2 leading-normal hover:bg-btn transition duration-500 text-btn bg-white items-center rounded-sm shadow-lg mx-auto  hover:text-white font-semibold"
+                className="py-3 px-[25px] w-fit flex flex-row justify-center gap-2 leading-normal hover:bg-btn transition duration-500 text-btn bg-white items-center  shadow-lg mx-auto border border-[#0081e9] hover:border-white hover:text-white font-semibold"
               >
                 See More <ImArrowUpRight2 />
               </Link>

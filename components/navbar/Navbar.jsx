@@ -98,20 +98,22 @@ const Navbar = () => {
           <div className="flex gap-3 items-center">
             <Image src={logo} width={50} height={50} alt="logo" />
             <h2
-              className={`${inter.className} lg:text-2xl 3xl:text-3xl text-primaryColor font-bold font-Inter`}
+              className={`${inter.className} lg:text-2xl 3xl:text-3xl text-[#0a4a77] font-bold font-Inter`}
             >
               Shippers’ Council of Bangladesh
             </h2>
           </div>
-          <div className="border border-primaryColor rounded-tl-3xl  rounded-bl-3xl rounded-br-[40px] w-[208px] ">
+          <div className="border border-[#477799] rounded-tl-3xl bg-[#ffffff]  rounded-bl-3xl rounded-br-[32px] w-[198px] ">
             <Link
               href="/contact"
               className="font-bold text-lg col-span-1 flex items-center gap-2 w-fit leading-normal"
             >
-              <div className="p-3 rounded-full border-2 ring bg-primaryColor transform transition-transform duration-1000 hover:rotate-45">
-                <BsSend className="lg:text-lg 3xl:text-xl text-white" />
+              <div className="bg-[#0a4a77] p-1 rounded-full">
+                <div className="p-2 rounded-full border border-[#84a4bb]  ">
+                  <BsSend className="lg:text-lg 3xl:text-xl transform transition-transform duration-1000 hover:rotate-45 text-white" />
+                </div>
               </div>
-              <span className="pr-2 text-primaryColor"> CONTACT US</span>
+              <span className="pr-2 text-[#0a4a77]"> CONTACT US</span>
             </Link>
           </div>
         </div>
@@ -127,8 +129,8 @@ const Navbar = () => {
                 <NavigationMenuItem
                   className={
                     pathname === "/"
-                      ? "bg-white text-lg font-sans font-semibold text-primaryColor rounded-none"
-                      : "hover:bg-white transition duration-700 font-sans text-lg font-semibold text-white hover:text-primaryColor"
+                      ? "bg-white text-lg  font-normal text-[#0a4a77] rounded-none"
+                      : "hover:bg-white transition duration-700 text-lg font-normal text-white hover:text-[#0a4a77]"
                   }
                 >
                   <Link href={"/"} legacyBehavior passHref>
@@ -147,7 +149,7 @@ const Navbar = () => {
               <NavigationMenuList>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger
-                    className={`bg-transparent text-lg  hover:bg-white transition duration-700 hover:text-[#0a4a77] rounded-none ${
+                    className={`bg-transparent text-lg  hover:bg-white transition font-normal duration-700 hover:text-[#0a4a77] rounded-none ${
                       pathname.split("/")[1] === "about"
                         ? "bg-white text-black"
                         : null
@@ -271,7 +273,7 @@ const Navbar = () => {
               <NavigationMenuList>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger
-                    className={`bg-transparent text-lg  hover:bg-white transition duration-700 hover:text-[#0a4a77] rounded-none ${
+                    className={`bg-transparent text-lg font-normal  hover:bg-white transition duration-700 hover:text-[#0a4a77] rounded-none ${
                       pathname.split("/")[1] === "news"
                         ? "bg-white text-black"
                         : null
@@ -322,7 +324,7 @@ const Navbar = () => {
               <NavigationMenuList>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger
-                    className={`bg-transparent text-lg hover:bg-white transition duration-700 hover:text-[#0a4a77] rounded-none ${
+                    className={`bg-transparent text-lg font-normal hover:bg-white transition duration-700 hover:text-[#0a4a77] rounded-none ${
                       pathname.split("/")[1] === "seminar"
                         ? "bg-white text-black"
                         : null
@@ -358,7 +360,7 @@ const Navbar = () => {
               <NavigationMenuList>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger
-                    className={`bg-transparent text-lg hover:bg-white transition duration-700 hover:text-[#0a4a77]  rounded-none ${
+                    className={`bg-transparent text-lg font-normal hover:bg-white transition duration-700 hover:text-[#0a4a77]  rounded-none ${
                       pathname.split("/")[1] === "media"
                         ? "bg-white text-black"
                         : null
@@ -395,7 +397,7 @@ const Navbar = () => {
               <NavigationMenuList>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger
-                    className={`bg-transparent text-lg hover:bg-white transition duration-700 hover:text-[#0a4a77]  rounded-none ${
+                    className={`bg-transparent text-lg font-normal hover:bg-white transition duration-700 hover:text-[#0a4a77]  rounded-none ${
                       pathname.split("/")[1] === "member"
                         ? "bg-white text-black"
                         : null
@@ -450,8 +452,8 @@ const Navbar = () => {
                 <NavigationMenuItem
                   className={
                     pathname === "/useful-link"
-                      ? "bg-white text-black  hover:bg-white transition duration-700 hover:text-[#0a4a77]"
-                      : "hover:bg-white transition duration-700 hover:text-[#0a4a77]  "
+                      ? "bg-white text-black font-normal hover:bg-white transition duration-700 hover:text-[#0a4a77]"
+                      : "hover:bg-white transition font-normal duration-700 hover:text-[#0a4a77]  "
                   }
                 >
                   <Link href={"/useful-link"} legacyBehavior passHref>

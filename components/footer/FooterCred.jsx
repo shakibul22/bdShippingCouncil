@@ -1,11 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { BiLogoGmail } from "react-icons/bi";
-import {
-  FaInstagram,
-  FaLocationDot,
-
-} from "react-icons/fa6";
+import { FaInstagram, FaLocationDot } from "react-icons/fa6";
 import { RiTwitterXFill } from "react-icons/ri";
 const FooterCred = () => {
   return (
@@ -18,6 +14,14 @@ const FooterCred = () => {
         >
           {" "}
           <RiTwitterXFill className="text-xl text-black" />
+        </Link>
+
+        <Link
+          href="https://www.instagram.com/"
+          aria-label="Go to instagram"
+          className="mr-3 flex h-8 w-8 items-center justify-center bg-white rounded-full border border-stroke  hover:border-primary hover:bg-btn text-white hover:text-whitey sm:mr-4 lg:mr-3 xl:mr-4"
+        >
+          <FaInstagram className="text-xl text-[#ad3469]" />
         </Link>
         <Link
           href="https://www.facebook.com/"
@@ -34,14 +38,6 @@ const FooterCred = () => {
           </svg>
         </Link>
         <Link
-          href="https://www.instagram.com/"
-          aria-label="Go to instagram"
-          className="mr-3 flex h-8 w-8 items-center justify-center bg-white rounded-full border border-stroke  hover:border-primary hover:bg-btn text-white hover:text-whitey sm:mr-4 lg:mr-3 xl:mr-4"
-        >
-          <FaInstagram className="text-xl text-[#ad3469]" />
-        </Link>
-
-        <Link
           href="https://www.gmail.com/"
           aria-label="Go to youtube"
           className="mr-3 flex h-8 w-8 items-center justify-center bg-white rounded-full border border-stroke  hover:border-primary hover:bg-btn text-white hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
@@ -53,16 +49,9 @@ const FooterCred = () => {
           aria-label="Go to whats app"
           className="mr-3 flex h-8 w-8 items-center justify-center bg-white rounded-full border border-stroke  hover:border-primary hover:bg-btn text-white hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
         >
-          <FaLocationDot className="text-red-400 text-xl" />
+          <FaLocationDot className="text-red-600 text-xl" />
         </Link>
       </div>
-      {/* <div className="space-y-1">
-        <p>© Copyright 2022, All Rights Reserved by Shippers Council</p>
-        <p>
-          Developed by{" "}
-          <span className="font-medium">Tech Solution Factory</span>
-        </p>
-      </div> */}
     </div>
   );
 };

@@ -9,7 +9,9 @@ const BODcard = ({ id, name, designation, image }) => {
 
   return (
     <div
-      className="relative w-[45vw] sm:w-[180px] h-[275px] lg:w-[250px] 3xl:w-[300px] lg:h-[410px] transition duration-1000"
+      className="relative w-[45vw] sm:w-[180px] h-[275px] lg:w-[250px] 3xl:w-[300px] lg:h-[410px] transition-all duration-1000"
+      data-aos="zoom-in"
+      data-aos-once="false"
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
@@ -17,8 +19,8 @@ const BODcard = ({ id, name, designation, image }) => {
         className="w-full h-full bg-cardColor shadow-lg rounded-2xl transition duration-1000"
         style={{
           clipPath: hover
-            ? "polygon(-9% -4%, -8% 101%, 78% 105%, 106% 75%, 105% -4%)"
-            : "polygon(22% -8%, -6% 27%, -8% 103%, 78% 105%, 106% 75%, 105% -4%)",
+            ? "polygon(-3% -6%, -13% 106%, 74% 102%, 103% 80%, 108% -17%)"
+            : "polygon(38% -6%, -5% 23%, -13% 106%, 74% 102%, 103% 80%, 108% -17%)",
         }}
       ></div>
       <div className="absolute inset-0 flex flex-col items-start gap-1 justify-start p-2 md:p-3 lg:p-5 border-solid aspect-[0.67] fill-sky-900 stroke-[1px] stroke-sky-900">
@@ -27,7 +29,7 @@ const BODcard = ({ id, name, designation, image }) => {
           width={250}
           height={300}
           alt="bod"
-          className="h-40 md:h-52 lg:h-64 object-fill size-full"
+          className="h-40 md:h-52 lg:h-64 object-fill border rounded border-sky-900 hover:border-white transition-all duration-500 size-full"
         />
         <h3 className="text-white text-xs md:text-sm lg:text-[16px] 3xl:text-lg font-bold mt-2">
           {name}

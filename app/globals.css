@@ -50,26 +50,25 @@
   }
 }
 
-/* css for latest news text */
-.custom-quote {
-  font-family: "Quattrocento Sans", sans-serif;
-  font-style: italic;
-  font-size: 27px;
-  line-height: 27.4px;
-  color: rgba(
-    215,
-    215,
-    215,
-    0.8
-  ); /* Adjusted to match the image more closely */
-  word-wrap: break-word;
-  text-shadow: 5px 4px 2px rgba(0, 0, 0, 0.5); /* Added subtle shadow */
+.outline-text {
+  color: #0081e9; /* The fill color of the text */
+  -webkit-text-stroke: 0.2px #7dc5ff; /* Stroke color and width */
+  text-shadow: 0.2px 0.2px 0 #7dc5ff, -0.2px -0.2px 0 #7dc5ff,
+    -0.2px 0.2px 0 #7dc5ff, 0.2px -0.2px 0 #7dc5ff;
+}
+/* NewsCard.module.css */
+@keyframes borderAnimation {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  50% {
+    box-shadow: 0 0 20px 5px rgba(152, 186, 211, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
 }
 
-.custom-quote .bold {
-  font-weight: 700;
-}
-
-.custom-quote .normal {
-  font-weight: 400;
+.animatedBorder {
+  animation: borderAnimation 2s infinite;
 }

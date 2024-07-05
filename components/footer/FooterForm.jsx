@@ -37,7 +37,7 @@ const FooterForm = () => {
     <div className="space-y-5 flex-1 flex flex-col items-start">
       <div className="flex gap-2">
         <h4 className="text-2xl text-white">Contact with us</h4>
-        <div className="w-[100px] lg:w-[240px]">
+        <div className="w-[135px] lg:w-[207px]">
           <hr className="flex-grow border-b mt-6 " />
         </div>
       </div>
@@ -49,7 +49,7 @@ const FooterForm = () => {
           <div className="flex-1">
             <input
               type="text"
-              className=" bg-[#547086] text-white  p-4 rounded-lg mt-2 focus:outline-none w-full"
+              className=" bg-[#547086] text-[#aab8c3]  border border-[#fff]  p-4 rounded-lg mt-2 focus:outline-none w-full"
               required
               placeholder="Enter your name"
               onChange={(e) => {
@@ -60,7 +60,7 @@ const FooterForm = () => {
           <div className="flex-1">
             <input
               type="number"
-              className=" bg-[#547086] text-white  p-4 rounded-lg mt-2 focus:outline-none w-full"
+              className=" bg-[#547086] text-[#aab8c3]  border border-[#fff]  p-4 rounded-lg mt-2 focus:outline-none w-full"
               required
               placeholder="Enter your number"
               onChange={(e) => {
@@ -73,7 +73,7 @@ const FooterForm = () => {
         <div>
           <input
             type="email"
-            className=" bg-[#547086] text-white  p-4 rounded-lg mt-2 focus:outline-none w-full"
+            className=" bg-[#547086] text-[#aab8c3]  border border-[#fff]  p-4 rounded-lg mt-2 focus:outline-none w-full"
             required
             placeholder="Enter your email"
             onChange={(e) => {
@@ -86,7 +86,7 @@ const FooterForm = () => {
           <textarea
             rows={3}
             type="text"
-            className=" bg-[#547086] text-white  p-4 rounded-lg mt-2 focus:outline-none w-full"
+            className=" bg-[#547086] text-[#aab8c3]  border border-[#fff]  p-4 rounded-lg mt-2 focus:outline-none w-full"
             required
             aria-required
             placeholder="Write something to us"
@@ -98,7 +98,7 @@ const FooterForm = () => {
 
         <button
           type="submit"
-          className="py-3 w-full bg-white flex flex-row justify-center items-center gap-3   text-blue-600"
+          className="py-3 w-full bg-white flex flex-row justify-center items-center gap-3 border hover:text-black font-normal text-lg rounded-lg transition-colors duration-200 border-[#0081e9]  text-blue-600"
           // onClick={(e) => handleSubmit(e)}
           disabled={sending}
         >

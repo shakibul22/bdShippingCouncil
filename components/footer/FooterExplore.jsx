@@ -8,25 +8,25 @@ const FooterExplore = () => {
       <div className="flex flex-col items-center gap-4 mt-5 ">
         <Link
           href={"/about"}
-          className=" text-[#6f8699] hover:text-[#ffffff] hover:underline"
+          className=" text-[#8699a8] hover:text-[#ffffff] hover:underline"
         >
           About us
         </Link>
         <Link
           href={"/contact"}
-          className=" text-[#6f8699] hover:text-[#ffffff] hover:underline"
+          className=" text-[#8699a8] hover:text-[#ffffff] hover:underline"
         >
           Contact us
         </Link>
         <Link
           href={"/member"}
-          className=" text-[#6f8699] hover:text-[#ffffff] hover:underline"
+          className=" text-[#8699a8] hover:text-[#ffffff] hover:underline"
         >
           Become a member
         </Link>
         <Link
           href={"/about/officials"}
-          className=" text-[#6f8699] hover:text-[#ffffff] hover:underline"
+          className=" text-[#8699a8] hover:text-[#ffffff] hover:underline"
         >
           Organization info
         </Link>

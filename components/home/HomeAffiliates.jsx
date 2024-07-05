@@ -31,7 +31,7 @@ const HomeAffiliates = () => {
 
   return (
     <div>
-      <h3 className="text-lg md:text-xl px-2 font-bold lg:text-2xl text-white text-start">
+      <h3 className="text-lg md:text-xl px-2 font-poppins lg:text-2xl text-white text-start">
         Our Affiliates
       </h3>
 
