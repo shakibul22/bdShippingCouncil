@@ -53,8 +53,8 @@ const HomeSlider = () => {
       className="py-5 px-10 w-full lg:min-w-7xl xl:container mx-auto bg-primaryColor"
       onMouseLeave={() => setHoveredIndex(null)}
     >
-      <div className="flex flex-col justify-center mb-10 items-center">
-        <h3 className="text-center text-xl font-semibold md:text-2xl pb-2  lg:text-3xl pt-5 text-white relative">
+      <div className="flex flex-col justify-center mb-1 items-center">
+        <h3 className="text-center font-poppins text-xl font-bold md:text-2xl pb-2  lg:text-4xl tracking-[.8px] pt-5 text-white relative">
           Our Memorable Journey
           <span className="block h-0.5 w-full bg-current mt-2"></span>
         </h3>
@@ -97,7 +97,10 @@ const HomeSlider = () => {
                             : "opacity-0 group-hover:opacity-100"
                         }`}
                       >
-                        <p className="text-white text-sm font-extralight font-quattrocento italic tracking-1 bg-black/60 backdrop-blur-sm p-4 rounded-lg">
+                        <p
+                          className="text-white text-sm font-normal font-quattrocento italic tracking-[0.36px] backdrop-blur-sm p-4 rounded-lg"
+                          style={{ backgroundColor: "rgba(0, 30, 53, 0.60)" }}
+                        >
                           &ldquo;{img.caption}&ldquo;
                         </p>
                       </div>
@@ -219,10 +222,10 @@ const HomeSlider = () => {
                 </div>
               </div>
             </div>
-            <div className="relative inset-0 m-auto rounded-lg overflow-hidden ">
+            <div className="relative inset-0 m-auto rounded-md overflow-hidden border hover:bg-btn transition duration-500 text-btn bg-white border-[#0081e9] hover:border-white hover:text-white">
               <Link
                 href={"/media"}
-                className="py-3 px-[25px] w-fit flex flex-row justify-center gap-2 leading-normal hover:bg-btn transition duration-500 text-btn bg-white items-center  shadow-lg mx-auto border border-[#0081e9] hover:border-white hover:text-white font-semibold"
+                className="py-3 px-[25px] w-fit flex flex-row justify-center gap-2 leading-normal  items-center  shadow-lg mx-auto  font-medium"
               >
                 See More <ImArrowUpRight2 />
               </Link>

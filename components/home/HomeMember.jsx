@@ -20,9 +20,9 @@ const HomeMember = ({ data }) => {
       <div>
         <div
           className="flex flex-col lg:flex-row justify-between w-full lg:max-w-5xl 3xl:max-w-7xl mx-auto items-center gap-10 lg:mt-16"
-         data-aos-once="false" data-aos="fade-right"
+          data-aos="fade-right"
         >
-          <div className="mt-7 text-sm lg:text-base space-y-8 text-justify lg:w-[650px]">
+          <div className="mt-7 text-sm lg:text-base space-y-8 text-justify lg:w-[650px] ">
             <div className="flex items-center space-x-2">
               <p className="text-xs font-semibold lg:text-lg">
                 Become a member
@@ -32,7 +32,7 @@ const HomeMember = ({ data }) => {
               </div>
             </div>
 
-            <h2 className="text-lg font-bold lg:text-3xl mt-4">
+            <h2 className="text-lg font-bold lg:text-3xl mt-4 ">
               Members in the{" "}
               <span className="text-btn italic font-bold tracking-wide break-words outline-text ">
                 Shippers'
@@ -46,7 +46,7 @@ const HomeMember = ({ data }) => {
 
             <div
               className="bg-btn hover:bg-white hover:text-btn my-10 lg:mx- py-2.5 px-5 w-fit"
-             data-aos-once="false" data-aos="fade-right"
+              data-aos="fade-right"
             >
               <a
                 href={`/pdf/application.pdf`}
@@ -66,17 +66,14 @@ const HomeMember = ({ data }) => {
             </div>
           </div>
 
-          <div
-            className="flex justify-end flex-1 ml-auto mr-4 h-[420px] xl:h-[490px] sm:mx-auto"
-         
-          >
+          <div className="flex justify-end flex-1 ml-auto mr-4 h-[420px] xl:h-[490px] sm:mx-auto">
             <div className="relative">
               <Image
                 src={`/img/${data?.image?.image1}`}
                 width={320}
                 height={280}
                 alt="ship"
-                  data-aos-once="false" data-aos="fade-left"
+                data-aos="fade-left"
                 className="border-2 w-56 h-64 lg:w-[370px] 3xl:w-full xl:h-[500px] border-r-8 rounded-lg border-white object-cover"
               />
               <Image
@@ -84,7 +81,7 @@ const HomeMember = ({ data }) => {
                 width={320}
                 height={280}
                 alt="ship"
-                  data-aos-once="false" data-aos="fade-left"
+                data-aos="fade-left"
                 className="border-2 w-[200px] lg:w-[250px] 3xl:w-[250px] xl:h-[350px] h-48 rounded-lg object-cover object-top absolute top-[13%] lg:top-[10%] right-[45%] sm:right-[60%] 3xl:right-[70%] z-20"
               />
             </div>

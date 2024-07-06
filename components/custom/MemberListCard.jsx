@@ -1,11 +1,8 @@
-import Image from "next/image";
 import React from "react";
 
 const MemberListCard = ({ bg, name, logo, member_id }) => {
   return (
-    <div
-      className={`p-2 md:p-4 flex items-center gap-3}`}
-    >
+    <div className={`p-2 md:p-4  gap-3}`}>
       {/* <Image
         src={`/img/memberLogo/${logo}`}
         width={70}
@@ -14,9 +11,11 @@ const MemberListCard = ({ bg, name, logo, member_id }) => {
         className="rounded-md"
       /> */}
 
-      <div className="text-sm lg:text-base space-y-2">
-        <p className="">{name}</p>
-        <p className="font-extralight text-xs lg:text-sm tracking-wide">Membership ID: {member_id}</p>
+      <div className="text-sm flex flex-col justify-center text-[#cccccc] items-center lg:text-base space-y-2">
+        <p className="uppercase font-semibold text-lg">{name}</p>
+        <p className="font-normal text-xs lg:text-[16px] tracking-wide">
+          Membership ID: {member_id}
+        </p>
       </div>
     </div>
   );

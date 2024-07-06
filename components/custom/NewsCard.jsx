@@ -9,10 +9,10 @@ const NewsCard = ({ image, name, date, volume, index }) => {
       className={`pb-3 w-full bg-white rounded-xl space-y-4 shadow-md relative overflow-hidden 
         animatedBorder
        ${
-        isLargeCard
-          ? "w-full h-full lg:w-full lg:h-[500px]"
-          : "w-full h-[200px] lg:h-full flex flex-row justify-between items-start"
-      }`}
+         isLargeCard
+           ? "w-full h-full lg:w-full lg:h-[500px]"
+           : "w-full h-[200px] lg:h-full flex flex-row justify-between items-start"
+       }`}
     >
       <div className={`absolute inset-0 animatedBorder`}></div>
       <div
@@ -40,10 +40,10 @@ const NewsCard = ({ image, name, date, volume, index }) => {
           <h4 className="font-semibold text-[#0a4a77] text-xs mb-2 lg:text-2xl">
             0{index}. {name}
           </h4>
-          <p className="font-semibold text-lg">{date}</p>
+          <p className="font-semibold text-[#626262] text-lg">{date}</p>
           {volume && (
-            <p className="py-1 text-xs lg:py-3 rounded-2xl uppercase font-semibold px-1 lg:px-4 border">
-              Volume: {volume}
+            <p className="py-1 text-xs text-[#626262] lg:py-2 rounded-2xl uppercase font-semibold w-fit px-4 border">
+              Volume {volume}
             </p>
           )}
         </div>

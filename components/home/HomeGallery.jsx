@@ -41,7 +41,7 @@ const HomeGallery = async () => {
                 width={400}
                 height={300} // Reduced height
                 alt="img-2"
-                className="w-full h-auto hover:zoom-in rounded-lg lg:rounded-lg"
+                className="w-full h-auto rounded-lg lg:rounded-lg"
               />
             </div>
             <div
@@ -54,7 +54,7 @@ const HomeGallery = async () => {
                 width={400}
                 height={300} // Reduced height
                 alt="img-5"
-                className="w-full h-auto hover:zoom-in rounded-lg lg:rounded-lg"
+                className="w-full h-auto rounded-lg lg:rounded-lg"
               />
             </div>
           </div>
@@ -68,7 +68,7 @@ const HomeGallery = async () => {
               width={400}
               height={200} // Reduced height
               alt="hbgh"
-              className="w-full h-auto hover:zoom-in rounded-lg lg:rounded-lg"
+              className="w-full h-auto rounded-lg lg:rounded-lg"
             />
           </div>
 
@@ -83,7 +83,7 @@ const HomeGallery = async () => {
                 width={400}
                 height={300} // Reduced height
                 alt="img-2"
-                className="w-full h-auto hover:zoom-in rounded-lg lg:rounded-lg"
+                className="w-full h-auto rounded-lg lg:rounded-lg"
               />
             </div>
             <div
@@ -96,7 +96,7 @@ const HomeGallery = async () => {
                 width={400}
                 height={300} // Reduced height
                 alt="img-5"
-                className="w-full h-auto hover:zoom-in rounded-lg lg:rounded-lg"
+                className="w-full h-auto rounded-lg lg:rounded-lg"
               />
             </div>
           </div>
@@ -111,14 +111,14 @@ const HomeGallery = async () => {
               width={400}
               height={200} // Reduced height
               alt="image-6"
-              className="w-full h-auto hover:zoom-in rounded-lg lg:rounded-lg"
+              className="w-full h-auto rounded-lg lg:rounded-lg"
             />
           </div>
         </div>
         <div>
           <Link
             href={"/media"}
-            className="py-2.5 px-7 w-fit flex flex-row justify-center gap-2 leading-normal bg-btn hover:bg-white hover:border hover:text-blue-400 hover:border-blue-400 items-center rounded-md shadow-lg mx-auto mt-12 transition duration-500 text-white font-semibold"
+            className="py-3 px-6 w-fit flex flex-row justify-center gap-2 leading-normal bg-btn hover:bg-white hover:border hover:text-blue-400 hover:border-blue-400 items-center rounded-sm  mx-auto mt-12 transition duration-500 border border-white text-white font-semibold"
             data-aos="fade-up"
           >
             See More <ImArrowUpRight2 />
