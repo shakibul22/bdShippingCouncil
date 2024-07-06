@@ -48,7 +48,7 @@ const HomeAboutUs = ({ data }) => {
           <p className="mt-0 md:mt-2 lg:mt-4 text-start text-[#d9dde1] text-xs lg:text-lg">
             {data?.text}
           </p>
-          <div className="max-w-[200px] rounded-lg pb-2 lg:pb-6 absolute lg:bottom-3">
+          <div className="max-w-[200px] rounded-md overflow-auto pb-2 lg:pb-6 absolute lg:bottom-3">
             <Link href="/about">
               <p className="py-2.5 px-7 flex flex-row justify-center gap-2 leading-normal bg-btn hover:bg-white hover:text-black transition duration-500 items-center rounded-sm shadow-lg mx-auto mt-4 lg:mt-12 text-white font-semibold">
                 Explore Now <ImArrowUpRight2 />

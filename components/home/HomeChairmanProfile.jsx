@@ -70,7 +70,7 @@ const HomeChairmanProfile = ({ data }) => {
               data-aos-once="false"
               data-aos="fade-up"
             >
-              <p className="py-3 px-6 w-fit flex flex-row justify-center gap-2 leading-normal transition-all duration-500 bg-btn hover:bg-white hover:text-gray-950 hover:border-gray-950 items-center rounded-sm shadow-lg mx-auto mt-4 lg:mt-12 text-white font-semibold">
+              <p className="py-3 px-6 w-fit flex flex-row justify-center gap-2 leading-normal transition-all duration-500 bg-btn hover:bg-white hover:text-gray-950 hover:border-gray-950 items-center rounded-md shadow-lg mx-auto mt-4 lg:mt-12 text-white font-semibold">
                 Read More <ImArrowUpRight2 />
               </p>
             </Link>

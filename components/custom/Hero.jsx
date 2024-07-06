@@ -31,7 +31,7 @@ const Hero = () => {
         Your browser does not support the video tag.
       </video>
       {/* Overlay color */}
-      <div className="absolute inset-0 bg-primaryColor/50 bg-opacity-40 lg:bg-opacity-10"></div>
+      <div className="absolute inset-0 bg-[#0A4A77] bg-opacity-40 lg:bg-opacity-30"></div>
 
       <div className="absolute inset-0 flex items-center justify-center">
         <div className="absolute bg-white/5 shadow-transparent bg-opacity-20 w-[180px] h-[180px] sm:w-[150px] sm:h-[150px] md:w-[200px] md:h-[200px] lg:w-[300px] lg:h-[300px] 3xl:w-[400px] 3xl:h-[400px] top-[40%] lg:top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full z-10 flex items-center justify-center">

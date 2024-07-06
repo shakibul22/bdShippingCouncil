@@ -31,7 +31,7 @@ const HomeRnP = async () => {
           </h3>
         </div>
 
-        <div className="grid grid-cols-2 gap-2 lg:gap-6 shadow-lg shadow-blue-500/50 bg-[#d1e9fd] mt-10">
+        <div className="grid grid-cols-2 gap-2 lg:gap-6   mt-10">
           <div className="flex flex-col gap-4 w-full">
             {news &&
               Array.isArray(news) &&

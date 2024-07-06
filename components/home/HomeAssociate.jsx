@@ -122,7 +122,7 @@ const HomeAssociate = async () => {
         <div className="flex justify-end items-center mt-12">
           <Link
             href={"/member/list"}
-            className="py-3 px-6 flex items-center gap-2 hover:bg-btn bg-white  hover:border hover:border-white rounded-sm transition-all duration-500  hover:text-white text-btn font-semibold"
+            className="py-3 px-6 flex items-center gap-2 hover:bg-btn bg-white  hover:border hover:border-white rounded-md transition-all duration-500  hover:text-white text-btn font-semibold"
           >
             <span className="whitespace-nowrap">See More</span>
             <ImArrowUpRight2 className="ml-1" />

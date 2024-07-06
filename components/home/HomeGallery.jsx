@@ -118,7 +118,7 @@ const HomeGallery = async () => {
         <div>
           <Link
             href={"/media"}
-            className="py-3 px-6 w-fit flex flex-row justify-center gap-2 leading-normal bg-btn hover:bg-white hover:border hover:text-blue-400 hover:border-blue-400 items-center rounded-sm  mx-auto mt-12 transition duration-500 border border-white text-white font-semibold"
+            className="py-3 px-6 w-fit flex flex-row justify-center gap-2 leading-normal bg-btn hover:bg-white hover:border hover:text-blue-400 hover:border-blue-400 items-center rounded-md  mx-auto mt-12 transition duration-500 border border-white text-white font-semibold"
             data-aos="fade-up"
           >
             See More <ImArrowUpRight2 />

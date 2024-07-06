@@ -46,7 +46,7 @@ const HomeBOD = async ({ data }) => {
         </div>
         <div>
           <Link href={"/about/officials"} className="w-[200px]">
-            <p className="py-3 px-6 w-fit flex flex-row justify-center gap-2 leading-normal bg-btn hover:bg-[#e8e8e8] hover:border-gray-900 hover:border hover:text-gray-900 cursor-pointer items-center rounded-sm transition duration-500 shadow-lg mx-auto mt-12 text-white font-semibold">
+            <p className="py-3 px-6 w-fit flex flex-row justify-center gap-2 leading-normal bg-btn hover:bg-[#e8e8e8] hover:border-gray-900 hover:border hover:text-gray-900 cursor-pointer items-center rounded-md transition duration-500 shadow-lg mx-auto mt-12 text-white font-semibold">
               View All <ImArrowUpRight2 />
             </p>
           </Link>

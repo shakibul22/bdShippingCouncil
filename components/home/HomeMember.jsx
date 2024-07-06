@@ -45,7 +45,7 @@ const HomeMember = ({ data }) => {
             </p>
 
             <div
-              className="bg-btn hover:bg-white hover:text-btn my-10 lg:mx- py-2.5 px-5 w-fit"
+              className="bg-btn hover:bg-white hover:text-btn  rounded-md my-10 lg:mx- py-2.5 px-5 w-fit"
               data-aos="fade-right"
             >
               <a
@@ -74,7 +74,7 @@ const HomeMember = ({ data }) => {
                 height={280}
                 alt="ship"
                 data-aos="fade-left"
-                className="border-2 w-56 h-64 lg:w-[370px] 3xl:w-full xl:h-[500px] border-r-8 rounded-lg border-white object-cover"
+                className="border-2 w-56 h-64 lg:w-[370px] 3xl:w-full xl:h-[460px] border-r-8 rounded-lg border-white object-cover"
               />
               <Image
                 src={`/img/${data?.image?.image2}`}
