@@ -1,5 +1,6 @@
 "use client";
-import MemberListCard from "@/components/custom/MemberListCard";
+import MemberListModal from "@/components/custom/MemberListModal";
+
 import { publicRequest } from "@/requestMethod";
 import React, { useState } from "react";
 import { AiOutlineSearch } from "react-icons/ai";
@@ -24,7 +25,6 @@ const MemberListLayout = async () => {
 
   const ordinary = await data_O;
   const associate = await data_A;
-  console.log(ordinary);
   return (
     <div className="subRoutebg">
       <div className="bg-[url('/img/memberlist_bg.webp')] subRoutebanner">
@@ -80,13 +80,13 @@ const MemberListLayout = async () => {
         {tab === 1 ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4  animate__animated animate__fadeIn animate__slow">
             {ordinary?.map((member) => (
-              <MemberListCard key={member.id} member={member} />
+              <MemberListModal key={member.id} member={member} />
             ))}
           </div>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 animate__animated animate__fadeIn animate__slow">
             {associate?.map((member) => (
-              <MemberListCard key={member.id} member={member} />
+              <MemberListModal key={member.id} member={member} />
             ))}
           </div>
         )}

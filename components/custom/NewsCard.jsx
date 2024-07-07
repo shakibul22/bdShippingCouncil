@@ -19,7 +19,7 @@ const NewsCard = ({ image, name, date, volume, index }) => {
         className={`flex flex-row justify-end items-end absolute rounded-tl-2xl w-full bottom-0 right-0 ${
           isLargeCard
             ? "w-[130px] h-[200px] lg:w-[400px] lg:h-[330px]"
-            : "w-[80px] lg:w-[300px] lg:h-[200px]"
+            : "w-[70px] lg:w-[300px] h-[80px] lg:h-[200px]"
         }`}
       >
         <Image
@@ -40,9 +40,11 @@ const NewsCard = ({ image, name, date, volume, index }) => {
           <h4 className="font-semibold text-[#0a4a77] text-xs mb-2 lg:text-2xl">
             0{index}. {name}
           </h4>
-          <p className="font-semibold text-[#626262] text-lg">{date}</p>
+          <p className="font-semibold text-[#626262] text-xs lg:text-lg">
+            {date}
+          </p>
           {volume && (
-            <p className="py-1 text-xs text-[#626262] lg:py-2 rounded-2xl uppercase font-semibold w-fit px-4 border">
+            <p className="py-1 text-xs text-[#626262] lg:py-2 rounded-2xl uppercase font-semibold w-fit px-2 lg:px-4 border">
               Volume {volume}
             </p>
           )}
