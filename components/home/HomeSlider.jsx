@@ -23,7 +23,7 @@ const HomeSlider = () => {
 
     fetchData();
   }, []);
-console.log(allImageData)
+  console.log(allImageData);
   useEffect(() => {
     const interval = setInterval(() => {
       setHighlightedIndex((prevIndex) => {
@@ -54,7 +54,7 @@ console.log(allImageData)
       onMouseLeave={() => setHoveredIndex(null)}
     >
       <div className="flex flex-col justify-center mb-1 items-center">
-        <h3 className="text-center font-poppins text-xl font-bold md:text-2xl pb-2  lg:text-4xl tracking-[.8px] pt-5 text-white relative">
+        <h3 className="text-center font-poppins text-xl font-bold md:text-xl pb-2  lg:text-2xl 3xl:text-3xl tracking-[.8px] pt-5 text-white relative">
           Our Memorable Journey
           <span className="block h-0.5 w-full bg-current mt-2"></span>
         </h3>

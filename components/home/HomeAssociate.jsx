@@ -28,7 +28,11 @@ const HomeAssociate = async () => {
             <hr className="flex-grow border-b mt-4 " />
           </div>
         </div>
-        <h3 className="text-xl font-bold lg:text-4xl">
+        <h3
+          className="text-xl font-bold lg:text-4xl"
+          data-aos="fade-right"
+          data-aos-once="false"
+        >
           Some of Our{" "}
           <span className="text-[#0081E9] text-xl lg:text-[40px] font-poppins font-bold tracking-[0.8px] break-words outline-text">
             Associate
