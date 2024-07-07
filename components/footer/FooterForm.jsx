@@ -49,7 +49,7 @@ const FooterForm = () => {
           <div className="flex-1">
             <input
               type="text"
-              className=" bg-[#547086] text-[#aab8c3]  border border-[#fff]  p-4 rounded-lg mt-2 focus:outline-none w-full"
+              className=" bg-[#547086] text-[#aab8c3]  border border-[#fff]  text-[16px] p-4 rounded-lg mt-2 focus:outline-none w-full"
               required
               placeholder="Enter your name"
               onChange={(e) => {
@@ -60,7 +60,7 @@ const FooterForm = () => {
           <div className="flex-1">
             <input
               type="number"
-              className=" bg-[#547086] text-[#aab8c3]  border border-[#fff]  p-4 rounded-lg mt-2 focus:outline-none w-full"
+              className=" bg-[#547086] text-[#aab8c3]  border border-[#fff]  text-[16px] p-4 rounded-lg mt-2 focus:outline-none w-full"
               required
               placeholder="Enter your number"
               onChange={(e) => {
@@ -73,7 +73,7 @@ const FooterForm = () => {
         <div>
           <input
             type="email"
-            className=" bg-[#547086] text-[#aab8c3]  border border-[#fff]  p-4 rounded-lg mt-2 focus:outline-none w-full"
+            className=" bg-[#547086] text-[#aab8c3]  border border-[#fff]  text-[16px] p-4 rounded-lg mt-2 focus:outline-none w-full"
             required
             placeholder="Enter your email"
             onChange={(e) => {
@@ -86,7 +86,7 @@ const FooterForm = () => {
           <textarea
             rows={3}
             type="text"
-            className=" bg-[#547086] text-[#aab8c3]  border border-[#fff]  p-4 rounded-lg mt-2 focus:outline-none w-full"
+            className=" bg-[#547086] text-[#aab8c3]  border border-[#fff]  text-[16px] p-4 rounded-lg mt-2 focus:outline-none w-full"
             required
             aria-required
             placeholder="Write something to us"

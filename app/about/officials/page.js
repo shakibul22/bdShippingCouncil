@@ -12,7 +12,7 @@ const page = () => {
         <div className="bg-[url('/img/former_bg.webp')] subRoutebanner">
           <div className="subRouteblack">
             <h2 className="subRouteTitle animate__animated animate__fadeInUp">
-              Office Bearers and Directors ({new Date().getFullYear()-1 } & {new Date().getFullYear()})
+              Office Bearers and Directors ({new Date().getFullYear() } & {new Date().getFullYear()+1})
             </h2>
           </div>
         </div>

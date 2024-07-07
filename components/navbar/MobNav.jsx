@@ -64,7 +64,7 @@ const MobNav = () => {
           </DropdownMenuItem>
           <DropdownMenuItem>
             <Link href={"/about/officials"}>
-              Office Bearers and Directors ({new Date().getFullYear-1} & {new Date().getFullYear()})
+              Office Bearers and Directors ({new Date().getFullYear} & {new Date().getFullYear()+1})
             </Link>
           </DropdownMenuItem>
           <DropdownMenuItem>

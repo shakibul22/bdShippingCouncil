@@ -1,11 +1,21 @@
-"use client";
-import Image from "next/image";
-import { FaLinkedin, FaRegEnvelope, FaXTwitter } from "react-icons/fa6";
-import { useState } from "react";
-import { Link } from "lucide-react";
+// BODcard.js
 
-const BODcard = ({ id, name, designation, image }) => {
+import Image from "next/image";
+import {
+  FaLinkedin,
+  FaPhone,
+  FaRegEnvelope,
+  FaMapMarkerAlt,
+} from "react-icons/fa";
+import { useState } from "react";
+
+const BODcard = ({ id, name, designation, image, mob, email, address }) => {
   const [hover, setHover] = useState(false);
+  const [primaryMob] = mob.split(",");
+
+  const googleMapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+    address
+  )}`;
 
   return (
     <div
@@ -25,7 +35,7 @@ const BODcard = ({ id, name, designation, image }) => {
       ></div>
       <div className="absolute inset-0 flex flex-col items-start gap-1 justify-start p-2 md:p-3 lg:p-5 border-solid aspect-[0.67] fill-sky-900 stroke-[1px] stroke-sky-900">
         <Image
-          src={image ? `/img/bod/${image}` : "/img/demo.webp"}
+          src={image ? `img/bod/${image}` : "/img/demo.webp"}
           width={250}
           height={300}
           alt="bod"
@@ -35,10 +45,13 @@ const BODcard = ({ id, name, designation, image }) => {
           {name}
         </h3>
         <p className="text-white text-xs lg:text-lg">{designation}</p>
-        <div className="flex relative gap-2.5  mt-1">
+        <div className="flex relative gap-2.5 mt-1">
           <div className="flex items-center justify-center">
             <div className="flex gap-2 items-center">
-              <div className="relative  w-[30px] h-[30px] lg:w-[35px] lg:h-[35px] bg-white hover:bg-blue-500 cursor-pointer hover:border-white border rounded-full overflow-hidden flex items-center justify-center transition duration-500">
+              <a
+                href={`mailto:${email}`}
+                className="relative w-[30px] h-[30px] lg:w-[35px] lg:h-[35px] bg-white hover:bg-blue-500 cursor-pointer hover:border-white border rounded-full overflow-hidden flex items-center justify-center transition duration-500"
+              >
                 <Image
                   width={16}
                   alt="gmail"
@@ -47,22 +60,21 @@ const BODcard = ({ id, name, designation, image }) => {
                   src="https://res.cloudinary.com/dgohi0iqm/image/upload/v1719690838/Gmail_icon__2020_ybntks.svg"
                   className="w-full h-full p-2 hover:shadow-inner transition duration-500"
                 />
-              </div>
-
-              <div className="relative w-[30px] h-[30px] lg:w-[35px] lg:h-[35px] bg-white hover:bg-blue-500 cursor-pointer hover:border-white border rounded-full overflow-hidden flex items-center justify-center transition duration-500">
-                <FaXTwitter />
-              </div>
-
-              <div className="relative w-[30px] h-[30px] lg:w-[35px] lg:h-[35px] bg-white hover:bg-blue-500 cursor-pointer hover:border-white border rounded-full overflow-hidden flex items-center justify-center transition duration-500">
-                <Image
-                  width={16}
-                  alt="linkedin"
-                  height={16}
-                  loading="lazy"
-                  src="https://res.cloudinary.com/dgohi0iqm/image/upload/v1719697559/linkedin_vgbynx.png"
-                  className=""
-                />
-              </div>
+              </a>
+              <a
+                href={`tel:${primaryMob.trim()}`}
+                className="relative w-[30px] h-[30px] lg:w-[35px] lg:h-[35px] bg-white hover:bg-blue-500 cursor-pointer hover:border-white border rounded-full overflow-hidden flex items-center justify-center transition duration-500"
+              >
+                <FaPhone className="text-btn hover:text-white transition duration-500" />
+              </a>
+              <a
+                href={googleMapsLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative w-[30px] h-[30px] lg:w-[35px] lg:h-[35px] bg-white hover:bg-blue-500 cursor-pointer hover:border-white border rounded-full overflow-hidden flex items-center justify-center transition duration-500"
+              >
+                <FaMapMarkerAlt className="text-red-600 hover:text-white transition duration-500" />
+              </a>
             </div>
           </div>
         </div>

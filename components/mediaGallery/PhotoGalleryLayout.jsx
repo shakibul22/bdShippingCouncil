@@ -15,7 +15,7 @@ const data = getData();
 // eslint-disable-next-line @next/next/no-async-client-component
 const PhotoGalleryLayout = async () => {
   const albums = await data;
-
+  console.log(albums?.img?.image);
   return (
     <div className="p-2">
       <div className="max-w-screen-2xl mx-auto text-sm sm:text-base lg:text-lg">

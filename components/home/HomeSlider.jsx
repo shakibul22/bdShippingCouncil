@@ -23,7 +23,7 @@ const HomeSlider = () => {
 
     fetchData();
   }, []);
-
+console.log(allImageData)
   useEffect(() => {
     const interval = setInterval(() => {
       setHighlightedIndex((prevIndex) => {

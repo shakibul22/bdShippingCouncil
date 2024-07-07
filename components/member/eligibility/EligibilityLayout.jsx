@@ -33,7 +33,7 @@ const EligibilityLayout = async () => {
 
           <div>
             <Image
-              src={"/img/eligibility.webp"}
+              src={"/img/eligibility.jpg"}
               width={400}
               height={400}
               alt="photo"
@@ -74,7 +74,7 @@ const EligibilityLayout = async () => {
         <div className="flex flex-col gap-10 lg:flex-row">
           <div className="">
             <Image
-              src={"/img/eligibility_b.webp"}
+              src={"/img/eligibility_b.jpg"}
               width={400}
               height={400}
               alt="photo"

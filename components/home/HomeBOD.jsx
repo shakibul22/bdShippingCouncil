@@ -13,7 +13,7 @@ const bod_data = getData();
 
 const HomeBOD = async ({ data }) => {
   const bod = await bod_data;
-  console.log(bod);
+  console.log(bod)
   return (
     <div className="bg-softWhite  px-4 py-8 lg:py-20">
       <div className="w-full lg:max-w-5xl 3xl:max-w-7xl mx-auto">
@@ -27,7 +27,7 @@ const HomeBOD = async ({ data }) => {
         <h3 className="text-xl font-bold mt-3 lg:text-4xl">
           Office <span className="text-btn italic">Bearers</span> and{" "}
           <span className="text-btn italic">Directors</span> (
-          {new Date().getFullYear() - 1} & {new Date().getFullYear()})
+          {new Date().getFullYear() } & {new Date().getFullYear()+1})
         </h3>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-5 mt-10">
           {bod &&
@@ -41,6 +41,9 @@ const HomeBOD = async ({ data }) => {
                   image={dir.image}
                   name={dir.name}
                   designation={dir.designation}
+                  email={dir.email}
+                  mob={dir.mob}
+                  address={dir.address}
                 />
               ))}
         </div>

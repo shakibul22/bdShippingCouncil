@@ -241,8 +241,8 @@ const Navbar = () => {
                             <NavigationMenuLink>
                               <Link href={"/about/officials"}>
                                 Office Bearers and Directors (
-                                {new Date().getFullYear() - 1} &{" "}
-                                {new Date().getFullYear()})
+                                {new Date().getFullYear() } &{" "}
+                                {new Date().getFullYear()+1})
                               </Link>
                             </NavigationMenuLink>
                           </li>
