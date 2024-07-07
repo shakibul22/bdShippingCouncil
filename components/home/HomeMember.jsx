@@ -22,7 +22,7 @@ const HomeMember = ({ data }) => {
           className="flex flex-col lg:flex-row justify-between w-full lg:max-w-5xl 3xl:max-w-7xl mx-auto items-center gap-10 lg:mt-16"
           data-aos="fade-right"
         >
-          <div className="mt-7 text-sm lg:text-base space-y-8 text-justify lg:w-[580px] 3xl:w-[650px] ">
+          <div className="mt-7 text-sm lg:text-base space-y-8 text-justify lg:w-[480px] 3xl:w-[650px] ">
             <div className="flex items-center space-x-2">
               <p className="text-xs font-semibold lg:text-lg">
                 Become a member
@@ -32,7 +32,7 @@ const HomeMember = ({ data }) => {
               </div>
             </div>
 
-            <h2 className="text-lg font-bold lg:text-3xl mt-4 ">
+            <h2 className="text-lg font-bold  lg:text-2xl 3xl:text-3xl mt-4 ">
               Members in the{" "}
               <span className="text-btn italic font-bold tracking-wide break-words outline-text ">
                 Shippers'
