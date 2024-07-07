@@ -1,28 +1,36 @@
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
-const NewsCard = ({ image, name, date, volume, index }) => {
+
+const NewsCard = ({ image, name, date, volume, index, pdf }) => {
+  const router = useRouter();
+
   // Conditionally determine whether the card should be larger
   const isLargeCard = index === 3;
 
+  const handleImageClick = () => {
+    router.push(`/pdf/${pdf}`);
+  };
+
   return (
     <div
-      className={`pb-3 w-full bg-white rounded-xl space-y-4 shadow-md relative overflow-hidden 
-        animatedBorder
-       ${
-         isLargeCard
-           ? "w-full h-full lg:w-full lg:h-[500px]"
-           : "w-full h-[200px] lg:h-full flex flex-row justify-between items-start"
-       }`}
+      className={`pb-3 w-full bg-white rounded-xl space-y-4 shadow-md relative overflow-hidden animatedBorder ${
+        isLargeCard
+          ? "w-full h-full lg:w-full lg:h-[500px]"
+          : "w-full h-[200px] lg:h-full flex flex-row justify-between items-start"
+      }`}
     >
       <div className={`absolute inset-0 animatedBorder`}></div>
+
       <div
         className={`flex flex-row justify-end items-end absolute rounded-tl-2xl w-full bottom-0 right-0 ${
           isLargeCard
             ? "w-[130px] h-[200px] lg:w-[400px] lg:h-[330px]"
-            : "w-[70px] lg:w-[290px] h-[80px] lg:h-[190px] "
+            : "w-[70px] lg:w-[290px] h-[80px] lg:h-[190px]"
         }`}
       >
         <Image
+          onClick={handleImageClick}
           src={image ? `/img/news/${image}` : "/img/pdf.png"}
           width={350}
           height={350}
@@ -34,6 +42,7 @@ const NewsCard = ({ image, name, date, volume, index }) => {
           }`}
         />
       </div>
+
       <div className="flex flex-row gap-2 p-2 lg:p-4">
         <div className="font-semibold text-sm lg:text-xl text-center w-8 lg:w-10 h-8 lg:h-10"></div>
         <div className="text-xs lg:text-lg font-light text-start space-y-1 lg:space-y-2">

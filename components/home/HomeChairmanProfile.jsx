@@ -3,12 +3,12 @@ import Link from "next/link";
 import { ImArrowUpRight2 } from "react-icons/im";
 
 const HomeChairmanProfile = ({ data }) => {
-  console.log(data)
+
   return (
     <div className="bg-[url('/img/memberbg.png')] bg-cover px-4 xl:px-0 py-8 lg:py-24 text-white size-full inset-0">
       <div className="flex flex-col w-full lg:max-w-5xl 3xl:max-w-7xl mx-auto lg:flex-row items-center justify-center">
         <div
-          className="w-full lg:w-[30%]"
+          className="w-full lg:w-[30%] max-h-[410px]"
           data-aos-once="false"
           data-aos="fade-right"
         >
