@@ -14,12 +14,12 @@ const Footer = () => {
           <FooterForm />
         </div>
       </div>
-      <footer class="bg-[#10222B] text-slate-400 text-center  py-3 px-2">
+      <footer className="bg-[#10222B] text-slate-400 text-center  py-3 px-2">
         &copy; Copyright 2024, All Rights Reserved by Shippers Council.
         Developed by
         <Link
           href="https://techsolutionfactory.com"
-          class="text-[#ffff] hover:underline"
+          className="text-[#ffff] hover:underline"
         >
           {" "}
           Tech Solution Factory

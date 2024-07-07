@@ -11,8 +11,7 @@ import { useState } from "react";
 
 const BODcard = ({ id, name, designation, image, mob, email, address }) => {
   const [hover, setHover] = useState(false);
-  const [primaryMob] = mob.split(",");
-
+  const primaryMob = mob ? mob.split(",")[0] : "";
   const googleMapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
     address
   )}`;
@@ -35,7 +34,11 @@ const BODcard = ({ id, name, designation, image, mob, email, address }) => {
       ></div>
       <div className="absolute inset-0 flex flex-col items-start gap-1 justify-start p-2 md:p-3 lg:p-5 border-solid aspect-[0.67] fill-sky-900 stroke-[1px] stroke-sky-900">
         <Image
-          src={image ? `img/bod/${image}` : "/img/demo.webp"}
+          src={
+            image
+              ? `https://server.scbdhk.org.bd/bod/${image}`
+              : "/img/demo.webp"
+          }
           width={250}
           height={300}
           alt="bod"
