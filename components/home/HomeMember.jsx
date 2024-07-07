@@ -32,12 +32,8 @@ const HomeMember = ({ data }) => {
               </div>
             </div>
 
-            <h2 className="text-lg font-bold  lg:text-2xl 3xl:text-3xl mt-4 ">
-              Members in the{" "}
-              <span className="text-btn italic font-bold tracking-wide break-words outline-text ">
-                Shippers'
-              </span>
-              Council Bangladesh
+            <h2 className="text-lg font-bold  lg:text-[22px] 3xl:text-3xl mt-4 ">
+              Members in the<span className="text-btn italic font-bold 3xl:tracking-wide break-words outline-text "> Shippers'</span> Council Bangladesh
             </h2>
 
             <p className="font-medium opacity-70 flex flex-col text-base lg:text-lg">

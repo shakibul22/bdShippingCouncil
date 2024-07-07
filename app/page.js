@@ -6,7 +6,7 @@ import { useEffect } from "react";
 export default function Home() {
   useEffect(() => {
     Aos.init({
-      duration: 3000, // You can adjust the duration here
+      duration: 2000, // You can adjust the duration here
     });
   }, []);
   return (

@@ -24,7 +24,7 @@ const NewsCard = ({ image, name, date, volume, index, pdf }) => {
       <div className={`absolute inset-0 animatedBorder`}></div>
 
       <div
-        className={`flex flex-row justify-end items-end absolute rounded-tl-2xl w-full bottom-0 right-0 ${
+        className={`flex flex-row justify-end items-end cursor-pointer absolute rounded-tl-2xl w-full bottom-0 right-0 ${
           isLargeCard
             ? "w-[130px] h-[200px] lg:w-[400px] lg:h-[330px]"
             : "w-[70px] lg:w-[290px] h-[80px] lg:h-[190px]"

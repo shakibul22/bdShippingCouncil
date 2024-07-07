@@ -31,7 +31,7 @@ const HomeChairmanProfile = ({ data }) => {
             </span>{" "}
             Of Bangladesh
           </h3>
-          <p className="font-normal text-sm lg:text-[14px] 3xl:text-[16px] tracking-wide opacity-70 text-justify mt-4  lg:mt-4 3xl:mt-7 sm:w-[60%] lg:w-auto mx-auto relative z-10">
+          <p className="font-normal text-sm lg:text-[14px] 3xl:text-lg tracking-wide opacity-70 text-justify mt-4  lg:mt-4 3xl:mt-7 sm:w-[60%] lg:w-auto mx-auto relative z-10">
             {data?.text}
           </p>
           <p className="mt-7 text-xl lg:text-lg relative z-10">
@@ -40,7 +40,7 @@ const HomeChairmanProfile = ({ data }) => {
           <p className="text-md lg:text-sm relative z-10">Chairman</p>
 
           <div className="flex flex-col lg:flex-row justify-evenly lg:justify-between items-center relative z-10">
-            <div className="flex items-center gap-4 w-fit mx-auto lg:mx-0 mt-2 lg:mt-2 3xl:mt-4 text-sm lg:text-2xl">
+            <div className="flex items-center gap-4 w-fit mx-auto lg:mx-0 mt-2 lg:mt-2 2xl:mt-4 text-sm lg:text-2xl">
               <div className="flex gap-2 items-center">
               <div className="relative w-[30px] h-[30px] lg:w-[38px] lg:h-[38px] border bg-white hover:bg-blue-500 cursor-pointer hover:border-white rounded-full overflow-hidden flex items-center justify-center transition duration-500">
   <Link href="mailto:sn_jute@hotmail.com" className="flex items-center justify-center w-full h-full">
