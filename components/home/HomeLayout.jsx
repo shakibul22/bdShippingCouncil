@@ -15,11 +15,7 @@ import HomeSlider from "./HomeSlider";
 import Hero from "../custom/Hero";
 import HeadOffice from "../HeadOffice/HeadOffice";
 
-// async function getData() {
-//   const res = await fetch(`
-//     ${process.env.NEXT_PUBLIC_API_BASE_URL}/home/alldata`);
-//   return await res.json();
-// }
+
 
 async function getData() {
   try {

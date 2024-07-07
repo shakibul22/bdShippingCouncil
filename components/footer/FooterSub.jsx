@@ -113,7 +113,7 @@ const FooterSub = () => {
         </form>
       </div>
 
-      <div className=" hidden lg:block">
+      <div className="">
         <FooterCred />
       </div>
     </div>

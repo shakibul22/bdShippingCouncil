@@ -17,7 +17,7 @@ const HomeGallery = async () => {
   const images = galleryData[0]?.photos || [];
 
   return (
-    <div className="bg-softWhite px-4 py-8 lg:py-20">
+    <div className="bg-softWhite px-4 py-8 lg:py-14">
       <div className="w-full lg:max-w-5xl 3xl:max-w-7xl mx-auto">
         <div className="flex gap-2 text-[#3b5468]">
           <p className="text-xs font-semibold lg:text-lg">Media Corner</p>
@@ -30,9 +30,9 @@ const HomeGallery = async () => {
           <span className="text-btn italic">Video</span>
         </h3>
         <div className="mt-10 grid grid-cols-2 lg:grid-cols-4 gap-2">
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col justify-evenly overflow-hidden gap-2">
             <div
-              className="col-span-1"
+              className="col-span-1 h-full md:h-[180px] lg:h-[180px]"
               data-aos="zoom-in"
               data-aos-once="false"
             >
@@ -41,11 +41,11 @@ const HomeGallery = async () => {
                 width={400}
                 height={300} // Reduced height
                 alt="img-2"
-                className="w-full h-auto rounded-lg lg:rounded-lg"
+                className="w-full h-full rounded-lg lg:rounded-lg"
               />
             </div>
             <div
-              className="col-span-1"
+              className="col-span-1 h-full md:h-[180px] lg:h-[180px]"
               data-aos="zoom-in"
               data-aos-once="false"
             >
@@ -72,37 +72,37 @@ const HomeGallery = async () => {
             />
           </div>
 
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col justify-evenly  gap-2">
             <div
-              className="col-span-1"
+              className="col-span-1 h-full md:h-[180px] lg:h-[180px]"
               data-aos="zoom-in"
               data-aos-once="false"
             >
               <Image
                 src={`/img/gallery/photo/${images[0]?.image}`}
                 width={400}
-                height={300} // Reduced height
+                height={200} // Reduced height
                 alt="img-2"
-                className="w-full h-auto rounded-lg lg:rounded-lg"
+                className="w-full h-full rounded-lg lg:rounded-lg"
               />
             </div>
             <div
-              className="col-span-1"
+              className="col-span-1 h-full md:h-[180px] lg:h-[180px]"
               data-aos="zoom-in"
               data-aos-once="false"
             >
               <Image
                 src={`/img/gallery/photo/${images[2]?.image}`}
                 width={400}
-                height={300} // Reduced height
+                height={200} // Reduced height
                 alt="img-5"
-                className="w-full h-auto rounded-lg lg:rounded-lg"
+                className="w-full h-full rounded-lg lg:rounded-lg"
               />
             </div>
           </div>
 
           <div
-            className="col-span-1 flex flex-row gap-2"
+            className="col-span-1 flex flex-row gap-2 "
             data-aos="zoom-in"
             data-aos-once="false"
           >

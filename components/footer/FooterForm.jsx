@@ -34,22 +34,21 @@ const FooterForm = () => {
   };
 
   return (
-    <div className="space-y-5 flex-1 flex flex-col items-start">
-      <div className="flex gap-2">
-        <h4 className="text-2xl text-white">Contact with us</h4>
-        <div className="w-[135px] 2xl:w-[170px] lg:w-[205px] 3xl:w-[240px]">
-          <hr className="flex-grow border-b mt-6 " />
-        </div>
+    <div className=" flex flex-col items-center">
+      <div className="flex  mb-5 items-center w-full">
+        <h4 className="text-2xl text-white w-full">Contact with us</h4>
+        <hr className="w-full border-b mt-3 border-white " />
       </div>
+
       <form
-        className="text-sm text-softWhite  space-y-2"
+        className="text-sm text-softWhite  space-y-1"
         onSubmit={handleSubmit}
       >
         <div className="flex gap-2 overflow-hidden">
           <div className="flex-1">
             <input
               type="text"
-              className=" bg-[#547086] text-[#aab8c3]  border border-[#fff]  text-[16px] p-4 rounded-lg mt-2 focus:outline-none w-full"
+              className=" bg-[#547086] text-[#aab8c3]  border border-[#fff]  text-[16px] p-4 rounded-lg mt-1 focus:outline-none w-full"
               required
               placeholder="Enter your name"
               onChange={(e) => {
@@ -60,7 +59,7 @@ const FooterForm = () => {
           <div className="flex-1">
             <input
               type="number"
-              className=" bg-[#547086] text-[#aab8c3]  border border-[#fff]  text-[16px] p-4 rounded-lg mt-2 focus:outline-none w-full"
+              className=" bg-[#547086] text-[#aab8c3]  border border-[#fff]  text-[16px] p-4 rounded-lg mt-1 focus:outline-none w-full"
               required
               placeholder="Enter your number"
               onChange={(e) => {
@@ -73,7 +72,7 @@ const FooterForm = () => {
         <div>
           <input
             type="email"
-            className=" bg-[#547086] text-[#aab8c3]  border border-[#fff]  text-[16px] p-4 rounded-lg mt-2 focus:outline-none w-full"
+            className=" bg-[#547086] text-[#aab8c3]  border border-[#fff]  text-[16px] p-4 rounded-lg mt-1 focus:outline-none w-full"
             required
             placeholder="Enter your email"
             onChange={(e) => {
@@ -84,9 +83,9 @@ const FooterForm = () => {
 
         <div>
           <textarea
-            rows={3}
+            rows={2}
             type="text"
-            className=" bg-[#547086] text-[#aab8c3]  border border-[#fff]  text-[16px] p-4 rounded-lg mt-2 focus:outline-none w-full"
+            className=" bg-[#547086] text-[#aab8c3]  border border-[#fff]  text-[16px] p-4 rounded-lg mt-1 focus:outline-none w-full"
             required
             aria-required
             placeholder="Write something to us"

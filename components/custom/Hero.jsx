@@ -20,7 +20,8 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative w-full h-screen sm:h-[70vh] md:h-[45vh] lg:h-screen 3xl:h-screen">
+    <>{
+      latestNews &&     <div className="relative w-full h-screen sm:h-[70vh] md:h-[45vh] lg:h-screen 3xl:h-screen">
       <video
         autoPlay
         loop
@@ -360,6 +361,8 @@ const Hero = () => {
         </div>
       </div>
     </div>
+    }</>
+
   );
 };
 

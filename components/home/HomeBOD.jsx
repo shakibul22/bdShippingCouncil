@@ -13,7 +13,6 @@ const bod_data = getData();
 
 const HomeBOD = async ({ data }) => {
   const bod = await bod_data;
-  console.log(bod)
   return (
     <div className="bg-softWhite  px-4 py-8 lg:py-20">
       <div className="w-full lg:max-w-5xl 3xl:max-w-7xl mx-auto">
