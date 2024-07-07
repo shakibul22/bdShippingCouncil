@@ -41,10 +41,10 @@ const FooterSub = () => {
   };
 
   return (
-    <div className="flex-1 flex flex-col gap-12 ">
+    <div className="flex-1 flex flex-col gap-5 3xl:gap-12 ">
       <div className="flex items-center gap-2  w-fit mx-auto lg:mx-0">
         <Image src={"/img/logo.webp"} width={45} height={45} alt="logo" />
-        <h2 className="font-semibold text-2xl text-white">
+        <h2 className="font-semibold text-xl lg:text-xl 3xl:text-2xl text-white">
           Shippers’ Council of Bangladesh
         </h2>
       </div>
@@ -62,7 +62,7 @@ const FooterSub = () => {
         >
           <input
             type="email"
-            className="p-3 text-white  bg-transparent focus:outline-none"
+            className="p-2 3xl:p-3 text-white  bg-transparent focus:outline-none"
             placeholder="Enter  email address"
             required
             onChange={(e) => {

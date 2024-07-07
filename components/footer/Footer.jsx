@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <div className="bg-footerbg bg-cover ">
       <div className="w-full lg:max-w-5xl 3xl:max-w-7xl h-full md:max-h-[458px] mx-auto py-10 lg:py-12 px-4 xl:px-1 ">
-        <div className="flex flex-col  lg:flex-row justify-between items-start  gap-14 lg:gap-24">
+        <div className="flex flex-col  lg:flex-row justify-between items-start  gap-14 lg:gap-20 3xl:gap-24">
           <FooterSub />
           <FooterExplore />
           <FooterForm />
