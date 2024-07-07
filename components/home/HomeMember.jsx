@@ -24,16 +24,21 @@ const HomeMember = ({ data }) => {
         >
           <div className="mt-7 text-sm lg:text-base space-y-8 text-justify lg:w-[480px] 3xl:w-[650px] ">
             <div className="flex items-center space-x-2">
-              <p className="text-xs font-semibold lg:text-lg">
+              <p className="text-sm font-semibold lg:text-lg">
                 Become a member
               </p>
               <div className="w-[100px]">
-                <hr className="flex-grow border-b mt-6 " />
+                <hr className="flex-grow border-b mt-3 " />
               </div>
             </div>
 
-            <h2 className="text-lg font-bold  lg:text-[22px] 3xl:text-2xl mt-4 ">
-              Members in the<span className="text-btn italic font-bold 3xl:tracking-wide break-words outline-text "> Shippers'</span> Council Bangladesh
+            <h2 className="text-lg font-bold  lg:text-[22px] 3xl:text-2xl  ">
+              Members in the
+              <span className="text-btn italic font-bold 3xl:tracking-wide break-words outline-text ">
+                {" "}
+                Shippers'
+              </span>{" "}
+              Council Bangladesh
             </h2>
 
             <p className="font-medium opacity-70 flex flex-col text-base lg:text-lg">

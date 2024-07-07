@@ -37,7 +37,7 @@ const FooterForm = () => {
     <div className="space-y-5 flex-1 flex flex-col items-start">
       <div className="flex gap-2">
         <h4 className="text-2xl text-white">Contact with us</h4>
-        <div className="w-[135px] 2xl:w-[240px] lg:w-[205px]">
+        <div className="w-[135px] 2xl:w-[170px] lg:w-[205px] 3xl:w-[240px]">
           <hr className="flex-grow border-b mt-6 " />
         </div>
       </div>
