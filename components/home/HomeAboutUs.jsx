@@ -2,30 +2,42 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ImArrowUpRight2 } from "react-icons/im";
-import { FaPlay, FaPause } from "react-icons/fa";
-import { useState, useRef, useEffect } from "react";
+import { FaPlay, FaPause, FaTimes } from "react-icons/fa";
+import { useState, useRef } from "react";
 
 const HomeAboutUs = ({ data }) => {
   const [isPlaying, setIsPlaying] = useState(false);
+  const [showModal, setShowModal] = useState(false);
   const videoRef = useRef(null);
 
   const handleTogglePlay = () => {
-    if (isPlaying) {
-      videoRef.current.pause();
-    } else {
-      videoRef.current.play();
+    if (videoRef.current) {
+      if (videoRef.current.paused) {
+        videoRef.current.play();
+        setIsPlaying(true);
+      } else {
+        videoRef.current.pause();
+        setIsPlaying(false);
+      }
     }
-    setIsPlaying(!isPlaying);
   };
 
-  // Ensure video stops when navigating away
-  useEffect(() => {
-    return () => {
-      if (videoRef.current) {
-        videoRef.current.pause();
-      }
-    };
-  }, []);
+  const handleToggleModal = () => {
+    setShowModal(!showModal);
+    if (!showModal && !isPlaying) {
+      handleTogglePlay();
+    }
+  };
+  console.log(isPlaying);
+  const handleCloseModal = () => {
+    setShowModal(false);
+    document.getElementById("vd1").pause();
+    document.getElementById("vd").pause();
+    setIsPlaying(false);
+    if (videoRef.current && !videoRef.current.paused) {
+      videoRef.current.pause();
+    }
+  };
 
   return (
     <div className="bg-softWhite text-white overflow-hidden h-[850px] lg:h-full font-poppins flex justify-center py-5">
@@ -70,16 +82,17 @@ const HomeAboutUs = ({ data }) => {
           </div>
         </div>
         <div
-          className="relative flex flex-col gap-2 lg:w-[850px] h-[250px] lg:h-[500px]"
+          className="relative flex flex-col gap-2 w-full lg:w-[850px] h-[250px] lg:h-[500px]"
           data-aos="fade-left"
           data-aos-once="false"
         >
-          <div className="relative w-full h-full ">
+          <div
+            className="relative w-full h-full cursor-pointer"
+            onClick={handleToggleModal}
+          >
             <video
               ref={videoRef}
-              autoPlay
-              loop
-              muted // Consider muting by default to prevent unexpected audio playback
+              id="vd"
               src={`/${data?.image?.video}`}
               className="rounded-lg w-full h-full"
               style={{ objectFit: "cover", filter: "brightness(100%)" }}
@@ -87,26 +100,58 @@ const HomeAboutUs = ({ data }) => {
             <div className="absolute inset-0 bg-[rgba(1,99,160,0.50)] rounded-t-lg"></div>
             {isPlaying ? (
               <div className="absolute inset-0 flex items-center justify-center">
-                <button
-                  className="bg-opacity-50 bg-black rounded-full p-4"
-                  onClick={handleTogglePlay}
-                >
-                  <FaPause className="text-white text-2xl" />
-                </button>
+                <FaPause className="text-white  text-2xl" />
               </div>
             ) : (
-              <div className="absolute inset-0 flex items-center justify-center">
-                <button
-                  className="bg-opacity-50 bg-black rounded-full p-4"
-                  onClick={handleTogglePlay}
-                >
-                  <FaPlay className="text-white text-2xl" />
+              <div class="absolute inset-0 flex items-center justify-center">
+                <button class="bg-white/40 hover:bg-white/20 rounded-full p-5 border transition-all duration-500 transform hover:scale-110 ">
+                  <FaPlay className="text-white hover:text-blue-500  text-2xl transition-all duration-500 transform hover:scale-110" />
                 </button>
               </div>
             )}
           </div>
         </div>
       </div>
+
+      {showModal && (
+        <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-75 flex items-center justify-center z-50">
+          <div className="bg-black bg-opacity-95 rounded-lg overflow-hidden relative w-full max-w-screen-lg">
+            <div
+              className="relative w-full"
+              style={{ paddingBottom: "56.25%" }}
+            >
+              <video
+                ref={videoRef}
+                autoPlay
+                loop
+                muted
+                id="vd1"
+                className="absolute inset-0 w-full h-full object-cover"
+                src={`/${data?.image?.video}`}
+              />
+              <div className="absolute inset-0 flex items-center justify-center">
+                {isPlaying ? (
+                  <FaPause
+                    className="text-white text-4xl cursor-pointer"
+                    onClick={handleTogglePlay}
+                  />
+                ) : (
+                  <FaPlay
+                    className="text-white text-4xl cursor-pointer"
+                    onClick={handleTogglePlay}
+                  />
+                )}
+              </div>
+            </div>
+            <button
+              className="absolute top-2 right-2 text-white focus:outline-none"
+              onClick={handleCloseModal}
+            >
+              <FaTimes className="text-3xl" />
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
