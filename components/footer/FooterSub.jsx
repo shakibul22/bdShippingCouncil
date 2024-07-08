@@ -57,12 +57,12 @@ const FooterSub = () => {
           </p>
         </div>
         <form
-          className="bg-[#FFF0F0] text-[#1b405d] w-[305px] border sm:w-[315px] lg:w-full flex flex-row justify-between px-5 p-2 rounded-lg bg-opacity-25  text-lg"
+          className="bg-[#FFF0F0] text-[#1b405d] w-[305px] border sm:w-[315px] lg:w-full flex flex-row justify-between px-5 p-2 rounded-lg bg-opacity-25  text-[16px]"
           onSubmit={handleSub}
         >
           <input
             type="email"
-            className="p-2 3xl:p-3 text-white  bg-transparent focus:outline-none"
+            className="p-2  text-white  bg-transparent focus:outline-none"
             placeholder="Enter  email address"
             required
             onChange={(e) => {
