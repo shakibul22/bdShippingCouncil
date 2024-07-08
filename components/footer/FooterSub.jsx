@@ -49,10 +49,10 @@ const FooterSub = () => {
         </h2>
       </div>
 
-      <div className="flex flex-col gap-5 ">
+      <div className="flex flex-col gap-4  justify-center lg:items-start items-center">
         <div>
-          <h3 className="text-2xl font-smeibold text-white">NEWSLETTER</h3>
-          <p className="text-[#8699a8] text-sm lg:text-lg mt-1">
+          <h3 className="text-xl font-smeibold text-white">NEWSLETTER</h3>
+          <p className="text-[#8699a8] text-sm lg:text-[13px] 3xl:text-lg mt-1">
             Subscribe to out newsletter and stay updated
           </p>
         </div>

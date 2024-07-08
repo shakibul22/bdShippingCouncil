@@ -67,7 +67,7 @@ const HomeMember = ({ data }) => {
             </div>
           </div>
 
-          <div className="flex justify-end flex-1 ml-auto mr-4 h-[420px] xl:h-[490px] sm:mx-auto">
+          <div className="flex justify-end flex-1 ml-auto mr-4 h-[420px]  xl:h-[490px] sm:mx-auto">
             <div className="relative">
               <Image
                 src={`/img/${data?.image?.image1}`}
@@ -75,7 +75,7 @@ const HomeMember = ({ data }) => {
                 height={280}
                 alt="ship"
                 data-aos="fade-left"
-                className="border-2 w-56 h-64 lg:w-[370px] 3xl:w-full xl:h-[460px] border-r-8 rounded-lg border-white object-cover"
+                className="border-2 w-56 h-64 lg:w-[370px] 3xl:w-full lg:h-[420px]  xl:h-[460px] border-r-8 rounded-lg border-white object-cover"
               />
               <Image
                 src={`/img/${data?.image?.image2}`}
@@ -83,7 +83,7 @@ const HomeMember = ({ data }) => {
                 height={280}
                 alt="ship"
                 data-aos="fade-left"
-                className="border-2 w-[200px] lg:w-[250px] 3xl:w-[250px] xl:h-[350px] h-48 rounded-lg object-cover object-top absolute top-[13%] lg:top-[10%] right-[45%] sm:right-[60%] 3xl:right-[70%] z-20"
+                className="border-2 w-[200px] lg:w-[250px] 3xl:w-[250px] lg:h-[320px] xl:h-[350px] h-48 rounded-lg object-cover object-top absolute top-[13%] lg:top-[10%] right-[45%] sm:right-[60%] 3xl:right-[70%] z-20"
               />
             </div>
           </div>

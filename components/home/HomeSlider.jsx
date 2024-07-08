@@ -67,9 +67,9 @@ const HomeSlider = () => {
                 <div className="flex rounded-2xl flex-row p-2">
                   {imageData?.map((img, index) => (
                     <div
-                      className={`relative rounded group activeSlide h-[200px] lg:h-[497px] mb-16 overflow-hidden transition-all duration-500 ${
+                      className={`relative rounded group activeSlide h-[200px] md:h-[400px] lg:h-[420px] mb-16 overflow-hidden transition-all duration-500 ${
                         getActiveIndex() === index
-                          ? "flex-[6] opacity-100"
+                          ? "flex-[5] opacity-100"
                           : "flex-[1] opacity-50"
                       } ${
                         getActiveIndex() === index ? "shadow-none" : "shadow-md"
@@ -190,7 +190,7 @@ const HomeSlider = () => {
                     <circle cx="92" cy="17" r="2.5" fill="#8599a8" />
                   </svg>
                 </div>
-                <div class=" absolute -top-[9%] lg:-top-[4.1%]  3xl:-top-[4.1%]  right-1">
+                <div class=" absolute -top-[9%] lg:-top-[4.8%]  3xl:-top-[4.8%]  right-1">
                   <svg
                     class="absolute -left-1 lg:left-0"
                     width="30"

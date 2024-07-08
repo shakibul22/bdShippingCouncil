@@ -20,10 +20,10 @@ const NewsCard = ({ image, name, date, volume, index, pdf }) => {
       <div className={`absolute inset-0 animatedBorder`}></div>
 
       <div
-        className={`flex flex-row justify-end items-end  absolute rounded-tl-2xl w-full bottom-0 right-0 ${
+        className={`flex flex-row justify-end items-end  absolute rounded-tl-2xl w-full bottom-0 -right-4 ${
           isLargeCard
-            ? "w-[130px] h-[200px] lg:w-[400px] lg:h-[330px]"
-            : "w-[70px] lg:w-[290px] h-[80px] lg:h-[190px]"
+            ? "w-[130px] h-[200px] lg:w-[380px] lg:h-[330px]"
+            : "w-[70px] lg:w-[270px] h-[80px] lg:h-[190px]"
         }`}
       >
         <Image
@@ -33,8 +33,8 @@ const NewsCard = ({ image, name, date, volume, index, pdf }) => {
           alt="news"
           className={`object-bottom ${
             !isLargeCard
-              ? "w-full h-full lg:w-full lg:h-full pl-5 pt-3"
-              : "w-full h-full lg:w-full lg:h-full pl-5 pt-3"
+              ? "w-full h-full lg:w-full lg:h-full "
+              : "w-full h-full lg:w-full lg:h-full "
           }`}
         />
       </div>

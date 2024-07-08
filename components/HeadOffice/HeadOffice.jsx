@@ -22,8 +22,8 @@ const HeadOffice = () => {
   // };
 
   return (
-    <div className="relative bg-[url('/img/office.png')] bg-cover px-2 bg-center h-auto lg:h-[300px] w-full lg:max-w-5xl 3xl:max-w-7xl gap-4 mx-auto py-10 flex flex-col lg:flex-row items-center justify-between rounded-lg shadow-lg">
-      <div className="px-8" data-aos="fade-right" data-aos-once="false">
+    <div className="relative bg-[url('/img/office.png')] bg-cover px-2  bg-center h-auto lg:h-[300px] w-full lg:max-w-5xl 3xl:max-w-7xl gap-4 mx-auto py-10 flex flex-col lg:flex-row items-center justify-between rounded-lg shadow-lg">
+      <div className="px-8 w-full" data-aos="fade-right" data-aos-once="false">
         <h2 className="text-white text-xl font-semibold mb-4">
           Click the map to find the location of our head office
         </h2>
@@ -33,7 +33,7 @@ const HeadOffice = () => {
         </p>
       </div>
       <div
-        className="max-w-full lg:w-1/2 mt-4 h-[300px] lg:mt-0 py-1"
+        className="max-w-full lg:w-full mt-4 h-[300px] lg:mt-0 py-1"
         data-aos="fade-up"
         data-aos-once="false"
       >

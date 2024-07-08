@@ -3,7 +3,8 @@ import Image from "next/image";
 
 const ShippersNewsCard = ({ image, name, date, volume, index, pdf }) => {
   const handleImageClick = () => {
-    window.open(`/pdf/${pdf}`);
+    window.open(`/pdf/${pdf}`, "_blank");
+
   };
 
   return (
