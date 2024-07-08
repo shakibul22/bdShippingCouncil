@@ -17,13 +17,13 @@ const HomeBOD = async ({ data }) => {
     <div className="bg-softWhite  px-4 py-8 lg:py-20">
       <div className="w-full lg:max-w-5xl 3xl:max-w-7xl mx-auto">
         <div className="text-[#001e35] flex gap-2">
-          <p className="text-xs font-semibold lg:text-lg">Organization Info</p>
+          <p className="font-poppins">Organization Info</p>
           <div className="w-[150px] lg:w-[300px]">
             <hr className="flex-grow border-b mt-6 " />
           </div>
         </div>
         {/* <h3 className="text-xl font-bold mt-3 lg:text-4xl">{data.title}</h3> */}
-        <h3 className="text-xl font-bold mt-3 lg:text-4xl">
+        <h3 className="text-xl font-bold mt-3 lg:text-3xl font-poppins">
           Office <span className="text-btn italic">Bearers</span> and{" "}
           <span className="text-btn italic">Directors</span> (
           {new Date().getFullYear() } & {new Date().getFullYear()+1})

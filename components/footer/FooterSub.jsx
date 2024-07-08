@@ -44,20 +44,20 @@ const FooterSub = () => {
     <div className="flex-1 flex flex-col gap-5 3xl:gap-12 ">
       <div className="flex items-center gap-2  w-fit mx-auto lg:mx-0">
         <Image src={"/img/logo.webp"} width={45} height={45} alt="logo" />
-        <h2 className="font-semibold text-xl lg:text-xl 3xl:text-2xl text-white">
+        <h2 className="font-semibold text-[24px] text-white">
           Shippers’ Council of Bangladesh
         </h2>
       </div>
 
       <div className="flex flex-col gap-4  justify-center lg:items-start items-center">
         <div>
-          <h3 className="text-xl font-smeibold text-white">NEWSLETTER</h3>
+          <h3 className="text-xl font-semibold text-white">NEWSLETTER</h3>
           <p className="text-[#8699a8] text-sm lg:text-[13px] 3xl:text-lg mt-1">
             Subscribe to out newsletter and stay updated
           </p>
         </div>
         <form
-          className="bg-[#FFF0F0] text-[#1b405d] w-[305px] border sm:w-[315px] lg:w-full flex flex-row justify-between px-5 p-2 rounded-lg bg-opacity-25  text-sm"
+          className="bg-[#FFF0F0] text-[#1b405d] w-[305px] border sm:w-[315px] lg:w-full flex flex-row justify-between px-5 p-2 rounded-lg bg-opacity-25  text-lg"
           onSubmit={handleSub}
         >
           <input

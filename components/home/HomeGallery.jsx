@@ -17,15 +17,17 @@ const HomeGallery = async () => {
   const images = galleryData[0]?.photos || [];
 
   return (
-    <div className="bg-softWhite px-4 py-8 lg:py-14">
+    <div className="bg-softWhite px-4 py-8 ">
       <div className="w-full lg:max-w-5xl 3xl:max-w-7xl mx-auto">
-        <div className="flex gap-2 text-[#3b5468]">
-          <p className="text-xs font-semibold lg:text-lg">Media Corner</p>
-          <div className="w-[120px] lg:w-[300px]">
-            <hr className="flex-grow border-b mt-4" />
+        <div className="flex gap-2 ">
+          <p className="font-normal text-[#3b5468] font-poppins">
+            Media Corner
+          </p>
+          <div className="w-[120px] lg:w-[270px] text-[#001E35] mt-4">
+            <hr className="flex-grow border-b " />
           </div>
         </div>
-        <h3 className="text-xl font-bold mt-3 lg:text-4xl">
+        <h3 className="text-xl font-bold mt-3 font-poppins lg:text-3xl">
           Our Photo <span className="text-btn italic"> Gallery</span> and{" "}
           <span className="text-btn italic">Video</span>
         </h3>

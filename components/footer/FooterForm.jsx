@@ -34,11 +34,11 @@ const FooterForm = () => {
   };
 
   return (
-    <div className=" flex flex-col items-center">
-      <div className="flex  mb-5 items-center w-full">
-        <h4 className="text-xl lg:text-2xl text-white w-full">
+    <div className=" flex flex-col items-center font-poppins">
+      <div className="flex mb-5 items-center w-full">
+        <h4 className="text-[24px] font-poppins text-white w-full">
           Contact with us
-        </h4>
+        </h4>{" "}
         <hr className="w-full border-b mt-3 border-white " />
       </div>
 

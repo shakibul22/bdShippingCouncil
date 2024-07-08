@@ -18,14 +18,12 @@ const HomeRnP = async () => {
       <div className="w-full lg:max-w-5xl 3xl:max-w-7xl mx-auto">
         <div className="w-full">
           <div className="flex items-center space-x-2">
-            <p className="text-md font-semibold lg:text-lg">
-              Research & Publications
-            </p>
-            <div className="w-[100px] lg:w-[470px]">
+            <p className="font-poppins">Research & Publications</p>
+            <div className="w-[100px] lg:w-[370px]">
               <hr className="flex-grow border-b mt-4 " />
             </div>
           </div>
-          <h3 className="text-xl  font-bold mt-3 lg:text-4xl space-x-2">
+          <h3 className="text-xl  font-bold mt-3 lg:text-3xl space-x-2">
             Shippers News, <span className="text-btn italic">Reports</span> and
             <span className="text-btn italic"> Publication</span>
           </h3>

@@ -22,21 +22,21 @@ const HomeChairmanProfile = ({ data }) => {
             width={450}
             height={400}
             alt="Chairman"
-            className="mx-auto lg:mx-0 lg:h-full 3xl:h-[410px]"
+            className="mx-auto lg:mx-0 lg:h-full 3xl:h-full"
           />
         </div>
-        <div className="text-center min-w-[55%] rounded-xl lg:text-left flex-1 bg-gradient-to-r from-gray-900 to-gray-0 bg-opacity-70 p-8 relative">
-          <p className="text-md uppercase lg:text-lg font-normal relative z-10">
+        <div className="text-center min-w-[55%] rounded-xl lg:text-left flex-1 bg-gradient-to-r from-gray-900 to-gray-0 bg-opacity-70 p-10 relative">
+          <p className="text-md uppercase lg:text-lg font-poppins font-normal relative z-10">
             Chairman’s Profile
           </p>
-          <h3 className="font-semibold text-lg leading-8 lg:text-2xl 3xl:text-4xl lg:mt-1 3xl:mt-2 relative z-10 space-x-1">
+          <h3 className="font-semibold text-lg leading-8 lg:text-2xl font-poppins 3xl:text-3xl lg:mt-1 3xl:mt-2 relative z-10 space-x-1">
             Shippers’{" "}
             <span className="text-btn font-poppins mr-1 italic font-bold tracking-wide break-words outline-text">
               Council{" "}
             </span>{" "}
             Of Bangladesh
           </h3>
-          <p className="font-normal text-sm lg:text-[14px] 3xl:text-lg tracking-wide opacity-70 text-justify mt-4  lg:mt-4 3xl:mt-7 sm:w-[60%] lg:w-auto mx-auto relative z-10">
+          <p className="font-normal text-sm lg:text-[14px] 3xl:text-[16px] leading-6 tracking-wide opacity-70 text-justify mt-4  lg:mt-4 3xl:mt-7 sm:w-[60%] lg:w-auto mx-auto relative z-10">
             {data?.text}
           </p>
           <p className="mt-7 text-xl lg:text-lg relative z-10">

@@ -22,19 +22,17 @@ const HomeMember = ({ data }) => {
           className="flex flex-col lg:flex-row justify-between w-full lg:max-w-5xl 3xl:max-w-7xl mx-auto items-center gap-10 lg:mt-16"
           data-aos="fade-right"
         >
-          <div className="mt-7 text-sm lg:text-base space-y-8 text-justify lg:w-[480px] 3xl:w-[650px] ">
+          <div className="mt-7 text-sm lg:text-base space-y-4  lg:w-[480px] 3xl:w-[670px] ">
             <div className="flex items-center space-x-2">
-              <p className="text-sm font-semibold lg:text-lg">
-                Become a member
-              </p>
+              <p className="font-poppins">Become a member</p>
               <div className="w-[100px]">
                 <hr className="flex-grow border-b mt-3 " />
               </div>
             </div>
 
-            <h2 className="text-lg font-bold  lg:text-[22px] 3xl:text-2xl  ">
+            <h2 className="text-xl font-poppins font-bold lg:text-[22px] 3xl:text-3xl  ">
               Members in the
-              <span className="text-btn italic font-bold 3xl:tracking-wide break-words outline-text ">
+              <span className="text-btn italic font-poppins 3xl:tracking-wide break-words outline-text ">
                 {" "}
                 Shippers'
               </span>{" "}
