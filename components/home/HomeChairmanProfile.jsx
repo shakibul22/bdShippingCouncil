@@ -1,9 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
+import { FaMapMarkerAlt } from "react-icons/fa";
 import { ImArrowUpRight2 } from "react-icons/im";
 
 const HomeChairmanProfile = ({ data }) => {
+  const address = "Apt.-302, House # 18, Road # 6 Dhanmondi R/A, Dhaka-1205.";
 
+  const googleMapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+    address
+  )}`;
   return (
     <div className="bg-[url('/img/memberbg.png')] bg-cover px-4 xl:px-0 py-8 lg:py-20 3xl:py-24 text-white size-full inset-0">
       <div className="flex flex-col w-full lg:max-w-5xl 3xl:max-w-7xl mx-auto lg:flex-row items-center justify-center">
@@ -13,7 +18,7 @@ const HomeChairmanProfile = ({ data }) => {
           data-aos="fade-right"
         >
           <Image
-            src='https://scbdhk.org.bd/img/chairman/chairman3.JPG'
+            src="https://scbdhk.org.bd/img/chairman/chairman3.JPG"
             width={450}
             height={400}
             alt="Chairman"
@@ -42,29 +47,30 @@ const HomeChairmanProfile = ({ data }) => {
           <div className="flex flex-col lg:flex-row justify-evenly lg:justify-between items-center relative z-10">
             <div className="flex items-center gap-4 w-fit mx-auto lg:mx-0 mt-2 lg:mt-2 2xl:mt-4 text-sm lg:text-2xl">
               <div className="flex gap-2 items-center">
-              <div className="relative w-[30px] h-[30px] lg:w-[38px] lg:h-[38px] border bg-white hover:bg-blue-500 cursor-pointer hover:border-white rounded-full overflow-hidden flex items-center justify-center transition duration-500">
-  <Link href="mailto:sn_jute@hotmail.com" className="flex items-center justify-center w-full h-full">
-    <Image
-      width={16}
-      alt="gmail"
-      height={16}
-      loading="lazy"
-      src="https://res.cloudinary.com/dgohi0iqm/image/upload/v1719690838/Gmail_icon__2020_ybntks.svg"
-      className="w-full h-full p-2"
-    />
-  </Link>
-</div>
-
-                <div className="relative w-[30px] h-[30px] lg:w-[38px] lg:h-[38px] bg-white hover:bg-blue-500 cursor-pointer hover:border-white border rounded-full overflow-hidden flex items-center justify-center transition duration-500">
-                  <Image
-                    width={16}
-                    alt="linkedin"
-                    height={16}
-                    loading="lazy"
-                    src="https://res.cloudinary.com/dgohi0iqm/image/upload/v1719697559/linkedin_vgbynx.png"
-                    className=""
-                  />
+                <div className="relative w-[30px] h-[30px] lg:w-[38px] lg:h-[38px] border bg-white hover:bg-blue-500 cursor-pointer hover:border-white rounded-full overflow-hidden flex items-center justify-center transition duration-500">
+                  <Link
+                    href="mailto:sn_jute@hotmail.com"
+                    className="flex items-center justify-center w-full h-full"
+                  >
+                    <Image
+                      width={16}
+                      alt="gmail"
+                      height={16}
+                      loading="lazy"
+                      src="https://res.cloudinary.com/dgohi0iqm/image/upload/v1719690838/Gmail_icon__2020_ybntks.svg"
+                      className="w-full h-full p-2"
+                    />
+                  </Link>
                 </div>
+
+                <a
+                  href={googleMapsLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="relative w-[30px] h-[30px] lg:w-[38px] lg:h-[38px]  bg-white hover:bg-blue-500 cursor-pointer hover:border-white border rounded-full overflow-hidden flex items-center justify-center transition duration-500"
+                >
+                  <FaMapMarkerAlt className="text-red-600 hover:text-white transition duration-500" />
+                </a>
               </div>
             </div>
 
