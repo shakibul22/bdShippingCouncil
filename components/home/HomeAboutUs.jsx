@@ -2,17 +2,30 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ImArrowUpRight2 } from "react-icons/im";
-import { FaPlay } from "react-icons/fa";
-import { useState, useRef } from "react";
+import { FaPlay, FaPause } from "react-icons/fa";
+import { useState, useRef, useEffect } from "react";
 
 const HomeAboutUs = ({ data }) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const videoRef = useRef(null);
 
-  const handlePlay = () => {
-    setIsPlaying(true);
-    videoRef.current.play();
+  const handleTogglePlay = () => {
+    if (isPlaying) {
+      videoRef.current.pause();
+    } else {
+      videoRef.current.play();
+    }
+    setIsPlaying(!isPlaying);
   };
+
+  // Ensure video stops when navigating away
+  useEffect(() => {
+    return () => {
+      if (videoRef.current) {
+        videoRef.current.pause();
+      }
+    };
+  }, []);
 
   return (
     <div className="bg-softWhite text-white overflow-hidden h-[850px] lg:h-full font-poppins flex justify-center py-5">
@@ -66,16 +79,26 @@ const HomeAboutUs = ({ data }) => {
               ref={videoRef}
               autoPlay
               loop
+              muted // Consider muting by default to prevent unexpected audio playback
               src={`/${data?.image?.video}`}
               className="rounded-lg w-full h-full"
               style={{ objectFit: "cover", filter: "brightness(100%)" }}
             />
             <div className="absolute inset-0 bg-[rgba(1,99,160,0.50)] rounded-t-lg"></div>
-            {!isPlaying && (
+            {isPlaying ? (
               <div className="absolute inset-0 flex items-center justify-center">
                 <button
                   className="bg-opacity-50 bg-black rounded-full p-4"
-                  onClick={handlePlay}
+                  onClick={handleTogglePlay}
+                >
+                  <FaPause className="text-white text-2xl" />
+                </button>
+              </div>
+            ) : (
+              <div className="absolute inset-0 flex items-center justify-center">
+                <button
+                  className="bg-opacity-50 bg-black rounded-full p-4"
+                  onClick={handleTogglePlay}
                 >
                   <FaPlay className="text-white text-2xl" />
                 </button>
