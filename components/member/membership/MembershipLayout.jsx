@@ -12,7 +12,7 @@ const MembershipLayout = async () => {
       <div className="max-w-screen-2xl mx-auto space-y-10 md:space-y-20">
         <div className="font-semibold space-y-4 md:space-y-0 md:flex md:gap-8">
           <a
-            href={`/pdf/ordinary.pdf`}
+            href={`/pdf/ordinary.pdf`} target="_blank"
             // href="/public/pdf/ordinary.pdf"
             // download={"Ordinary Membership Form.pdf"}
             className="p-4 bg-white border-2 border-dashed rounded-xl flex items-center gap-3 hover:shadow-lg cursor-pointer flex-1 easyTrans"
@@ -28,7 +28,7 @@ const MembershipLayout = async () => {
           </a>
 
           <a
-            href={`/pdf/associate.pdf`}
+            href={`/pdf/associate.pdf`} target="_blank"
             // download={"Associate Membership Form.pdf"}
             className="p-4 bg-white border-2 border-dashed rounded-xl flex items-center gap-3 hover:shadow-lg cursor-pointer flex-1 easyTrans"
           >

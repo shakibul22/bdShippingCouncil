@@ -63,7 +63,7 @@ const HomeAboutUs = ({ data }) => {
           />
         </div>
         <div className="bg-[#001e35] w-[250px] overflow-hidden lg:w-[470px] 3xl:w-[500px] h-[510px] transform -translate-y-16 lg:translate-y-0 rounded absolute right-2 lg:right-[40%] 3xl:right-[45%] lg:h-[700px] z-10 p-6 pb-12 lg:p-10">
-          <h2 className="text-2xl font-bold lg:text-3xl border-b font-poppins">
+          <h2 className="text-2xl font-bold lg:text-[30.5px] border-b font-poppins">
             About <span className="text-[#0081e9]">Us</span>
           </h2>
           <h3 className="text-md font-bold mt-3 text-[#FFF] lg:text-lg">

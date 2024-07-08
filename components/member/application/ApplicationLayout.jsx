@@ -21,7 +21,7 @@ const ApplicationLayout = async () => {
           </div>
 
           <a
-            href={`/pdf/application.pdf`}
+            href={`/pdf/application.pdf`} target="_blank"
             className="lg:hidden block w-fit mx-auto"
           >
             <div className="space-y-2 p-6 bg-white w-fit mx-auto rounded-xl shadow-lg cursor-pointer group">
@@ -67,7 +67,7 @@ const ApplicationLayout = async () => {
         </div>
 
         <a
-          href={`/pdf/application.pdf`}
+          href={`/pdf/application.pdf`} target="_blank"
           className="hidden lg:block mx-auto mt-32"
         >
           <div className="space-y-2 p-6 bg-white w-fit mx-auto rounded-xl shadow-lg cursor-pointer group animate__animated animate__fadeInDown">
