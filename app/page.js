@@ -13,7 +13,7 @@ export default function Home() {
       Aos.init({
         duration: 1500, // You can adjust the duration here
       });
-    }, 1500); // Adjust the loading time here (in milliseconds)
+    }, 500); // Adjust the loading time here (in milliseconds)
 
     return () => clearTimeout(timeoutId); // Cleanup the timeout on unmount
   }, []);
