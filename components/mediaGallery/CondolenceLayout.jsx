@@ -5,7 +5,6 @@ import React from "react";
 const CondolenceLayout = async () => {
   const res = await publicRequest("/gallery/condolence");
   const data = res.data;
-
   return (
     <div className="px-4 py-10">
       <div className="max-w-screen-2xl mx-auto text-sm">

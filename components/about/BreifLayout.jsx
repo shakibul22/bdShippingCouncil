@@ -4,6 +4,8 @@ import React from "react";
 import img1 from "/public/img/slider/0011.webp";
 import img2 from "/public/img/slider/0012.webp";
 import img3 from "/public/img/slider/0013.webp";
+import img4 from "/public/img/slider/0014.webp";
+import img5 from "/public/img/slider/0015.webp";
 import { publicRequest } from "@/requestMethod";
 
 async function getData() {
@@ -38,6 +40,12 @@ const BreifLayout = async () => {
           </div>
           <div className="relative h-52">
             <Image src={img3} fill alt="image" className="object-cover" />
+          </div>
+          <div className="relative h-52">
+            <Image src={img4} fill alt="image" className="object-cover" />
+          </div>
+          <div className="relative h-52">
+            <Image src={img5} fill alt="image" className="object-cover" />
           </div>
         </div>
       </div>
