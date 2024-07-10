@@ -35,7 +35,7 @@ const ContactUsLayout = () => {
             <div className="p-4 bg-tabbg w-fit rounded-full">
               <FaEnvelope size={24} className="text-primaryColor" />
             </div>
-            <p>Email: scbdhk@gmail.com, scbdhkbd@yahoo.com</p>
+            <p>Email: scbdhk@gmail.com</p>
           </div>
         </div>
 
