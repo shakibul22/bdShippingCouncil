@@ -51,7 +51,7 @@ const HomeRnP = async () => {
             {news &&
               Array.isArray(news) &&
               news
-                ?.slice(2, 4)
+                ?.slice(2, 3)
                 .map((n) => (
                   <NewsCard
                     key={n.id}
