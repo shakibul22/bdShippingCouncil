@@ -6,6 +6,8 @@ import img2 from "/public/img/slider/0012.webp";
 import img3 from "/public/img/slider/0013.webp";
 import img4 from "/public/img/slider/0014.webp";
 import img5 from "/public/img/slider/0015.webp";
+import img6 from "/public/img/slider/1.jpg";
+import img7 from "/public/img/slider/2.jpg";
 import { publicRequest } from "@/requestMethod";
 
 async function getData() {
@@ -28,24 +30,30 @@ const BreifLayout = async () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 flex-1">
           <div className="sm:col-span-2 relative h-72">
-            <Image src={img1} fill alt="image" className="object-cover" />
+            <Image src={img1} fill alt="image1" className="object-cover" />
           </div>
           <div className="relative h-52">
             <Image
               src={img2}
               fill
-              alt="image"
+              alt="image2"
               className="object-cover object-right"
             />
           </div>
           <div className="relative h-52">
-            <Image src={img3} fill alt="image" className="object-cover" />
+            <Image src={img3} fill alt="image3" className="object-cover" />
           </div>
           <div className="relative h-52">
-            <Image src={img4} fill alt="image" className="object-cover" />
+            <Image src={img4} fill alt="image4" className="object-cover" />
           </div>
           <div className="relative h-52">
-            <Image src={img5} fill alt="image" className="object-cover" />
+            <Image src={img5} fill alt="image5" className="object-cover" />
+          </div>
+          <div className="relative h-52">
+            <Image src={img6} fill alt="image6" className="object-cover" />
+          </div>
+          <div className="relative h-52">
+            <Image src={img7} fill alt="image7" className="object-cover" />
           </div>
         </div>
       </div>
