@@ -72,3 +72,34 @@
 .animatedBorder {
   animation: borderAnimation 2s infinite;
 }
+/* Add this to your global CSS file (e.g., styles/globals.css) */
+/* affiliates.css */
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.scroll-container {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.scroll-content {
+  display: flex;
+  width: calc(200% + var(--gap)); /* This ensures that the duplicated content fits within the container, including the gap */
+  animation: scroll 30s linear infinite;
+}
+
+.scroll-item {
+  margin-right: var(--gap); /* Adjust the gap between images */
+}
+
+.scroll-item:last-child {
+  margin-right: 0; /* Remove the gap after the last item */
+}
