@@ -46,7 +46,7 @@ const HomeAssociate = () => {
           Members
         </h3>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-2 mt-10">
           {memberList &&
             Array.isArray(memberList) &&
             memberList?.slice(0, 1).map((associate, i) => (
@@ -109,7 +109,7 @@ const HomeAssociate = () => {
             ))}
         </div>
 
-        <div className="flex justify-end items-center mt-12">
+        <div className="flex justify-center lg:justify-end items-center mt-12">
           <Link
             href={"/member/list"}
             className="py-3 px-6 flex items-center gap-2 hover:bg-btn bg-white hover:border hover:border-white rounded-md transition-all duration-500 hover:text-white text-btn font-semibold"

@@ -36,12 +36,12 @@ const FooterForm = () => {
   return (
     <div className=" flex flex-col items-center font-poppins">
       <div className="flex mb-5 items-center w-full">
-      <h4
-  className="text-2xl font-poppins font-normal text-white w-full leading-5"
-  style={{ textEdge: 'cap' }}
->
-  Contact with us
-</h4>
+        <h4
+          className="text-[20px] lg:text-[24px] font-poppins font-normal text-white w-full leading-5"
+          style={{ textEdge: "cap" }}
+        >
+          Contact with us
+        </h4>
 
         <hr className="w-full border-b mt-3 border-white " />
       </div>
