@@ -44,7 +44,7 @@ const HomeAffiliates = () => {
         Our Affiliates
       </h3>
       <div
-        className="max-w-screen-xl mx-auto mt-7 overflow-hidden  scroll-container"
+        className="max-w-screen-xl mx-auto mt-7 overflow-hidden  scroll-container overflow-hidden"
         style={{ "--gap": "10px" }} // Adjust the gap value
       >
         <div className="scroll-content">
