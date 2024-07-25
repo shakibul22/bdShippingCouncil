@@ -103,8 +103,8 @@ const HomeAboutUs = ({ data }) => {
                 <FaPause className="text-white  text-2xl" />
               </div>
             ) : (
-              <div class="absolute inset-0 flex items-center justify-center">
-                <button class="bg-white/40 hover:bg-white/20 rounded-full p-5 border transition-all duration-500 transform hover:scale-110 ">
+              <div className="absolute inset-0 flex items-center justify-center">
+                <button className="bg-white/40 hover:bg-white/20 rounded-full p-5 border transition-all duration-500 transform hover:scale-110 ">
                   <FaPlay className="text-white hover:text-blue-500  text-2xl transition-all duration-500 transform hover:scale-110" />
                 </button>
               </div>

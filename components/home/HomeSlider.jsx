@@ -107,7 +107,7 @@ const HomeSlider = () => {
                     </div>
                   ))}
                 </div>
-                <div class=" absolute bottom-20 -left-5 3xl:-left-6 lg:bottom-[14.5%]">
+                <div className=" absolute bottom-20 -left-5 3xl:-left-6 lg:bottom-[14.5%]">
                   <svg
                     className="absolute top-3"
                     width="134"
@@ -138,9 +138,9 @@ const HomeSlider = () => {
                   </svg>
                 </div>
 
-                <div class=" absolute bottom-[66%] lg:bottom-[33%] -left-9 3xl:-left-10">
+                <div className=" absolute bottom-[66%] lg:bottom-[33%] -left-9 3xl:-left-10">
                   <svg
-                    class="absolute left-0"
+                    className="absolute left-0"
                     width="34"
                     height="134"
                     viewBox="0 0 34 134"
@@ -152,7 +152,7 @@ const HomeSlider = () => {
                     <circle cx="17" cy="122" r="2.5" fill="#8599a8" />
                   </svg>
                   <svg
-                    class="absolute left-4"
+                    className="absolute left-4"
                     width="34"
                     height="134"
                     viewBox="0 0 34 134"
@@ -164,7 +164,7 @@ const HomeSlider = () => {
                     <circle cx="17" cy="122" r="2.5" fill="#8599a8" />
                   </svg>
                 </div>
-                <div class=" absolute -top-8 right-20 ">
+                <div className=" absolute -top-8 right-20 ">
                   <svg
                     className="absolute top-0"
                     width="100"
@@ -190,9 +190,9 @@ const HomeSlider = () => {
                     <circle cx="92" cy="17" r="2.5" fill="#8599a8" />
                   </svg>
                 </div>
-                <div class=" absolute -top-[9%] lg:-top-[4.8%]  3xl:-top-[4.8%]  right-1">
+                <div className=" absolute -top-[9%] lg:-top-[4.8%]  3xl:-top-[4.8%]  right-1">
                   <svg
-                    class="absolute -left-1 lg:left-0"
+                    className="absolute -left-1 lg:left-0"
                     width="30"
                     height="134"
                     viewBox="0 0 34 134"
@@ -206,7 +206,7 @@ const HomeSlider = () => {
                     <circle cx="17" cy="65" r="2.5" fill="#8599a8" />
                   </svg>
                   <svg
-                    class="absolute -left-3.5 md:left-2 lg:-left-3"
+                    className="absolute -left-3.5 md:left-2 lg:-left-3"
                     width="30"
                     height="134"
                     viewBox="0 0 34 134"
