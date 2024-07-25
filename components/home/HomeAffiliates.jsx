@@ -44,14 +44,14 @@ const HomeAffiliates = () => {
         Our Affiliates
       </h3>
       <div
-        className="max-w-screen-xl mx-auto mt-7 overflow-hidden  scroll-container overflow-hidden"
+        className="w-full lg:max-w-5xl mx-auto mt-7   scroll-container"
         style={{ "--gap": "10px" }} // Adjust the gap value
       >
         <div className="scroll-content">
           {affiliateImages.map((aff) => (
             <div
               key={aff.id}
-              className="w-[70px] sm:w-[75px] h-auto bg-white lg:w-[130px] lg:h-[60px] scroll-item"
+              className="w-[70px] sm:w-[75px] h-auto bg-white lg:w-[130px] lg:h-[60px] scroll-item  overflow-hidden"
             >
               <Image
                 src={aff.src}
