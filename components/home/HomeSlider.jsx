@@ -49,7 +49,7 @@ const HomeSlider = () => {
 
   return (
     <div
-      className="py-5 px-10 w-full lg:min-w-7xl xl:container mx-auto bg-primaryColor"
+      className="py-5 px-10 w-full lg:container xl:container mx-auto bg-primaryColor"
       onMouseLeave={() => setHoveredIndex(null)}
     >
       <div className="flex flex-col justify-center mb-1 items-center">
@@ -60,13 +60,13 @@ const HomeSlider = () => {
       </div>
       <section className="relative z-10 lg:py-[0px]">
         <div className=" py-6">
-          <div className="-mx-4 flex flex-wrap lg:justify-between">
+          <div className="-mx-4 flex flex-wrap lg:justify-between p-3">
             <div className="relative">
               <div>
                 <div className="flex rounded-2xl flex-row p-2">
                   {imageData?.map((img, index) => (
                     <div
-                      className={`relative rounded group activeSlide h-[200px] md:h-[400px] lg:h-[420px] mb-16 overflow-hidden transition-all duration-500 ${
+                      className={`relative rounded group activeSlide h-[200px] md:h-[320px] lg:h-[400px] xl:h-[420px] mb-16 overflow-hidden transition-all duration-500 ${
                         getActiveIndex() === index
                           ? "flex-[5] opacity-100"
                           : "flex-[1] opacity-50"
@@ -97,7 +97,7 @@ const HomeSlider = () => {
                         }`}
                       >
                         <p
-                          className="text-white text-sm font-normal font-quattrocento italic tracking-[0.36px] backdrop-blur-sm p-4 rounded-lg"
+                          className="text-white text-sm md:text-[12px] lg:text-sm font-normal font-quattrocento italic tracking-[0.36px] backdrop-blur-sm p-4 rounded-lg"
                           style={{ backgroundColor: "rgba(0, 30, 53, 0.60)" }}
                         >
                           &ldquo;{img.caption}&ldquo;
@@ -106,7 +106,7 @@ const HomeSlider = () => {
                     </div>
                   ))}
                 </div>
-                <div className=" absolute bottom-20 -left-5 3xl:-left-6 lg:bottom-[14.5%]">
+                <div className=" absolute bottom-20 -left-5 xl:-left-6 lg:bottom-[14.5%]">
                   <svg
                     className="absolute top-3"
                     width="134"
@@ -137,7 +137,7 @@ const HomeSlider = () => {
                   </svg>
                 </div>
 
-                <div className=" absolute bottom-[66%] lg:bottom-[33%] -left-9 3xl:-left-10">
+                <div className=" absolute bottom-[66%] md:bottom-[47%] lg:bottom-[33%] -left-9 3xl:-left-10">
                   <svg
                     className="absolute left-0"
                     width="34"
@@ -189,7 +189,7 @@ const HomeSlider = () => {
                     <circle cx="92" cy="17" r="2.5" fill="#8599a8" />
                   </svg>
                 </div>
-                <div className=" absolute -top-[9%] lg:-top-[4.8%]  3xl:-top-[4.8%]  right-1">
+                <div className=" absolute -top-[9%] md:-top-[5.9%] lg:-top-[4.8%]  xl:-top-[4.8%]  right-1">
                   <svg
                     className="absolute -left-1 lg:left-0"
                     width="30"
