@@ -19,7 +19,6 @@ const Officials = () => {
 
     fetchData();
   }, []);
-  console.log(bodData);
   return (
     <div className="px-2 py-10">
       <div className="w-full lg:max-w-5xl 3xl:max-w-7xl mx-auto text-sm lg:text-base space-y-14">

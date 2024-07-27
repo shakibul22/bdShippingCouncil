@@ -28,7 +28,6 @@ const HomeAboutUs = ({ data }) => {
       handleTogglePlay();
     }
   };
-  console.log(isPlaying);
   const handleCloseModal = () => {
     setShowModal(false);
     document.getElementById("vd1").pause();
@@ -41,7 +40,7 @@ const HomeAboutUs = ({ data }) => {
 
   return (
     <div className="bg-softWhite text-white overflow-hidden h-[850px] lg:h-full font-poppins flex justify-center py-5">
-      <div className="py-8 px-2 lg:py-20 xl:px-0 space-y-8 gap-8 flex flex-col lg:flex-row md:gap-48 items-center justify-between w-full lg:max-w-5xl 3xl:max-w-7xl mx-auto">
+      <div className="py-8 px-2 lg:py-20 xl:px-0 space-y-8 gap-8 flex flex-col md:flex-row lg:flex-row md:gap-48 items-center justify-between w-full md:max-w-3xl lg:max-w-5xl 3xl:max-w-7xl mx-auto">
         <div className="flex flex-col justify-start items-start mr-20 gap-4">
           <Image
             className="rounded-lg w-[320px] h-[200px] lg:w-[280px] lg:h-[300px] xl:w-[320px]"

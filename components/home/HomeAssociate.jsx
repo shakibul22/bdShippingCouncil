@@ -5,6 +5,7 @@ import { publicRequest } from "@/requestMethod";
 import { ImArrowUpRight2 } from "react-icons/im";
 import MemberListCard from "../custom/MemberListCard";
 import MemberListModal from "../custom/MemberListModal";
+import toast from "react-hot-toast";
 
 const HomeAssociate = () => {
   const [memberList, setMemberList] = useState([]);
@@ -15,7 +16,7 @@ const HomeAssociate = () => {
         const res = await publicRequest("/member/memberlist");
         setMemberList(res.data);
       } catch (error) {
-        console.error("Error fetching member list:", error);
+        toast.error(error);
       }
     };
     fetchData();

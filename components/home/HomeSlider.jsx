@@ -23,7 +23,6 @@ const HomeSlider = () => {
 
     fetchData();
   }, []);
-  console.log(allImageData);
   useEffect(() => {
     const interval = setInterval(() => {
       setHighlightedIndex((prevIndex) => {
@@ -206,7 +205,7 @@ const HomeSlider = () => {
                     <circle cx="17" cy="65" r="2.5" fill="#8599a8" />
                   </svg>
                   <svg
-                    className="absolute -left-3.5 md:left-2 lg:-left-3"
+                    className="absolute -left-3.5  lg:-left-3"
                     width="30"
                     height="134"
                     viewBox="0 0 34 134"
