@@ -80,10 +80,10 @@ const PhotoGalleryLayout = () => {
   };
 
   return (
-     <div className="p-2">
-      <div className="max-w-screen-2xl mx-auto flex flex-col lg:flex-row gap-7 text-sm sm:text-base lg:text-lg">
+     <div className="p-5 ">
+      <div className="max-w-screen-2xl mx-auto flex flex-col lg:flex-row gap-7 justify-center text-sm sm:text-base lg:text-lg">
         {albums?.map((album, i) => (
-          <div key={i} className="w-[200px] bg-orange-300/30 p-3 h-auto rounded-lg" onClick={() => openModal(album)}>
+          <div key={i} className="w-[200px] bg-orange-300/30 p-3 h-auto rounded-lg cursor-pointer" onClick={() => openModal(album)}>
            
             <p>{album.id}. {album.title}</p>
           </div>
