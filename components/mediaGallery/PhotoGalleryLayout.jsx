@@ -33,7 +33,7 @@ const Modal = ({ isOpen, onClose, album }) => {
           &times;
         </button>
         <h2 className="text-xl font-semibold mb-4">{album.title}</h2>
-        <div className="mt-5">
+        <div className="mt-5 overflow-auto">
           <ResponsiveMasonry columnsCountBreakPoints={{ 350: 2, 800: 3 }}>
             <Masonry gutter="4px">
               {album.photos.map((img, i) => (

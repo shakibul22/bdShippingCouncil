@@ -1,43 +1,25 @@
-"use client";
+
 import Image from "next/image";
 
-const ShippersNewsCard = ({ image, name, date, volume, index, pdf }) => {
-  const handleImageClick = () => {
-    window.open(`/pdf/${pdf}`, "_blank");
-
-  };
-
+const ShippersNewsCard =({ name, date, pdf,image }) => {
   return (
-    <div
-      className={`pb-3 w-full h-full bg-white rounded-xl flex flex-col justify-center items-center shadow-md relative overflow-hidden animatedBorder }`}
-    >
+    <div className="bg-white py-6 px-3 border shadow-lg rounded-xl text-center flex flex-col items-center justify-between gap-4">
       <Image
         src={image ? `/img/news/${image}` : "/img/pdf.png"}
-        width={100}
-        height={200}
-        alt="news"
-        className="w-auto h-[80px] lg:w-auto lg:h-[150px] pt-3"
+        width={120}
+        height={120}
+        alt="pdf"
+        className="mx-auto "
       />
+      <p className="font-medium text-sm lg:text-base">{name}</p>
+      <p className="font-light text-sm">{date}</p>
 
-      <div className="text-xs lg:text-lg font-light text-start flex flex-col justify-center space-y-1 lg:space-y-2 p-3 lg:p-6">
-        <h4 className="font-semibold text-[#0a4a77] text-sm mb-1 text-center lg:text-lg 3xl:text-2xl">
-          0{index}. {name}
-        </h4>
-        <p className="font-semibold text-[#626262] text-xs text-center lg:text-lg">
-          {date}
-        </p>
-
-        <p className="text-xs lg:text-sm text-[#626262] text-center  uppercase font-semibold ">
-          Volume {volume}
-        </p>
-
-        <button
-          onClick={handleImageClick}
-          className="text-[#8c7f77] text-sm lg:text-lg font-semibold"
-        >
-          Read more...
-        </button>
-      </div>
+      <a
+        href={`/pdf/${pdf}`} target="_blank"
+        className="py-1 px-3 lg:py-2 lg:px-4 font-medium bg-secondaryColor text-white w-full lg:w-60 block mx-auto rounded-sm"
+      >
+        View PDF
+      </a>
     </div>
   );
 };
