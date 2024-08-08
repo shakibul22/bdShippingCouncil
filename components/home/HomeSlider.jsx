@@ -23,6 +23,7 @@ const HomeSlider = () => {
 
     fetchData();
   }, []);
+
   useEffect(() => {
     const interval = setInterval(() => {
       setHighlightedIndex((prevIndex) => {
@@ -39,8 +40,21 @@ const HomeSlider = () => {
   }, [imageData, allImageData]);
 
   function getRandomImages(data, count) {
-    const shuffled = data.sort(() => 0.5 - Math.random());
-    return shuffled.slice(0, count);
+    const uniqueImages = new Set();
+    const result = [];
+
+    while (result.length < count && uniqueImages.size < data.length) {
+      const randomIndex = Math.floor(Math.random() * data.length);
+      const randomImage = data[randomIndex];
+
+      // Ensure we have a unique ID before adding to result
+      if (!uniqueImages.has(randomImage.id)) {
+        uniqueImages.add(randomImage.id);
+        result.push(randomImage);
+      }
+    }
+
+    return result;
   }
 
   const getActiveIndex = () => {
@@ -53,13 +67,13 @@ const HomeSlider = () => {
       onMouseLeave={() => setHoveredIndex(null)}
     >
       <div className="flex flex-col justify-center mb-1 items-center">
-        <h3 className="text-center font-poppins text-xl font-bold md:text-xl pb-2  lg:text-2xl 3xl:text-3xl tracking-[.8px] pt-5 text-white relative">
+        <h3 className="text-center font-poppins text-xl font-bold md:text-xl pb-2 lg:text-2xl 3xl:text-3xl tracking-[.8px] pt-5 text-white relative">
           Our Memorable Journey
           <span className="block h-0.5 w-full bg-current mt-2"></span>
         </h3>
       </div>
       <section className="relative z-10 lg:py-[0px]">
-        <div className=" py-6">
+        <div className="py-6">
           <div className="-mx-4 flex flex-wrap lg:justify-between p-3">
             <div className="relative">
               <div>
@@ -72,7 +86,7 @@ const HomeSlider = () => {
                           : "flex-[1] opacity-50"
                       } ${
                         getActiveIndex() === index ? "shadow-none" : "shadow-md"
-                      } `} // Add the rounded-xl class here
+                      }`}
                       key={img.id}
                       onMouseEnter={() => setHoveredIndex(index)}
                     >
@@ -106,7 +120,7 @@ const HomeSlider = () => {
                     </div>
                   ))}
                 </div>
-                <div className=" absolute bottom-20 -left-5 xl:-left-6 lg:bottom-[14.5%]">
+                <div className="absolute bottom-20 -left-5 xl:-left-6 lg:bottom-[14.5%]">
                   <svg
                     className="absolute top-3"
                     width="134"
@@ -137,7 +151,7 @@ const HomeSlider = () => {
                   </svg>
                 </div>
 
-                <div className=" absolute bottom-[66%] md:bottom-[47%] lg:bottom-[33%] -left-9 3xl:-left-10">
+                <div className="absolute bottom-[66%] md:bottom-[47%] lg:bottom-[33%] -left-9 3xl:-left-10">
                   <svg
                     className="absolute left-0"
                     width="34"
@@ -163,7 +177,7 @@ const HomeSlider = () => {
                     <circle cx="17" cy="122" r="2.5" fill="#8599a8" />
                   </svg>
                 </div>
-                <div className=" absolute -top-8 right-20 ">
+                <div className="absolute -top-8 right-20 ">
                   <svg
                     className="absolute top-0"
                     width="100"
@@ -189,7 +203,7 @@ const HomeSlider = () => {
                     <circle cx="92" cy="17" r="2.5" fill="#8599a8" />
                   </svg>
                 </div>
-                <div className=" absolute -top-[9%] md:-top-[5.9%] lg:-top-[4.8%]  xl:-top-[4.8%]  right-1">
+                <div className="absolute -top-[9%] md:-top-[5.9%] lg:-top-[4.8%] xl:-top-[4.8%] right-1">
                   <svg
                     className="absolute -left-1 lg:left-0"
                     width="30"
@@ -205,7 +219,7 @@ const HomeSlider = () => {
                     <circle cx="17" cy="65" r="2.5" fill="#8599a8" />
                   </svg>
                   <svg
-                    className="absolute -left-3.5  lg:-left-3"
+                    className="absolute -left-3.5 lg:-left-3"
                     width="30"
                     height="134"
                     viewBox="0 0 34 134"
@@ -224,7 +238,7 @@ const HomeSlider = () => {
             <div className="relative inset-0 m-auto rounded-md overflow-hidden border hover:bg-btn transition duration-500 text-btn bg-white border-[#0081e9] hover:border-white hover:text-white">
               <Link
                 href={"/media"}
-                className="py-3 px-[25px] w-fit flex flex-row justify-center gap-2 leading-normal  items-center  shadow-lg mx-auto  font-medium"
+                className="py-3 px-[25px] w-fit flex flex-row justify-center gap-2 leading-normal items-center shadow-lg mx-auto font-medium"
               >
                 See More <ImArrowUpRight2 />
               </Link>
