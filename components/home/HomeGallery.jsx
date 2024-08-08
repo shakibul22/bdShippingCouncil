@@ -69,7 +69,7 @@ const HomeGallery = async () => {
               src={`/img/gallery/photo/${images[4]?.image}`}
               width={400}
               height={200} // Reduced height
-              alt="hbgh"
+              alt="image-4"
               className="w-full h-auto rounded-lg lg:rounded-lg"
             />
           </div>
